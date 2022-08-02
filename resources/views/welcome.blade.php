@@ -16,13 +16,12 @@
             <div class="container">
                 <div class="header__top__wrapper d-flex flex-wrap align-items-center justify-content-center justify-content-md-between text-center">
                     <ul class="contacts d-flex flex-wrap justify-content-center">
-                        <li><a href="mailto:demo@gmail.com"><i class="las la-envelope-open"></i> demo@gmail.com</a></li>
-                        <li><a href="tel:129075"><i class="las la-phone-volume"></i> 123  -  456  -  7890</a></li>
+                        <li><a href="mailto:demo@gmail.com"><i class="las la-envelope-open"></i> crypto@aurum.com</a></li>
+                        <li><a href="tel:129075"><i class="las la-phone-volume"></i> 8 800 -777  -  00000</a></li>
                     </ul>
                     <div class="right__area d-flex flex-wrap align-items-center mt-3 mt-md-0">
                         <select name="language" class="nice-select custom--scrollbar">
-                            <option>English</option>
-                            <option>Bangla</option>
+                            <option>Русский</option>
                         </select>
                         <a href="dashboard.html" class="user__thumb ms-3 me-3 me-lg-0">
                             <img src="/template-assets/digihyip/images/dashboard/user.png" alt="dashboard">
@@ -37,26 +36,26 @@
                     <div class="logo"><a href="index.html"><img src="/template-assets/digihyip/images/logo.png" alt="logo"></a></div>
                     <ul class="menu">
                         <li>
-                            <a href="#0">Home</a>
+                            <a href="#0">Главная</a>
                             <ul class="sub-menu">
                                 <li><a href="index.html">Home One</a></li>
                                 <li><a href="index2.html">Home Two</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="about.html">О проекте</a>
                         </li>
                         <li>
-                            <a href="plan.html">Plan</a>
+                            <a href="plan.html">Планы</a>
                         </li>
                         <li>
-                            <a href="#0">Pages</a>
+                            <a href="#0"></a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="dashboard.html">User Dashboard</a>
+                                    <a href="dashboard.html">Личный кабинет</a>
                                 </li>
                                 <li>
-                                    <a href="investor.html">Investor</a>
+                                    <a href="investor.html">Инвесторы</a>
                                 </li>
                                 <li>
                                     <a href="faq.html">FAQs</a>
@@ -70,15 +69,15 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#0">Blog</a>
+                            <a href="#0"></a>
                             <ul class="sub-menu">
-                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                <li><a href="blog-list.html">Blog List</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
+                                <li><a href="blog-grid.html">Блог Grid</a></li>
+                                <li><a href="blog-list.html">Блог List</a></li>
+                                <li><a href="blog-details.html">Детали</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="contact.html">Контакты</a>
                         </li>
 
                         <li class="d-none d-lg-block">
@@ -87,15 +86,15 @@
 
                         <li class="p-0 d-lg-none mt-3 mt-lg-0">
                             <div class="button__wrapper">
-                                <a href="sign-up.html" class="cmn--btn">Register</a>
-                                <a href="sign-in.html" class="cmn--btn">Login</a>
+                                <a href="sign-up.html" class="cmn--btn">Регистрация</a>
+                                <a href="sign-in.html" class="cmn--btn">Вход</a>
                             </div>
                         </li>
                     </ul>   <!-- Menu End -->
 
                     <div class="button__wrapper d-none d-lg-block">
-                        <a href="sign-up.html" class="cmn--btn">Register</a>
-                        <a href="sign-in.html" class="cmn--btn">Login</a>
+                        <a href="sign-up.html" class="cmn--btn">Регистрация</a>
+                        <a href="sign-in.html" class="cmn--btn">Вход</a></a>
                     </div>
 
 
@@ -133,9 +132,9 @@
         <div class="container">
             <div class="banner__wrapper d-flex align-items-center justify-content-between">
                 <div class="banner__content">
-                    <h1 class="title">Best Hyip Investment Platform</h1>
-                    <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero hyip investment pandding</p>
-                    <a href="sign-in.html" class="cmn--btn">Get Started</a>
+                    <h1 class="title">RED AURUM COIN (RAU)</h1>
+                    <p>Токен нового поколения - первая в мире восходящая криптовалюта</p>
+                    <a href="sign-in.html" class="cmn--btn">Начни зарабатывать</a>
                 </div>
                 <div class="banner__thumb d-none d-lg-block">
                     <img src="/template-assets/digihyip/images/banner/thumb.png" alt="banner">
@@ -164,21 +163,23 @@
                 <div class="col-lg-6">
                     <div class="choose__us__content">
                         <div class="section__header mb-0">
-                            <h2 class="section__header-title">Why Choose Our Investment Platform </h2>
-                            <p>Aenean vulputate eleifend tellus. Aenean leo ligul porttitoeu consequat vitae eleifend acenim</p>
+                            <h2 class="section__header-title">Инвестируйте в наш уникальный (RAU) COIN </h2>
+                            <p>Криптовалюты – это актив, который растет ежегодно в среднем на 650% в год.</p>
                         </div>
-                        <p>Maecenas tempus tellus eget condimentum rhoncus seumper libero sit amet adipiscing sem neque sepsumam uam nuandit vel luct endrerilorem.aecenas necdio et ante dunt tempus. Donec vitae sapien utlibero venenatis faucibus.</p>
+                        <p>55 из 100 банков мира, крупнейших по размерам активов под управлением, уже инвестировали в компании, связанные с криптовалютой и/или блокчейном.
+Ряд государств (в том числе передовых) стоит на пути принятия криптовалют, а это значит, что их наравне с другими видами активов начинают регулировать и делать частью обычной жизни граждан </p>
+                            </p>Крупнейшие мировые компании инвестируют в криптовалюты:</p>
                         <ul class="info__list d-flex flex-wrap mt-4">
-                            <li> Dapivamus elementum</li>
-                            <li> Dapivamus elementum</li>
-                            <li> There are many variations</li>
-                            <li> There are many variations</li>
-                            <li> Finibus onorum et alorum</li>
-                            <li> Finibus onorum et alorum</li>
+                            <li> Grayscale</li>
+                            <li> CoinShares</li>
+                            <li> MicroStrategy</li>
+                            <li> Galaxy Digital Holdings</li>
+                            <li> ETC Group Bitcoin ETP</li>
+                            <li> Tesla</li>
                         </ul>
                         <div class="button__wrapper">
-                            <a href="about.html" class="cmn--btn">Know More</a>
-                            <a href="contact.html" class="cmn--btn2">Contact Us</a>
+                            <a href="about.html" class="cmn--btn">Хочу инвестировать</a>
+                            <a href="contact.html" class="cmn--btn2">Контакты</a>
                         </div>
                     </div>
                 </div>
