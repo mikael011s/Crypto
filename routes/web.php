@@ -25,6 +25,15 @@ Route::prefix('home')->group(function () {
     Route::view('/privacy/documents', 'home.privacy-documents')->name('documents');
 });
 
-Auth::routes();
+// Мобильная версия
+Route::prefix('mobile')->group(function () {
+    Route::view('/', 'mobile.home')->name('m-home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Auth::routes();
+
+    Route::middleware('auth')->group(function () {
+        Route::view('dashboard', 'mobile.dashboard')->name('m-dashboard');
+    });
+});
+
+Route::redirect('/home', '/mobile/dashboard')->name('home');
