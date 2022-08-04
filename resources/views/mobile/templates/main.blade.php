@@ -32,11 +32,11 @@
                             </div>
                             <nav class="main-nav">
                                 <ul>
-                                    <li><a href="user-profile.html"><img src="/template-assets/cryptex/images/icons/user.svg" alt="" title="" /><span>My Account</span></a></li>
-                                    <li><a href="forms.html"><img src="/template-assets/cryptex/images/icons/settings.svg" alt="" title="" /><span>Settings</span></a></li>
-                                    <li class="subnav opensubnav"><a href="#"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>More Sections</span></a></li>
-                                    <li><a href="wallet.html"><img src="/template-assets/cryptex/images/icons/wallet.svg" alt="" title="" /><span>My Wallet</span></a></li>
-                                    <li><a href="contact.html"><img src="/template-assets/cryptex/images/icons/contact.svg" alt="" title="" /><span>Help &amp; Support</span></a></li>
+                                    <li><a href="user-profile.html"><img src="/template-assets/cryptex/images/icons/user.svg" alt="" title="" /><span>Мой аккаунт</span></a></li>
+                                    <li><a href="forms.html"><img src="/template-assets/cryptex/images/icons/settings.svg" alt="" title="" /><span>Настройки</span></a></li>
+                                    <li class="subnav opensubnav"><a href="#"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>Депозит</span></a></li>
+                                    <li><a href="wallet.html"><img src="/template-assets/cryptex/images/icons/wallet.svg" alt="" title="" /><span>Мои финансы</span></a></li>
+                                    <li><a href="contact.html"><img src="/template-assets/cryptex/images/icons/contact.svg" alt="" title="" /><span>Поддержка</span></a></li>
                                 </ul>
                             </nav>
                             <div class="buttons buttons--centered">

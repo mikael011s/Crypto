@@ -33,6 +33,7 @@ Route::prefix('mobile')->group(function () {
 
     Route::middleware('auth')->group(function () {
         Route::view('dashboard', 'mobile.dashboard')->name('m-dashboard');
+        Route::view('rau/by', 'mobile.rau.by')->name('m-by');
     });
 });
 

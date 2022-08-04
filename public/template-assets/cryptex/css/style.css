@@ -549,8 +549,8 @@ ul.custom-listing--checked li {
   justify-content: center; }
   .account-buttons a {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     background-color: #291f57;
     color: #47e7ce;
     text-align: center;
@@ -562,7 +562,7 @@ ul.custom-listing--checked li {
     .account-buttons a img {
       display: block;
       width: 12px;
-      margin: 10px auto 5px auto; }
+      margin: 17px auto 5px auto; }
 
 .account-selectors {
   width: 100%;
