@@ -51,13 +51,13 @@
             rauInput = $('#rau_input');
 
         function editRub() {
-            rauInput.val(rubInput.val() / rauPrice);
-            console.log(rubInput.val() / rauPrice);
+            rauInput.val((rubInput.val() / rauPrice).toFixed(6));
+            console.log((rubInput.val() / rauPrice).toFixed(6));
         }
 
         function editRau() {
-            rubInput.val(rauPrice * rauInput.val());
-            console.log(rauPrice * rauInput.val());
+            rubInput.val((rauPrice * rauInput.val()).toFixed(6));
+            console.log((rauPrice * rauInput.val()).toFixed(6));
         }
     </script>
 
