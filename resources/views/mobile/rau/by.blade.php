@@ -56,8 +56,8 @@
         }
 
         function editRau() {
-            rubInput.val((rauPrice * rauInput.val()).toFixed(6));
-            console.log((rauPrice * rauInput.val()).toFixed(6));
+            rubInput.val(rauPrice * rauInput.val());
+            console.log(rauPrice * rauInput.val());
         }
     </script>
 
