@@ -1,59 +1,10 @@
 /* Chart Up */
-var charts = document.getElementsByClassName("chartup");
+// var charts = document.getElementsByClassName("chartup");
 
-for (chart of charts) {
-	var ctx = chart.getContext('2d');
-	new Chart(ctx, {
-	type: 'line',
-	data: {
-		labels: ["1", "2", "3", "4", "5", "6", "7"],
-		datasets: [{
-			label: "",
-			borderColor: "#47e7ce",
-			pointBorderColor: "#47e7ce",
-			pointBackgroundColor: "rgba(255, 255, 255, 1)",
-			pointHoverBackgroundColor: "rgba(128, 182, 244, 1)",
-			pointHoverBorderColor: "#47e7ce",
-			pointBorderWidth: 1,
-			pointHoverRadius: 1,
-			pointHoverBorderWidth: 0,
-			pointRadius: 0,
-			fill: false,
-			borderWidth: 2,
-			data: [1, 6, 2, 5, 1, 7, 8]
-		}
-		]
-	},
-	options: {          
-		legend: {
-			display: false
-		},
-		scales: {
-			yAxes: [{
-				ticks: {
-					display: false
-				},
-				gridLines: {
-					drawTicks: false,
-					display: false,
-					drawBorder: false
-				}
-
-			}],
-			xAxes: [{
-				gridLines: {
-					zeroLineColor: "transparent",
-					display: false,
-					drawBorder: false
-				},
-				ticks: {
-					display: false
-				}
-			}]
-		}
-	}
-	});
-}
+// for (chart of charts) {
+//
+// ;
+// }
 
 /* Chart Down */
 var chartds = document.getElementsByClassName("chartdown");
@@ -81,7 +32,7 @@ for (chartd of chartds) {
 		}
 		]
 	},
-	options: {          
+	options: {
 		legend: {
 			display: false
 		},

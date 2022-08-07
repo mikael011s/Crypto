@@ -34,7 +34,14 @@ Route::prefix('mobile')->group(function () {
     Route::middleware('auth')->group(function () {
         Route::view('dashboard', 'mobile.dashboard')->name('m-dashboard');
         Route::view('rau/by', 'mobile.rau.by')->name('m-by');
+        Route::view('rau/sell', 'mobile.rau.sell')->name('m-sell');
+        Route::view('rau/swap', 'mobile.rau.swap')->name('m-swap');
     });
+});
+
+// Админ панель
+Route::prefix('admin')->middleware('auth')->middleware('admin')->group(function () {
+    Route::view('/', 'admin.main')->name('admin-main');
 });
 
 Route::redirect('/home', '/mobile/dashboard')->name('home');

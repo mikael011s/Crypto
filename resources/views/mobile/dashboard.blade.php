@@ -17,85 +17,99 @@
 
             <div class="account-buttons">
                 <a href="{{ route('m-by') }}"><img src="/template-assets/cryptex/images/icons/bottom.svg" alt="" title=""/><span>КУПИТЬ</span></a>
-                <a href="sell.html"><img src="/template-assets/cryptex/images/icons/top.svg" alt="" title=""/><span>ПРОДАТЬ</span></a>
-                <a href="transfer.html"><img src="/template-assets/cryptex/images/icons/swap.svg" alt="" title=""/><span>ОБМЕН</span></a>
+                <a href="{{ route('m-sell') }}"><img src="/template-assets/cryptex/images/icons/top.svg" alt="" title=""/><span>ПРОДАТЬ</span></a>
+                <a href="{{ route('m-swap') }}"><img src="/template-assets/cryptex/images/icons/swap.svg" alt="" title=""/><span>ОБМЕН</span></a>
             </div>
 
             <div class="page-inner">
                 <div class="page__title-bar">
-                    <h3>My Portfolio</h3>
-
-                    <div class="page__title-right">
-                        <div class="swiper-button-prev slider-portfolio__prev"></div>
-                        <div class="swiper-button-next slider-portfolio__next"></div>
-                    </div>
+                    <h3>График роста RAu за последнюю неделю</h3>
                 </div>
 
+                <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
+                <br>
+                <div class="caption__info"><b>2.5 BTC</b> <b>$41,904</b></div>
+                <div class="caption__info"><strong>$104,750</strong> <span class="plus">+12%</span></div>
+                <br><br>
                 <!-- SLIDER AUTO 2 -->
-                <div class="swiper-container slider-portfolio slider-portfolio--round-corners slider-init mb-40" data-paginationtype="progressbar" data-spacebetweenitems="10" data-itemsperview="auto">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide slider-portfolio__slide slider-portfolio__slide--1h">
-                            <div class="slider-portfolio__caption caption">
-                                <div class="caption__content">
-                                    <a href="details.html">
-                                        <h2 class="caption__title"><img src="/template-assets/cryptex/images/logos/bitcoin.png" alt="" title=""/><span>Bitcoin</span><strong>/ BTC</strong></h2>
-                                        <div class="caption__chart"><canvas class="chartup" width="100%" height="60"></canvas></div>
-                                        <div class="caption__info"><b>2.5 BTC</b> <b>$41,904</b></div>
-                                        <div class="caption__info"><strong>$104,750</strong> <span class="plus">+12%</span></div>
-                                    </a>
-                                </div>
-                            </div>
 
-                        </div>
-                        <div class="swiper-slide slider-portfolio__slide slider-portfolio__slide--1h">
-                            <div class="slider-portfolio__caption caption">
-                                <div class="caption__content">
-                                    <a href="details.html">
-                                        <h2 class="caption__title"><img src="/template-assets/cryptex/images/logos/ethereum.png" alt="" title=""/><span>Ethereum</span><strong>/ ETH</strong></h2>
-                                        <div class="caption__chart"><canvas class="chartdown" width="100%" height="60"></canvas></div>
-                                        <div class="caption__info"><b>23 ETH</b> <b>$3,150</b></div>
-                                        <div class="caption__info"><strong>$72,500</strong>  <span class="minus">-2%</span></div>
-                                    </a>
-                                </div>
-                            </div>
+                <!-- CHART -->
 
-                        </div>
-                        <div class="swiper-slide slider-portfolio__slide slider-portfolio__slide--1h">
-                            <div class="slider-portfolio__caption caption">
-                                <div class="caption__content">
-                                    <a href="details.html">
-                                        <h2 class="caption__title"><img src="/template-assets/cryptex/images/logos/tether.png" alt="" title=""/><span>Tether</span><strong>/ USDT</strong></h2>
-                                        <div class="caption__chart"><canvas class="chartup" width="100%" height="60"></canvas></div>
-                                        <div class="caption__info"><b>10,096 USDT</b> <b>$1,04</b></div>
-                                        <div class="caption__info"><strong>$10,500</strong>  <span class="plus">+1%</span></div>
-                                    </a>
-                                </div>
-                            </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function(event) {
+                        {
 
-                        </div>
-                        <div class="swiper-slide slider-portfolio__slide slider-portfolio__slide--1h">
-                            <div class="slider-portfolio__caption caption">
-                                <div class="caption__content">
-                                    <a href="details.html">
-                                        <h2 class="caption__title"><img src="/template-assets/cryptex/images/logos/polkadot.png" alt="" title=""/><span>Polkadot</span><strong>/ DOT</strong></h2>
-                                        <div class="caption__chart"><canvas class="chartdown" width="100%" height="60"></canvas></div>
-                                        <div class="caption__info"><b>120 DOT</b> <b>$24</b></div>
-                                        <div class="caption__info"><strong>$2,880</strong>  <span class="minus">-1%</span></div>
-                                    </a>
-                                </div>
-                            </div>
+                            var rauChart = document.getElementById('rau_chart')
+                            var ctx = rauChart.getContext('2d');
+                            new Chart(ctx, {
+                                type: 'line',
+                                data: {
+                                    labels: ["1", "2", "3", "4", "5", "6", "7"],
+                                    datasets: [{
+                                        label: "",
+                                        borderColor: "#47e7ce",
+                                        pointBorderColor: "#47e7ce",
+                                        pointBackgroundColor: "rgba(255, 255, 255, 1)",
+                                        pointHoverBackgroundColor: "rgba(128, 182, 244, 1)",
+                                        pointHoverBorderColor: "#47e7ce",
+                                        pointBorderWidth: 2,
+                                        pointHoverRadius: 5,
+                                        pointRadius: 5,
+                                        pointHoverBorderWidth: 0,
+                                        fill: false,
+                                        borderWidth: 3,
 
-                        </div>
-                    </div>
-                    <div class="swiper-pagination slider-portfolio__pagination"></div>
+                                        // Тут надо вывести 7 чисел
+                                        data:
+                                        [@php
+                                            $rows = \App\Models\RauHistory::all()->take(7);
+                                            foreach ($rows as $row) {
+                                                echo "'{$row->new_price}',";
+                                            }
+                                        @endphp]
+                                    }
+                                    ]
+                                },
+                                options: {
+                                    legend: {
+                                        display: false
+                                    },
+                                    scales: {
+                                        yAxes: [{
+                                            ticks: {
+                                                display: false
+                                            },
+                                            gridLines: {
+                                                drawTicks: false,
+                                                display: false,
+                                                drawBorder: false
+                                            }
 
-                </div>
+                                        }],
+                                        xAxes: [{
+                                            gridLines: {
+                                                zeroLineColor: "transparent",
+                                                display: false,
+                                                drawBorder: false
+                                            },
+                                            ticks: {
+                                                display: false
+                                            }
+                                        }]
+                                    }
+                                }
+                            });
+                        }
+                    });
+                </script>
+
+                <!-- END CHART -->
 
 
                 <div class="page__title-bar">
-                    <h3>Trending</h3>
+                    <h3>Курсы других валют</h3>
                     <div class="page__title-right">
-                        <a href="list.html" class="button button--main button--ex-small">VIEW ALL</a>
+{{--                        <a href="list.html" class="button button--main button--ex-small">VIEW ALL</a>--}}
                     </div>
                 </div>
 
@@ -127,7 +141,7 @@
                     </a>
                 </div>
 
-                <div class="w-100 text-center"><a href="list.html">View all trending coins</a></div>
+{{--                <div class="w-100 text-center"><a href="list.html">View all trending coins</a></div>--}}
 
                 <div class="page__title-bar mt-40">
                     <h3>Crypto News</h3>
@@ -176,12 +190,6 @@
                     </div>
                     <div class="swiper-pagination slider-cover__pagination"></div>
 
-                </div>
-
-                <div class="cards cards--11">
-                    <div class="card card--style-bg card--style-round-corners">
-                        <h4 class="card__title card__title--centered p0">Download our app!</h4>
-                    </div>
                 </div>
 
 

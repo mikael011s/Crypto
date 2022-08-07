@@ -46,6 +46,9 @@
                                     Выйти
                                 </a>
                             </div>
+                            <div class="main-nav">
+                                <p class="text-muted" style="font-size: 12px;color:rgba(250,250,250,.2);">Свайп вправо для полного меню</p>
+                            </div>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
@@ -79,11 +82,11 @@
             <div id="bottom-toolbar" class="bottom-toolbar">
                 <div class="bottom-navigation bottom-navigation--gradient">
                     <ul class="bottom-navigation__icons">
-                        <li><a href="main.html"><img src="{{ asset('template-assets/cryptex/images/icons/blocks.svg') }}" alt="" title="" /></a></li>
-                        <li><a href="list.html"><img src="{{ asset('template-assets/cryptex/images/icons/stats.svg') }}" alt="" title="" /></a></li>
-                        <li class="centered"><a href="wallet.html"><img src="{{ asset('template-assets/cryptex/images/icons/wallet.svg') }}" alt="" title="" /></a></li>
+                        <li><a href="{{ route('m-dashboard') }}"><img src="{{ asset('template-assets/cryptex/images/icons/blocks.svg') }}" alt="" title="" /></a></li>
+                        <li><a href="{{ route('m-dashboard') }}"><img src="{{ asset('template-assets/cryptex/images/icons/stats.svg') }}" alt="" title="" /></a></li>
+                        <li class="centered"><a href="{{ route('m-dashboard') }}"><img src="{{ asset('template-assets/cryptex/images/icons/wallet.svg') }}" alt="" title="" /></a></li>
                         <li><a href="#" class="open-popup" data-popup="notifications"><img src="{{ asset('template-assets/cryptex/images/icons/notifications.svg') }}" alt="" title="" /><i>3</i></a></li>
-                        <li><a href="contact.html"><img src="{{ asset('template-assets/cryptex/images/icons/contact.svg') }}" alt="" title="" /></a></li>
+                        <li><a href="{{ route('m-dashboard') }}"><img src="{{ asset('template-assets/cryptex/images/icons/contact.svg') }}" alt="" title="" /></a></li>
                     </ul>
                 </div>
             </div>

@@ -11,23 +11,23 @@
 
         <!-- PAGE CONTENT -->
         <div class="page__content page__content--with-header page__content--with-bottom-nav">
-            <h2 class="page__title">Купить RAu</h2>
+            <h2 class="page__title">Продать RAu</h2>
             <form id="Form" method="post" action="checkout.html">
                 <div class="fieldset">
                     <div class="form">
-                        <h3 class="mb-0 fw-bolder">Покупаю на</h3>
+                        <h3 class="mb-0 fw-bolder">Количество для продажи</h3>
                         <div class="form__row d-flex align-items-center justify-space">
-                            <input type="text" name="Text" value="" class="form__input form__input--23" placeholder="" oninput="editRub()" id="rub_input" />
-                            <div class="form__coin-icon"><span>Руб.</span></div>
+                            <input type="text" name="Text" value="" class="form__input form__input--23" placeholder="" oninput="editRau()" id="rau_input" />
+                            <div class="form__coin-icon"><span>RAu</span></div>
                         </div>
                     </div>
                 </div>
                 <div class="fieldset">
                     <div class="form">
-                        <h3 class="mb-0 fw-bolder">Получаю</h3>
+                        <h3 class="mb-0 fw-bolder">Цена с учётом курса</h3>
                         <div class="form__row d-flex align-items-center justify-space">
-                            <input type="text" name="Text" value="" class="form__input form__input--23" placeholder="" oninput="editRau()" id="rau_input" />
-                            <div class="form__coin-icon"><span>RAu</span></div>
+                            <input type="text" name="Text" value="" class="form__input form__input--23" placeholder="" oninput="editRub()" id="rub_input" readonly />
+                            <div class="form__coin-icon"><span>Руб.</span></div>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
     </div>
     <!-- PAGE END -->
     <div class="bottom-fixed-button">
-        <a href="#" data-popup="success" class="button button--full button--main open-popup">Перейти к оплате</a>
+        <button href="#" data-popup="success" class="button button--full button--main open-popup" id="pay-btn">Перейти к оплате</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -57,7 +57,12 @@
 
         function editRau() {
             rubInput.val(Math.floor(rauPrice * rauInput.val()));
-            console.log(rauPrice * rauInput.val());
+
+            let numbersAfterDot = ( (rauInput.val().toString().includes('.')) ? (rauInput.val().toString().split('.').pop().length) : (0) );
+            if (numbersAfterDot > 6) {
+                console.log('Максимум 6 символов после запятой.');
+                rauInput.val(rauInput.val().substr(0, rauInput.val().length -1));
+            }
         }
     </script>
 

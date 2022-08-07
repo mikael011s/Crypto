@@ -3,7 +3,7 @@ var chartdetails = document.getElementById('ChartDetails').getContext("2d");
 var gradientStroke = chartdetails.createLinearGradient(200, 0, 100, 0);
 gradientStroke.addColorStop(0, "rgba(71, 231, 206, 1)");
 gradientStroke.addColorStop(1, "rgba(15, 224, 191, 1)");
-   
+
 
 var gradientFill = chartdetails.createLinearGradient(0, 0, 0, 170);
 gradientFill.addColorStop(0, "rgba(71, 231, 206, 0.5)");
@@ -32,7 +32,7 @@ var ChartDetails = new Chart(chartdetails, {
         }
 		]
     },
-    options: {          
+    options: {
         legend: {
             display: false
         },

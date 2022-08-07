@@ -59,17 +59,17 @@
         <div class="header-bottom">
             <div class="container">
                 <div class="header-bottom-area">
-                    <div class="logo"><a href="index.html"><img src="/template-assets/digihyip/images/logo.png" alt="logo"></a></div>
+                    <div class="logo"><a href="/"><img src="/template-assets/digihyip/images/logo.png" alt="logo"></a></div>
                     <ul class="menu">
                         <li>
-                            <a href="#0">Главная</a>
+                            <a href="/">Главная</a>
                             <ul class="sub-menu">
                                 <li><a href="index.html">Home One</a></li>
                                 <li><a href="index2.html">Home Two</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="about.html">О проекте</a>
+                            <a href="{{ route('about') }}">О проекте</a>
                         </li>
                         <li>
                             <a href="plan.html">Планы</a>
@@ -81,13 +81,13 @@
                                     <a href="dashboard.html">Личный кабинет</a>
                                 </li>
                                 <li>
-                                    <a href="investor.html">Инвесторы</a>
+                                    <a href="{{ route('investors') }}">Инвесторы</a>
                                 </li>
                                 <li>
-                                    <a href="faq.html">FAQs</a>
+                                    <a href="">FAQs</a>
                                 </li>
                                 <li>
-                                    <a href="policy.html">Privacy Policy</a>
+                                    <a href="{{ route('privacy-policy') }}">Privacy Policy</a>
                                 </li>
                                 <li>
                                     <a href="error-page.html">404</a>
@@ -112,15 +112,15 @@
 
                         <li class="p-0 d-lg-none mt-3 mt-lg-0">
                             <div class="button__wrapper">
-                                <a href="sign-up.html" class="cmn--btn">Регистрация</a>
-                                <a href="sign-in.html" class="cmn--btn">Вход</a>
+                                <a href="{{ route('login') }}" class="cmn--btn">Регистрация</a>
+                                <a href="{{ route('logout') }}" class="cmn--btn">Вход</a>
                             </div>
                         </li>
                     </ul>   <!-- Menu End -->
 
                     <div class="button__wrapper d-none d-lg-block">
-                        <a href="sign-up.html" class="cmn--btn">Регистрация</a>
-                        <a href="sign-in.html" class="cmn--btn">Вход</a></a>
+                        <a href="{{ route('login') }}" class="cmn--btn">Регистрация</a>
+                        <a href="{{ route('logout') }}" class="cmn--btn">Вход</a></a>
                     </div>
 
 
