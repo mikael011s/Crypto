@@ -15,6 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="{{ asset('template-assets/cryptex/vendor/jquery/jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ asset('template-assets/cryptex/vendor/jquery/jquery.validate.min.js') }}" ></script>
+    <script src="{{ asset('template-assets/cryptex/vendor/swiper/swiper.min.js') }}"></script>
+    <script src="{{ asset('template-assets/cryptex/vendor/charts/Chart.min.js') }}"></script>
+    <script src="{{ asset('template-assets/cryptex/vendor/charts/chartjs-plugin-style.min.js') }}"></script>
+    <script src="{{ asset('template-assets/cryptex/js/custom-charts.js') }}"></script>
+    <script src="{{ asset('template-assets/cryptex/js/swiper-init.js') }}"></script>
+    <script src="{{ asset('template-assets/cryptex/js/jquery.custom.js') }}"></script>
+    <script src="{{ asset('template-assets/cryptex/js/header-scroll.js') }}"></script>
+
     @if(\Illuminate\Support\Facades\Auth::check())
         <!-- Overlay panel -->
         <div class="body-overlay"></div>
@@ -74,6 +84,7 @@
         </div>
     @endif
 
+
     @yield('content')
 
     @if(\Illuminate\Support\Facades\Auth::check())
@@ -83,10 +94,10 @@
                 <div class="bottom-navigation bottom-navigation--gradient">
                     <ul class="bottom-navigation__icons">
                         <li><a href="{{ route('m-dashboard') }}"><img src="{{ asset('template-assets/cryptex/images/icons/blocks.svg') }}" alt="" title="" /></a></li>
-                        <li><a href="{{ route('m-dashboard') }}"><img src="{{ asset('template-assets/cryptex/images/icons/stats.svg') }}" alt="" title="" /></a></li>
-                        <li class="centered"><a href="{{ route('m-dashboard') }}"><img src="{{ asset('template-assets/cryptex/images/icons/wallet.svg') }}" alt="" title="" /></a></li>
+                        <li><a href="{{ route('m-stats') }}"><img src="{{ asset('template-assets/cryptex/images/icons/stats.svg') }}" alt="" title="" /></a></li>
+                        <li class="centered"><a href="{{ route('m-wallet') }}"><img src="{{ asset('template-assets/cryptex/images/icons/wallet.svg') }}" alt="" title="" /></a></li>
                         <li><a href="#" class="open-popup" data-popup="notifications"><img src="{{ asset('template-assets/cryptex/images/icons/notifications.svg') }}" alt="" title="" /><i>3</i></a></li>
-                        <li><a href="{{ route('m-dashboard') }}"><img src="{{ asset('template-assets/cryptex/images/icons/contact.svg') }}" alt="" title="" /></a></li>
+                        <li><a href="{{ route('m-contact') }}"><img src="{{ asset('template-assets/cryptex/images/icons/contact.svg') }}" alt="" title="" /></a></li>
                     </ul>
                 </div>
             </div>
@@ -96,20 +107,30 @@
         <div id="popup-social"></div>
 
         <!-- Alert -->
-        <div id="popup-alert"></div>
+        <div id="popup-alert">
+            <div class="popup popup--centered popup--shadow popup--alert">
+                <div class="popup__close"><a href="#" class="close-popup" data-popup="alert"><img src="images/icons/close.svg" alt="" title=""/></a></div>
+                <div class="popup__icon"><img src="images/icons/alert.svg" alt="" title=""/></div>
+                <h2 class="popup__title">Hey there !</h2>
+                <p class="popup__text">This is an alert example. Creativity is breaking out of established patterns to look at things in a different way.</p>
+            </div>
+        </div>
 
         <!-- Notifications -->
-        <div id="popup-notifications"></div>
-
-        <script src="{{ asset('template-assets/cryptex/vendor/jquery/jquery-3.5.1.min.js') }}"></script>
-        <script src="{{ asset('template-assets/cryptex/vendor/jquery/jquery.validate.min.js') }}" ></script>
-        <script src="{{ asset('template-assets/cryptex/vendor/swiper/swiper.min.js') }}"></script>
-        <script src="{{ asset('template-assets/cryptex/vendor/charts/Chart.min.js') }}"></script>
-        <script src="{{ asset('template-assets/cryptex/vendor/charts/chartjs-plugin-style.min.js') }}"></script>
-        <script src="{{ asset('template-assets/cryptex/js/custom-charts.js') }}"></script>
-        <script src="{{ asset('template-assets/cryptex/js/swiper-init.js') }}"></script>
-        <script src="{{ asset('template-assets/cryptex/js/jquery.custom.js') }}"></script>
-        <script src="{{ asset('template-assets/cryptex/js/header-scroll.js') }}"></script>
+        <div id="popup-notifications">
+            <div class="popup popup--notifications">
+                <div class="popup__close"><a href="#" class="close-popup" data-popup="notifications"><img src="{{ asset('template-assets/cryptex/images/icons/close.svg') }}" alt="" title=""/></a></div>
+                <h2 class="popup__title">Your latest notifications!</h2>
+                <ul class="notifications pt-20">
+                    <li><a href="details.html">Bitcoin</a> is up 10%</li>
+                    <li><a href="details.html">Ethereum</a> is down 5% in the last 7 days</li>
+                    <li>Your BTC - ETH swap was succesfully done!</li>
+                    <li>Received a $100 payment from <a href="#">Robert J.</a></li>
+                    <li><a href="#">Jenifer F.</a> replied to your message</li>
+                </ul>
+                <a href="#" class="button button--full button--main">View All Notifications</a>
+            </div>
+        </div>
     @endif
 </body>
 </html>

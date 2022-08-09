@@ -257,12 +257,12 @@ Template:	CryptEX
   background-position: center center; }
 
 .gradient-lightgreen, .button--main, .button--more, .bottom-navigation__icons li.centered, .card--style-plan-premium, .card--style-bg {
-  background-color: #47e7ce !important;
-  background: linear-gradient(60deg, #47e7ce 0%, #4fa8c4 100%) !important; }
+  background-color: #ffb500 !important;
+  background: linear-gradient(60deg, #ffb500 0%, #ff8800 100%) !important; }
 
 .gradient-purple, .account-info {
   background-color: #633a97 !important;
-  background: linear-gradient(60deg, #633a97 0%, #4c87c6 100%) !important; }
+  background: linear-gradient(60deg, #483400 0%, #7e3900 100%) !important; }
 
 /*===============================================*/
 /* 2. GENERAL		 						 */
@@ -289,7 +289,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #47e7ce; }
+  color: #ffb500; }
 
 p {
   padding: 0px 0 10px 0;
@@ -403,7 +403,7 @@ textarea, input, select {
     background-color: #000;
     color: #fff; }
   .button--green {
-    background-color: #47e7ce;
+    background-color: #ffb500;
     color: #000; }
   .button--disabled {
     background-color: #291f57;
@@ -424,7 +424,7 @@ ul.custom-listing li {
   line-height: 1.5; }
   ul.custom-listing li span {
     font-weight: 600;
-    color: #47e7ce; }
+    color: #ffb500; }
   ul.custom-listing li.email {
     background-image: url(../images/icons/contact.svg);
     background-repeat: no-repeat;
@@ -485,7 +485,7 @@ ul.custom-listing--checked li {
       padding: 0px; }
       .page__title-bar h3 span {
         font-size: 1.2rem;
-        color: #47e7ce;
+        color: #ffb500;
         font-weight: 300;
         display: block; }
   .page__title-right {
@@ -527,7 +527,7 @@ ul.custom-listing--checked li {
     .account-info__stats span {
       padding: 0 5px; }
       .account-info__stats span.plus {
-        color: #47e7ce; }
+        color: #ffb500; }
   .account-info__svg {
     width: 100%;
     position: absolute;
@@ -552,7 +552,7 @@ ul.custom-listing--checked li {
     width: 65px;
     height: 65px;
     background-color: #291f57;
-    color: #47e7ce;
+    color: #ffb500;
     text-align: center;
     border-radius: 100%;
     font-size: 1rem;
@@ -584,10 +584,10 @@ ul.custom-listing--checked li {
     margin: 0 5px;
     cursor: pointer; }
     .account-selectors span:hover {
-      background-color: #47e7ce;
+      background-color: #ffb500;
       color: #291f57; }
     .account-selectors span.selected {
-      background-color: #47e7ce;
+      background-color: #ffb500;
       color: #291f57; }
 
 /* 3-1. PANELS LEFT AND RIGHT */
@@ -921,7 +921,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     font-weight: 400; }
     .header__logo--text strong {
       font-weight: 600;
-      color: #47e7ce; }
+      color: #ffb500; }
     .header__logo--text a {
       color: #fff; }
   .header__logo--intro {
@@ -990,7 +990,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
         font-size: 1.1rem;
         font-weight: 600;
         background-color: #000;
-        color: #47e7ce;
+        color: #ffb500;
         font-style: normal; }
       .bottom-navigation__icons li.centered {
         width: 60px;
@@ -1206,7 +1206,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
       max-width: 50px;
       border-radius: 10px; }
   .search-result__details p strong {
-    color: #47e7ce; }
+    color: #ffb500; }
 
 /*===============================================*/
 /* 9. CARDS */
@@ -1395,7 +1395,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
       opacity: 0.5;
       padding-left: 5px; }
   .card__badge {
-    background-color: #47e7ce;
+    background-color: #ffb500;
     height: 25px;
     line-height: 25px;
     left: -30px;
@@ -1487,7 +1487,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     display: block;
     text-align: right; }
   .card-coin__price .plus {
-    color: #47e7ce; }
+    color: #ffb500; }
   .card-coin__price .minus {
     color: #e58db6; }
   .card-coin__chart {
@@ -1803,7 +1803,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
         font-size: 1.2rem;
         margin-bottom: 10px; }
       .slider-portfolio .caption__info .plus {
-        color: #47e7ce; }
+        color: #ffb500; }
       .slider-portfolio .caption__info .minus {
         color: #e58db6; }
   .slider-portfolio__more {
@@ -1933,7 +1933,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
         text-align: center; }
     .slider-thumbs .caption__category {
       display: inline-block;
-      background-color: #47e7ce;
+      background-color: #ffb500;
       color: #000;
       font-size: 1rem;
       padding: 5px 10px;
@@ -2009,7 +2009,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
       max-width: 50%;
       border-radius: 0px !important; }
   .slider-thumbs__badge {
-    background-color: #47e7ce;
+    background-color: #ffb500;
     height: 25px;
     line-height: 25px;
     left: -30px;
@@ -2074,7 +2074,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
           border-radius: 25px;
           padding: 10px 20px; }
   .slider-links.slider-init-top .swiper-slide-active .caption__link a {
-    background-color: #47e7ce;
+    background-color: #ffb500;
     color: #000; }
   .slider-links__prev {
     position: relative;
@@ -2156,7 +2156,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     margin-bottom: 40px; }
     .splash__logo strong {
       font-weight: 600;
-      color: #47e7ce; }
+      color: #ffb500; }
   .splash__image {
     width: 100%;
     text-align: center; }
@@ -2272,7 +2272,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
       color: #fff;
       padding-bottom: 10px; }
       .login-form__bottom p a {
-        color: #47e7ce;
+        color: #ffb500;
         font-weight: 600;
         font-size: 1.2rem; }
 
@@ -2412,8 +2412,8 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     display: block;
     padding: 15px 20px;
     background-color: transparent;
-    border: 1px #47e7ce solid;
-    color: #47e7ce;
+    border: 1px #ffb500 solid;
+    color: #ffb500;
     text-align: left;
     font-size: 1.4rem;
     font-weight: 600;
@@ -2424,7 +2424,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
   .radio-option input[type="radio"] {
     display: none; }
   .radio-option input[type="radio"]:checked + label {
-    background-color: #47e7ce;
+    background-color: #ffb500;
     color: #000; }
     .radio-option input[type="radio"]:checked + label span {
       color: #000; }
@@ -2450,8 +2450,8 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     display: block;
     padding: 15px 20px;
     background-color: transparent;
-    border: 1px #47e7ce solid;
-    color: #47e7ce;
+    border: 1px #ffb500 solid;
+    color: #ffb500;
     text-align: left;
     font-size: 1.4rem;
     font-weight: 600;
@@ -2462,7 +2462,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
   .checkbox-option input[type="checkbox"] {
     display: none; }
   .checkbox-option input[type="checkbox"]:checked + label {
-    background-color: #47e7ce;
+    background-color: #ffb500;
     color: #000; }
     .checkbox-option input[type="checkbox"]:checked + label span {
       color: #000; }
@@ -2498,13 +2498,13 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     font-weight: 600;
     border-radius: 10px; }
     .card-selector label span {
-      color: #47e7ce;
+      color: #ffb500;
       font-weight: 400;
       display: block; }
   .card-selector input[type="radio"] {
     display: none; }
   .card-selector input[type="radio"]:checked + label {
-    background-color: #47e7ce;
+    background-color: #ffb500;
     background-image: url(../images/icons/checked-simple.svg);
     background-repeat: no-repeat;
     background-position: 15px 50%;
@@ -2541,7 +2541,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     content: "\2713";
     border: none;
     text-align: center;
-    background-color: #47e7ce; }
+    background-color: #ffb500; }
 
 .switch__label {
   display: inline-block;
@@ -2562,14 +2562,14 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     left: 4px;
     width: 22px;
     height: 22px;
-    background: #47e7ce;
+    background: #ffb500;
     border-radius: 50%;
     transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
   .switch__label:active::before {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28), 0 0 0 20px rgba(128, 128, 128, 0.1); }
 
 .switch input:checked + .switch__label {
-  background: #47e7ce; }
+  background: #ffb500; }
 
 .switch input:checked + .switch__label::before {
   left: 42px;
@@ -2743,7 +2743,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     width: 20px;
     height: 20px;
     float: right;
-    background-color: #47e7ce;
+    background-color: #ffb500;
     color: #000;
     border-radius: 100%;
     text-align: center;
@@ -2772,7 +2772,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
       padding: 0px !important;
       font-size: 1.4rem; }
       .chat__content p a {
-        color: #47e7ce; }
+        color: #ffb500; }
   .chat__row--received .chat__content {
     margin-right: 5%;
     background-color: #291f57;
@@ -2886,7 +2886,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
       background-color: #291f57; }
     .tabs--style1 input[type="radio"].tabs__radio:checked + label.tabs__label {
       color: #000;
-      background-color: #47e7ce; }
+      background-color: #ffb500; }
 
 /* ------Accordion---------- */
 .accordion {
@@ -2923,7 +2923,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
   .accordion__input:checked ~ .accordion__content {
     max-height: 300px; }
   .accordion__input:checked ~ .accordion__label, .accordion .accordion__label:hover {
-    background-color: #47e7ce;
+    background-color: #ffb500;
     color: #000; }
   .accordion__label span {
     position: absolute;
@@ -2980,7 +2980,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
   .toggle__input:checked ~ .toggle__content {
     max-height: 300px; }
   .toggle__input:checked ~ .toggle__label, .toggle .toggle__label:hover {
-    background-color: #47e7ce;
+    background-color: #ffb500;
     color: #000; }
   .toggle__label span {
     position: absolute;
@@ -3120,7 +3120,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     padding-bottom: 10px;
     margin: 10px 0; }
     .entry__comments a {
-      background-color: #47e7ce;
+      background-color: #ffb500;
       color: #000;
       font-size: 1.2rem;
       border-radius: 5px;

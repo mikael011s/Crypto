@@ -33,6 +33,10 @@ Route::prefix('mobile')->group(function () {
 
     Route::middleware('auth')->group(function () {
         Route::view('dashboard', 'mobile.dashboard')->name('m-dashboard');
+        Route::view('stat', 'mobile.stats')->name('m-stats');
+        Route::view('contact', 'mobile.contact')->name('m-contact');
+        Route::view('wallet', 'mobile.wallet')->name('m-wallet');
+
         Route::view('rau/by', 'mobile.rau.by')->name('m-by');
         Route::view('rau/sell', 'mobile.rau.sell')->name('m-sell');
         Route::view('rau/swap', 'mobile.rau.swap')->name('m-swap');
