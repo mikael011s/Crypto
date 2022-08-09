@@ -40,8 +40,17 @@ Route::prefix('mobile')->group(function () {
 });
 
 // Админ панель
-Route::prefix('admin')->middleware('auth')->middleware('admin')->group(function () {
+Route::prefix('panel')->middleware('auth')->middleware('admin')->group(function () {
     Route::view('/', 'admin.main')->name('admin-main');
+
+    Route::resources([
+        // Пользователи
+        'users' => \App\Http\Controllers\UsersController::class,
+    ]);
+
+    // Управление курсом
+    Route::view('/currency/edit', 'admin.currency.edit')->name('currency-edit');
+    Route::post('/currency/edit', 'App\Http\Controllers\RauCoinController@edit')->name('currency-save');
 });
 
 Route::redirect('/home', '/mobile/dashboard')->name('home');
