@@ -21,6 +21,8 @@ Route::view('/', 'welcome');
 Route::prefix('home')->group(function () {
     Route::view('/about', 'home.about')->name('about');
     Route::view('/about/contacts', 'home.contacts')->name('contacts');
+    Route::view('/about/plans', 'home.plans')->name('plans');
+    Route::view('/news', 'home.news')->name('news');
     Route::view('/investors', 'home.investors')->name('investors');
     Route::view('/investors/offers', 'home.investment-offers')->name('investment-offers');
     Route::view('/privacy/policy', 'home.privacy-policy')->name('privacy-policy');

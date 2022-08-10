@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+{{--<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">--}}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,9 +49,6 @@
                         <select name="language" class="nice-select custom--scrollbar">
                             <option>Русский</option>
                         </select>
-                        <a href="dashboard.html" class="user__thumb ms-3 me-3 me-lg-0">
-                            <img src="/template-assets/digihyip/images/dashboard/user.png" alt="dashboard">
-                        </a>
                     </div>
                 </div>
             </div>
@@ -63,10 +60,6 @@
                     <ul class="menu">
                         <li>
                             <a href="/">Главная</a>
-                            <ul class="sub-menu">
-                                <li><a href="index.html">Home One</a></li>
-                                <li><a href="index2.html">Home Two</a></li>
-                            </ul>
                         </li>
                         <li>
                             <a href="{{ route('about') }}">О проекте</a>
@@ -75,52 +68,20 @@
                             <a href="plan.html">Планы</a>
                         </li>
                         <li>
-                            <a href="#0"></a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="dashboard.html">Личный кабинет</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('investors') }}">Инвесторы</a>
-                                </li>
-                                <li>
-                                    <a href="">FAQs</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('privacy-policy') }}">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="error-page.html">404</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#0"></a>
-                            <ul class="sub-menu">
-                                <li><a href="blog-grid.html">Блог Grid</a></li>
-                                <li><a href="blog-list.html">Блог List</a></li>
-                                <li><a href="blog-details.html">Детали</a></li>
-                            </ul>
-                        </li>
-                        <li>
                             <a href="{{ route('contacts') }}">Контакты</a>
-                        </li>
-
-                        <li class="d-none d-lg-block">
-                            <a href="#0" class="search--btn"><i class="fas fa-search"></i></a>
                         </li>
 
                         <li class="p-0 d-lg-none mt-3 mt-lg-0">
                             <div class="button__wrapper">
-                                <a href="{{ route('login') }}" class="cmn--btn">Регистрация</a>
-                                <a href="{{ route('logout') }}" class="cmn--btn">Вход</a>
+                                <a href="{{ route('register') }}" class="cmn--btn">Регистрация</a>
+                                <a href="{{ route('login') }}" class="cmn--btn">Вход</a>
                             </div>
                         </li>
                     </ul>   <!-- Menu End -->
 
                     <div class="button__wrapper d-none d-lg-block">
-                        <a href="{{ route('login') }}" class="cmn--btn">Регистрация</a>
-                        <a href="{{ route('logout') }}" class="cmn--btn">Вход</a></a>
+                        <a href="{{ route('register') }}" class="cmn--btn">Регистрация</a>
+                        <a href="{{ route('login') }}" class="cmn--btn">Вход</a></a>
                     </div>
 
 
@@ -160,11 +121,11 @@
                         <div class="footer__widget">
                             <h3 class="widget-title">Разделы</h3>
                             <ul class="footer-links">
-                                <li><a href="plan.html">Подробнее о RAuCOIN</a></li>
-                                <li><a href="privacy-policy.html">Правила</a></li>
-                                <li><a href="dashboard.html">Договор оферты</a></li>
-                                <li><a href="sign-in.html">Личный кабинет</a></li>
-                                <li><a href="terms-conditions.html">Условия</a></li>
+                                <li><a href="{{ route('about') }}">Подробнее о RAuCOIN</a></li>
+                                <li><a href="{{ route('rules') }}">Правила</a></li>
+                                <li><a href="{{ route('privacy-policy') }}">Договор оферты</a></li>
+                                <li><a href="{{ route('login') }}">Личный кабинет</a></li>
+                                <li><a href="{{ route('rules') }}">Условия</a></li>
                             </ul>
                         </div>
                     </div>
@@ -172,11 +133,11 @@
                         <div class="footer__widget">
                             <h3 class="widget-title">Компания</h3>
                             <ul class="footer-links">
-                                <li><a href="about.html">О проекте</a></li>
-                                <li><a href="blog.html">Партнерам</a></li>
-                                <li><a href="dashboard.html">Инвесторам</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="contact.html">Контакты</a></li>
+                                <li><a href="{{ route('about') }}">О проекте</a></li>
+{{--                                <li><a href="{{ route('investors') }}">Партнерам</a></li>--}}
+                                <li><a href="{{ route('investors') }}">Инвесторам</a></li>
+{{--                                <li><a href="">Faq</a></li>--}}
+                                <li><a href="{{ route('contacts') }}">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -184,11 +145,11 @@
                         <div class="footer__widget">
                             <h3 class="widget-title">Развитие</h3>
                             <ul class="footer-links">
-                                <li><a href="dashboard.html">Цели</a></li>
-                                <li><a href="dashboard.html">Развитие</a></li>
-                                <li><a href="dashboard.html">Инвестиции</a></li>
-                                <li><a href="dashboard.html">Партнеры в РФ</a></li>
-                                <li><a href="dashboard.html">Новости</a></li>
+                                <li><a href="{{ route('plans') }}">Цели</a></li>
+                                <li><a href="{{ route('login') }}">Развитие</a></li>
+                                <li><a href="{{ route('investment-offers') }}">Инвестиции</a></li>
+                                <li><a href="/">Партнеры в РФ</a></li>
+                                <li><a href="{{ route('news') }}">Новости</a></li>
                             </ul>
                         </div>
                     </div>
