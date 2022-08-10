@@ -9,10 +9,15 @@
             <div class="account-info">
                 <div class="account-info__title">ВАШ БАЛАНС</div>
                 <div class="account-info__total">
-                    {{ \Illuminate\Support\Facades\Auth::user()->balance }}
+                    {{ \Illuminate\Support\Facades\Auth::user()->balance_rau }}
                     <span style="font-size: 15px;font-weight: 300;position: absolute;margin-top: 20px;margin-left: 2px;">RAu</span>
                 </div>
-                <div class="account-info__stats"><span class="plus">+$235</span> | <span class="plus">+12%</span></div>
+                <div class="account-info__stats">
+                    <span class="plus">
+                        {{ \Illuminate\Support\Facades\Auth::user()->balance_rau * \App\Models\Setting::where('param', 'rau_price')->first()->value }}<span style="font-size: 11px;padding: 0px;">₽</span>
+                    </span>
+                    |
+                    <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span></div>
                 <svg class="account-info__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <path d="M0,0 Q50,201 100,0 L100,100 0,100 Z" fill="#0f0638"/>
                 </svg>
@@ -20,8 +25,8 @@
 
             <div class="account-buttons">
                 <a href="{{ route('m-by') }}"><img src="/template-assets/cryptex/images/icons/bottom.svg" alt="" title=""/><span>КУПИТЬ</span></a>
-                <a href="{{ route('m-sell') }}"><img src="/template-assets/cryptex/images/icons/top.svg" alt="" title=""/><span>ПРОДАТЬ</span></a>
-                <a href="{{ route('m-swap') }}"><img src="/template-assets/cryptex/images/icons/swap.svg" alt="" title=""/><span>ОБМЕН</span></a>
+                <a href="javascript:alert('Продажа пока недоступна');"><img src="/template-assets/cryptex/images/icons/top.svg" alt="" title=""/><span>ПРОДАТЬ</span></a>
+                <a href="javascript:alert('Обмен пока недоступен');"><img src="/template-assets/cryptex/images/icons/swap.svg" alt="" title=""/><span>ОБМЕН</span></a>
             </div>
 
             <div class="page-inner">
@@ -62,7 +67,26 @@
                             <div class="slider-simple__caption caption caption--gradient">
                                 <div class="caption__content">
                                     <div class="page__title-bar">
-                                        <h3>График роста RAu за последнюю неделю</h3>
+                                        <h3>Динамика изменения курса RAu COIN (неделя)</h3>
+                                    </div>
+
+                                    <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
+                                    <br>
+                                    <div class="caption__info">
+                                        <b>1 RAu</b> - <b>{{ \App\Models\Setting::where('param', 'rau_price')->first()->value }}₽</b>
+                                    </div>
+                                    <div class="caption__info">
+                                        <strong>Рост за последний день:</strong>
+                                        <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider-simple__slide" style="background-image:url(images/photos/image-2.jpg);">
+                            <div class="slider-simple__caption caption caption--gradient">
+                                <div class="caption__content">
+                                    <div class="page__title-bar">
+                                        <h3>Динамика изменения курса Bitcoin (неделя)</h3>
                                     </div>
 
                                     <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
@@ -72,23 +96,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide slider-simple__slide" style="background-image:url(images/photos/image-2.jpg);">
-                            <div class="slider-simple__caption caption caption--gradient">
-                                <div class="caption__content">
-                                    <h2 class="caption__title"><img src="images/logos/ethereum.png" alt="" title=""/><span>Ethereum</span><strong>/ ETH</strong></h2>
-                                    <div class="caption__chart"><canvas class="chartdown" width="100%" height="60"></canvas></div>
-                                    <div class="caption__info"><b>23 ETH</b> <b>$3,150</b></div>
-                                    <div class="caption__info"><strong>$72,500</strong>  <span class="minus">-2%</span></div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="swiper-slide slider-simple__slide" style="background-image:url(images/photos/image-3.jpg);">
                             <div class="slider-simple__caption caption caption--gradient">
                                 <div class="caption__content">
-                                    <h2 class="caption__title"><img src="images/logos/tether.png" alt="" title=""/><span>Tether</span><strong>/ USDT</strong></h2>
-                                    <div class="caption__chart"><canvas class="chartup" width="100%" height="60"></canvas></div>
-                                    <div class="caption__info"><b>10,096 USDT</b> <b>$1,04</b></div>
-                                    <div class="caption__info"><strong>$10,500</strong>  <span class="plus">+1%</span></div>
+                                    <div class="page__title-bar">
+                                        <h3>Динамика изменения курса Ethereum (неделя)</h3>
+                                    </div>
+
+                                    <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
+                                    <br>
+                                    <div class="caption__info"><b>2.5 BTC</b> <b>$41,904</b></div>
+                                    <div class="caption__info"><strong>$104,750</strong> <span class="plus">+12%</span></div>
                                 </div>
                             </div>
                         </div>
@@ -132,9 +150,15 @@
                                         // Тут надо вывести 7 чисел
                                         data:
                                         [@php
-                                            $rows = \App\Models\RauHistory::all()->take(7);
+                                            $rows = \App\Models\RauHistory::all()->sortByDesc('id')->take(7)->toArray();
+
+                                            $items = [];
                                             foreach ($rows as $row) {
-                                                echo "'{$row->new_price}',";
+                                                $items[] = $row;
+                                            }
+
+                                            for ($i = count($items) -1 ; $i >= count($items) - 7; $i--) {
+                                                echo "'{$items[$i]['new_price']}',";
                                             }
                                         @endphp]
                                     }
@@ -210,58 +234,6 @@
                         <div class="card-coin__price"><strong>$140</strong><span class="plus">+4%</span></div>
                     </a>
                 </div>
-
-{{--                <div class="w-100 text-center"><a href="list.html">View all trending coins</a></div>--}}
-
-                <div class="page__title-bar mt-40">
-                    <h3>Crypto News</h3>
-
-                    <div class="page__title-right">
-                        <div class="swiper-button-prev slider-cover__prev"></div>
-                        <div class="swiper-button-next slider-cover__next"></div>
-                    </div>
-                </div>
-
-                <!-- SLIDER -->
-                <div class="swiper-container slider-cover slider-cover--round-corners slider-init mb-20" data-paginationtype="progressbar" data-spacebetweenitems="10" data-itemsperview="auto">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide slider-cover__slide slider-cover__slide--34" style="background-image:url(/template-assets/cryptex/images/photos/image-1.jpg);">
-                            <div class="slider-cover__caption caption caption--gradient">
-                                <div class="caption__content">
-                                    <h2 class="caption__title caption__title--news"><a href="news-details.html">Market capitalization is calculated by multiplying the total number of coins</a></h2>
-                                </div>
-                            </div>
-                            <div class="slider-cover__more"><a href="news-details.html"><img src="/template-assets/cryptex/images/icons/arrow-right.svg" alt="" title=""/></a></div>
-                        </div>
-                        <div class="swiper-slide slider-cover__slide slider-cover__slide--34" style="background-image:url(/template-assets/cryptex/images/photos/image-2.jpg);">
-                            <div class="slider-cover__caption caption caption--gradient">
-                                <div class="caption__content">
-                                    <h2 class="caption__title caption__title--news"><a href="news-details.html">Blockchain Indicator Suggests Bitcoin Could Be Close to Bottoming Out</a></h2>
-                                </div>
-                            </div>
-                            <div class="slider-cover__more"><a href="news-details.html"><img src="/template-assets/cryptex/images/icons/arrow-right.svg" alt="" title=""/></a></div>
-                        </div>
-                        <div class="swiper-slide slider-cover__slide slider-cover__slide--34" style="background-image:url(/template-assets/cryptex/images/photos/image-3.jpg);">
-                            <div class="slider-cover__caption caption caption--gradient">
-                                <div class="caption__content">
-                                    <h2 class="caption__title caption__title--news"><a href="news-details.html">U.S. Federal Reserve and put fresh selling pressure on bitcoin</a></h2>
-                                </div>
-                            </div>
-                            <div class="slider-cover__more"><a href="news-details.html"><img src="/template-assets/cryptex/images/icons/arrow-right.svg" alt="" title=""/></a></div>
-                        </div>
-                        <div class="swiper-slide slider-cover__slide slider-cover__slide--34" style="background-image:url(/template-assets/cryptex/images/photos/image-4.jpg);">
-                            <div class="slider-cover__caption caption caption--gradient">
-                                <div class="caption__content">
-                                    <h2 class="caption__title caption__title--news"><a href="news-details.html">Cryptos as DeFi Narrative Heats Up</a></h2>
-                                </div>
-                            </div>
-                            <div class="slider-cover__more"><a href="news-details.html"><img src="/template-assets/cryptex/images/icons/arrow-right.svg" alt="" title=""/></a></div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination slider-cover__pagination"></div>
-                </div>
-
-
             </div>
         </div>
 

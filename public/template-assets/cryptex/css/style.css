@@ -1583,7 +1583,7 @@ body.panel-closing .page, body.panel-closing .bottom-toolbar {
     padding: 0 20px 10px 20px;
     height: calc(100% - 20px);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
     text-align: left;
     color: #fff; }
