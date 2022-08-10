@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// В случае ошибки с кроном
+Route::get('update-rate', 'App\Http\Controllers\RauCoinController@updateRate');
+
 // Ссылки главной страницы
 Route::view('/', 'welcome');
 Route::prefix('home')->group(function () {
