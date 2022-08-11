@@ -48,3 +48,17 @@ git pull origin
 git pull origin
 php7.4 artisan migrate:fresh
 git pull origin
+git pull origin
+git status
+git add .
+git push origin
+git commit -m "Правки ленда"
+git push origin
+git pull origin
+git sattus
+git satus
+git status
+git show diff resources/views/layouts/land.blade.php
+git show --diff resources/views/layouts/land.blade.php
+git diff resources/views/layouts/land.blade.php
+git diff resources/views/welcome.blade.php

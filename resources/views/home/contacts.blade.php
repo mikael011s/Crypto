@@ -5,10 +5,8 @@
     <div class="inner-banner section-bg overflow-hidden">
         <div class="container">
             <div class="inner__banner__content text-center">
-                <h2 class="title">Get in Touch With us</h2>
+                <h2 class="title">По вопросам и предложениям</h2>
                 <ul class="breadcums d-flex flex-wrap justify-content-center">
-                    <li><a href="index.html">Home</a>//</li>
-                    <li>Contact</li>
                 </ul>
             </div>
         </div>
@@ -30,7 +28,7 @@
                             <i class="las la-map-marker"></i>
                         </div>
                         <div class="content">
-                            <h3 class="title">Office Address</h3>
+                            <h3 class="title">Офис компании</h3>
                             <p>28 Benin, south San Francisco, United States of America</p>
                         </div>
                     </div>
@@ -41,10 +39,10 @@
                             <i class="las la-envelope-open-text"></i>
                         </div>
                         <div class="content">
-                            <h3 class="title">Email Address</h3>
+                            <h3 class="title">По вопросам</h3>
                             <ul class="contacts">
-                                <li><a href="mailto:demo@gmail.com">hello.cyber@gmail.com</a></li>
-                                <li><a href="mailto:demo@gmail.com">hello.cyber@gmail.com</a></li>
+                                <li><a href="mailto:demo@gmail.com">mail@redaurumcoin.com</a></li>
+                                <li><a href="mailto:demo@gmail.com">info@redaurumcoin.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -55,10 +53,10 @@
                             <i class="las la-phone-volume"></i>
                         </div>
                         <div class="content">
-                            <h3 class="title">Phone Number</h3>
+                            <h3 class="title">По предложениям </h3>
                             <ul class="contacts">
-                                <li><a href="tel:02834">+10-928 4591 8725</a></li>
-                                <li><a href="tel:02834">+91-123 4356 9150</a></li>
+                                <li><a href="tel:02834">partners@redaurumcoin.com</a></li>
+                                <li><a href="tel:02834">finance@redaurumcoin.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,18 +66,18 @@
         <div class="position-relative map__area">
             <div class="container padding-top padding-bottom contact__area">
                 <div class="contact__form__wrapper mx-auto me-lg-0">
-                    <h3 class="title">Send Your Messages</h3>
+                    <h3 class="title">Обратная связь</h3>
                     <form class="contact__form form" id="contact_form_submit" action="contact.php">
                         <div class="form-group">
-                            <input type="text" class="form-control form--control" placeholder="Full Name" name="contact_name" id="contact_name">
+                            <input type="text" class="form-control form--control" placeholder="Имя" name="contact_name" id="contact_name">
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control form--control" name="contact_email" placeholder="Email" id="contact_email">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control form--control" name="contact_message" placeholder="Write Your Messages" id="contact_message"></textarea>
+                            <textarea class="form-control form--control" name="contact_message" placeholder="Ваше обращение" id="contact_message"></textarea>
                         </div>
-                        <button type="submit" class="cmn--btn btn">Send Message</button>
+                        <button type="submit" class="cmn--btn btn">Отправить</button>
                     </form>
                 </div>
             </div>

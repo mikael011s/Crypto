@@ -21,7 +21,7 @@
         <div class="container">
             <div class="banner__wrapper d-flex align-items-center justify-content-between">
                 <div class="banner__content">
-                    <h1 class="title">RED AURUM COIN (RAU)</h1>
+                    <h1 class="title">RED AURUM COIN (RAu)</h1>
                     <p>Токен нового поколения - первая в мире восходящая криптовалюта</p>
                     <a href="sign-in.html" class="cmn--btn">Начни зарабатывать</a>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="col-lg-6">
                     <div class="choose__us__content">
                         <div class="section__header mb-0">
-                            <h2 class="section__header-title">Инвестируйте в уникальный COIN (RAU) </h2>
+                            <h2 class="section__header-title">Инвестируйте в уникальный COIN (RAu) </h2>
                             <p>RAu COIN – это актив, который растет ежегодно в среднем на 550%. И наш проект гарантирует этот рост!</p>
                         </div>
                         <p>55 из 100 банков мира, крупнейших по размерам активов под управлением, уже инвестировали в компании, связанные с криптовалютой и/или блокчейном.
@@ -68,7 +68,7 @@
                         </ul>
                         <div class="button__wrapper">
                             <a href="about.html" class="cmn--btn">Хочу инвестировать</a>
-                            <a href="contact.html" class="cmn--btn2">Узнать больше о Rau COIN</a>
+                            <a href="contact.html" class="cmn--btn2">Узнать больше о RAu COIN</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                 <div class="col-lg-6 col-md-10">
                     <div class="section__header text-center">
                         <h2 class="section__header-title">Доходность портфеля RAuCOIN</h2>
-                        <p>Компания MIKE GROUP реализовала возможность умножать инвестиции от продажи RAU в крупных международных компаниях и ярких доходных стартапах </p>
+                        <p>Компания MIKE GROUP реализовала возможность умножать инвестиции от продажи RAu COIN в крупных международных компаниях и ярких доходных стартапах </p>
                     </div>
                 </div>
             </div>
@@ -163,7 +163,7 @@
                     <div class="plan__item">
                         <div class="plan__item-header">
                             <h2 class="plan-parcent">550%</h2>
-                            <p class="plan-parcent-info">В год и далее навсегда</p>
+                            <p class="plan-parcent-info">В год и далее ежегодно</p>
                         </div>
                         <div class="plan__item-body">
                             <ul class="plan__info">
@@ -291,7 +291,7 @@
                         </div>
                         <div class="feature__item-content">
                             <h4 class="title">Высокая безопасность</h4>
-                            <p>Многоуровневая системой безопасности и кластерная система делает проект неубиваемым.</p>
+                            <p>Многоуровневый алгоритм безопасности и кластерная система делает проект неуязвимым.</p>
                         </div>
                     </div>
                 </div>
@@ -506,7 +506,7 @@
                                 <h4 class="title">Когда мои инвестиции начинают приносить прибыль?</h4>
                             </div>
                             <div class="faq__item-content">
-                                <p>Курс RAu COIN растёт ежедневно от 0,8 до 3%, поэтому Ваши инвестиции начинают работать буквально с первого дня приобретения RAuCOIN </p>
+                                <p>Курс RAu COIN растёт ежедневно от 0,8 до 3%, поэтому Ваши инвестиции начинают работать буквально с первого дня приобретения RAu COIN </p>
                             </div>
                         </div>
                         <div class="faq__item">
@@ -539,7 +539,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-10">
                     <ul class="transection__tab__menu nav-tabs nav border-0 justify-content-center">
-                        <li><a data-bs-toggle="tab" href="#deposit" class="cmn--btn2 active">Покупки COIN</a></li>
+                        <li><a data-bs-toggle="tab" href="#deposit" class="cmn--btn2 active">Купили RAu COIN</a></li>
                         <li><a data-bs-toggle="tab" href="#widthdraw" class="cmn--btn2">Вывод прибыли</a></li>
                     </ul>
                     <div class="tab-content">
@@ -637,9 +637,9 @@
                                     <td data-label="User Name">
                                         <div class="user d-flex flex-wrap align-items-center">
                                             <div class="thumb">
-                                                <img src="/template-assets/digihyip/images/dashboard/item1.png" alt="dashboard">
+                                                <img src="/template-assets/digihyip/images/dashboard/item6.png" alt="dashboard">
                                             </div>
-                                            <p class="name">Ирина Алексеевна</p>
+                                            <p class="name">Галина Алексеевна</p>
                                         </div>
                                     </td>
                                     <td data-label="Amount"><span class="amount">$300</span></td>
@@ -650,9 +650,9 @@
                                     <td data-label="User Name">
                                         <div class="user d-flex flex-wrap align-items-center">
                                             <div class="thumb">
-                                                <img src="/template-assets/digihyip/images/dashboard/item2.png" alt="dashboard">
+                                                <img src="/template-assets/digihyip/images/dashboard/item7.png" alt="dashboard">
                                             </div>
-                                            <p class="name">Munna Ahmed</p>
+                                            <p class="name">Ирина Марченко</p>
                                         </div>
                                     </td>
                                     <td data-label="Amount"><span class="amount">$1500</span></td>
@@ -663,9 +663,9 @@
                                     <td data-label="User Name">
                                         <div class="user d-flex flex-wrap align-items-center">
                                             <div class="thumb">
-                                                <img src="/template-assets/digihyip/images/dashboard/item3.png" alt="dashboard">
+                                                <img src="/template-assets/digihyip/images/dashboard/item8.png" alt="dashboard">
                                             </div>
-                                            <p class="name">Денис Николаев</p>
+                                            <p class="name">Надежда Кондратенко</p>
                                         </div>
                                     </td>
                                     <td data-label="Amount"><span class="amount">$1000</span></td>
@@ -676,7 +676,7 @@
                                     <td data-label="User Name">
                                         <div class="user d-flex flex-wrap align-items-center">
                                             <div class="thumb">
-                                                <img src="/template-assets/digihyip/images/dashboard/item4.png" alt="dashboard">
+                                                <img src="/template-assets/digihyip/images/dashboard/item9.png" alt="dashboard">
                                             </div>
                                             <p class="name">Александ Новиков</p>
                                         </div>
@@ -689,7 +689,7 @@
                                     <td data-label="User Name">
                                         <div class="user d-flex flex-wrap align-items-center">
                                             <div class="thumb">
-                                                <img src="/template-assets/digihyip/images/dashboard/item5.png" alt="dashboard">
+                                                <img src="/template-assets/digihyip/images/dashboard/item10.png" alt="dashboard">
                                             </div>
                                             <p class="name">Дмитрий Галушкин</p>
                                         </div>
@@ -732,7 +732,7 @@
                         <div class="single-slide">
                             <div class="testimonial__content">
                                 <div class="icon"><i class="fas fa-quote-left"></i></div>
-                                <p>Купил данный COIN пока не жалею, так как начал с минимального, продержал RAu 15 дней и получил доход..  </p>
+                                <p>Купил данный COIN и пока не жалею, так как начал с минимального, продержал RAu COIN 15 дней и уже получил доход..  </p>
                                 <h3 class="name">Сергей Давыдов</h3>
                                 <span class="designation text-white">Вебмастер</span>
                             </div>
@@ -740,8 +740,8 @@
                         <div class="single-slide">
                             <div class="testimonial__content">
                                 <div class="icon"><i class="fas fa-quote-left"></i></div>
-                                <p>"Кто не рискует тот не пьет шампанское" пока COIN растет я буду вкладывать в него.</p>
-                                <h3 class="name">Munna Ahmed</h3>
+                                <p>"Кто не рискует тот не пьет шампанское" пока RAu COIN растет я буду вкладывать в него. И желаю проекту только процвктание</p>
+                                <h3 class="name">Егор Каменов</h3>
                                 <span class="designation text-white">Частный инвестор</span>
                             </div>
                         </div>
@@ -770,15 +770,15 @@
                         <div class="post__item-thumb">
                             <img src="/template-assets/digihyip/images/blog/item1.png" alt="blog">
                             <div class="thumb__content">
-                                <h3 class="title"><a href="blog-details.html">Aenean Ligul Porttitoe Consequat Ditae</a></h3>
+                                <h3 class="title"><a href="blog-details.html">В мире уже более 1000 различных криптовалют</a></h3>
                                 <ul class="post-meta d-flex flex-wrap m-0 justify-content-between">
                                     <li>
                                         <i class="fas fa-user"></i>
-                                        Thomas Addican
+                                        Генадий Фридман
                                     </li>
                                     <li>
                                         <i class="fas fa-calendar"></i>
-                                        15 Aug 2020
+                                        12 августа 2022
                                     </li>
                                 </ul>
                             </div>
@@ -790,7 +790,7 @@
                         <div class="post__item-thumb">
                             <img src="/template-assets/digihyip/images/blog/item2.png" alt="blog">
                             <div class="thumb__content">
-                                <h3 class="title"><a href="blog-details.html">Aenean Ligul Porttitoe Consequat Ditae</a></h3>
+                                <h3 class="title"><a href="blog-details.html">Биткоин осенью ожидает резкий рост в связи ....</a></h3>
                                 <ul class="post-meta d-flex flex-wrap m-0 justify-content-between">
                                     <li>
                                         <i class="fas fa-user"></i>
@@ -798,7 +798,7 @@
                                     </li>
                                     <li>
                                         <i class="fas fa-calendar"></i>
-                                        15 Aug 2020
+                                        12 августа 2022
                                     </li>
                                 </ul>
                             </div>
@@ -810,15 +810,15 @@
                         <div class="post__item-thumb">
                             <img src="/template-assets/digihyip/images/blog/item3.png" alt="blog">
                             <div class="thumb__content">
-                                <h3 class="title"><a href="blog-details.html">Aenean Ligul Porttitoe Consequat Ditae</a></h3>
+                                <h3 class="title"><a href="blog-details.html">Скоро криптовалютой можно будет рсчитываться в магазинах</a></h3>
                                 <ul class="post-meta d-flex flex-wrap m-0 justify-content-between">
                                     <li>
                                         <i class="fas fa-user"></i>
-                                        Thomas Addican
+                                        Денис Арчаков
                                     </li>
                                     <li>
                                         <i class="fas fa-calendar"></i>
-                                        15 Aug 2020
+                                        15 августа 2022
                                     </li>
                                 </ul>
                             </div>

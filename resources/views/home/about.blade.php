@@ -5,10 +5,8 @@
     <div class="inner-banner section-bg overflow-hidden">
         <div class="container">
             <div class="inner__banner__content text-center">
-                <h2 class="title">About Company</h2>
+                <h2 class="title">О проекте RAu COIN</h2>
                 <ul class="breadcums d-flex flex-wrap justify-content-center">
-                    <li><a href="index.html">Home</a>//</li>
-                    <li>About</li>
                 </ul>
             </div>
         </div>
@@ -31,22 +29,22 @@
                 </div>
                 <div class="single-slide">
                     <div class="brand__item">
-                        <img src="/template-assets/digihyip/images/brand/item1.png" alt="brand">
+                        <img src="/template-assets/digihyip/images/brand/item2.png" alt="brand">
                     </div>
                 </div>
                 <div class="single-slide">
                     <div class="brand__item">
-                        <img src="/template-assets/digihyip/images/brand/item1.png" alt="brand">
+                        <img src="/template-assets/digihyip/images/brand/item3.png" alt="brand">
                     </div>
                 </div>
                 <div class="single-slide">
                     <div class="brand__item">
-                        <img src="/template-assets/digihyip/images/brand/item1.png" alt="brand">
+                        <img src="/template-assets/digihyip/images/brand/item6.png" alt="brand">
                     </div>
                 </div>
                 <div class="single-slide">
                     <div class="brand__item">
-                        <img src="/template-assets/digihyip/images/brand/item1.png" alt="brand">
+                        <img src="/template-assets/digihyip/images/brand/item7.png" alt="brand">
                     </div>
                 </div>
             </div>
@@ -61,9 +59,9 @@
             <div class="row gy-5">
                 <div class="col-lg-4">
                     <div class="section__header m-0">
-                        <h2 class="section__header-title">Let`s Go for Investment & Get Your Profit</h2>
-                        <span class="d-block"> Donec interdum metus et hendrerit aliqueolor diam sagittis ligula eget egestas libero tuelmin. Nunc nulla. Fusce risus nislviverra </span>
-                        <a href="sign-up.html" class="cmn--btn mt-4">Register</a>
+                        <h2 class="section__header-title">RAu COIN - это гарантирванный доход</h2>
+                        <span class="d-block"> Эмиссию данной уникальной валюты обьявила корпорация MIKE GROUP основанная в январе 2022 года </span>
+                        <a href="sign-up.html" class="cmn--btn mt-4">Купить RAu COIN</a>
                     </div>
                 </div>
                 <div class="col-lg-8">
