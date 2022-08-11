@@ -38,21 +38,21 @@
 
     <!-- Header Section Starts Here -->
     <div class="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="header__top__wrapper d-flex flex-wrap align-items-center justify-content-center justify-content-md-between text-center">
-                    <ul class="contacts d-flex flex-wrap justify-content-center">
-                        <li><a href="mailto:demo@gmail.com"><i class="las la-envelope-open"></i> crypto@aurum.com</a></li>
-                        <li><a href="tel:129075"><i class="las la-phone-volume"></i> 8 800 -777  -  00000</a></li>
-                    </ul>
-                    <div class="right__area d-flex flex-wrap align-items-center mt-3 mt-md-0">
-                        <select name="language" class="nice-select custom--scrollbar">
-                            <option>Русский</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--        <div class="header-top">--}}
+{{--            <div class="container">--}}
+{{--                <div class="header__top__wrapper d-flex flex-wrap align-items-center justify-content-center justify-content-md-between text-center">--}}
+{{--                    <ul class="contacts d-flex flex-wrap justify-content-center">--}}
+{{--                        <li><a href="mailto:demo@gmail.com"><i class="las la-envelope-open"></i> crypto@aurum.com</a></li>--}}
+{{--                        <li><a href="tel:129075"><i class="las la-phone-volume"></i> 8 800 -777  -  00000</a></li>--}}
+{{--                    </ul>--}}
+{{--                    <div class="right__area d-flex flex-wrap align-items-center mt-3 mt-md-0">--}}
+{{--                        <select name="language" class="nice-select custom--scrollbar">--}}
+{{--                            <option>Русский</option>--}}
+{{--                        </select>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <div class="header-bottom">
             <div class="container">
                 <div class="header-bottom-area">
