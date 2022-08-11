@@ -1,7 +1,6 @@
 @extends('layouts.land')
 
 @section('content')
-    <br><br>
     <!-- Banner Section Starts Here -->
     <div class="inner-banner section-bg overflow-hidden">
         <div class="container">
