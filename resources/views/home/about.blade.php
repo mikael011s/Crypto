@@ -1,21 +1,57 @@
 @extends('layouts.land')
 
 @section('content')
+    <br><br>
     <!-- Banner Section Starts Here -->
-    <div class="inner-banner section-bg overflow-hidden">
+{{--    <div class="inner-banner section-bg overflow-hidden">--}}
+{{--        <div class="container">--}}
+{{--            <div class="inner__banner__content text-center">--}}
+{{--                <h2 class="title">О проекте RAu COIN</h2>--}}
+{{--                <ul class="breadcums d-flex flex-wrap justify-content-center">--}}
+{{--                </ul>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="shapes">--}}
+{{--            <img src="/template-assets/digihyip/images/banner/inner-bg.png" alt="banner" class="shape shape1">--}}
+{{--            <img src="/template-assets/digihyip/images/banner/inner-thumb.png" alt="banner" class="shape shape2 d-none d-lg-block">--}}
+{{--        </div>--}}
+{{--    </div>--}}
+    <!-- Banner Section Ends Here -->
+
+    <section class="choose-us padding-top padding-bottom">
         <div class="container">
-            <div class="inner__banner__content text-center">
-                <h2 class="title">О проекте RAu COIN</h2>
-                <ul class="breadcums d-flex flex-wrap justify-content-center">
-                </ul>
+            <div class="row align-items-center">
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="section__thumb rtl">
+                        <img src="/template-assets/digihyip/images/choose-us/thumb.png" alt="choose-us">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="choose__us__content">
+                        <div class="section__header mb-0">
+                            <h2 class="section__header-title">Инвестируйте в уникальный COIN (RAu) </h2>
+                            <p>RAu COIN – это актив, который растет ежегодно в среднем на 550%. И наш проект гарантирует этот рост!</p>
+                        </div>
+                        <p>55 из 100 банков мира, крупнейших по размерам активов под управлением, уже инвестировали в компании, связанные с криптовалютой и/или блокчейном.
+                            Ряд государств (в том числе передовых) стоит на пути принятия криптовалют, а это значит, что их наравне с другими видами активов начинают регулировать и делать частью обычной жизни граждан </p>
+                        </p>Крупнейшие мировые компании инвестируют в криптовалюты:</p>
+                        <ul class="info__list d-flex flex-wrap mt-4">
+                            <li> Grayscale</li>
+                            <li> CoinShares</li>
+                            <li> MicroStrategy</li>
+                            <li> Galaxy Digital Holdings</li>
+                            <li> ETC Group Bitcoin ETP</li>
+                            <li> Tesla</li>
+                        </ul>
+                        <div class="button__wrapper">
+                            <a href="about.html" class="cmn--btn">Хочу инвестировать</a>
+                            <a href="contact.html" class="cmn--btn2">Узнать больше о RAu COIN</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="shapes">
-            <img src="/template-assets/digihyip/images/banner/inner-bg.png" alt="banner" class="shape shape1">
-            <img src="/template-assets/digihyip/images/banner/inner-thumb.png" alt="banner" class="shape shape2 d-none d-lg-block">
-        </div>
-    </div>
-    <!-- Banner Section Ends Here -->
+    </section>
 
 
     <!-- Brand Section Starts Here -->
@@ -51,7 +87,7 @@
         </div>
     </div>
     <!-- Brand Section Ends Here -->
-
+    <br><br><br>
 
     <!-- Feature Two Section Starts Here -->
     <section class="feature-section padding-bottom">
