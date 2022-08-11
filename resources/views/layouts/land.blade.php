@@ -68,10 +68,10 @@
                             <a href="plan.html">ДОХОДНОСТЬ</a>
                         </li>
                         <li>
-                            <a href="plan.html">ДОХОДНОСТЬ</a>
+                            <a href="plan.html">СТАРТАПАМ</a>
                         </li>
                         <li>
-                            <a href="{{ route('contacts') }}">СТАРТАПАМ</a>
+                            <a href="{{ route('contacts') }}">Контакты</a>
                         </li>
 
                         <li class="p-0 d-lg-none mt-3 mt-lg-0">
