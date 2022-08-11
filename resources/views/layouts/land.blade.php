@@ -62,13 +62,16 @@
                             <a href="/">Главная</a>
                         </li>
                         <li>
-                            <a href="{{ route('about') }}">О проекте</a>
+                            <a href="{{ route('about') }}">О RAU COIN</a>
                         </li>
                         <li>
-                            <a href="plan.html">Планы</a>
+                            <a href="plan.html">ДОХОДНОСТЬ</a>
                         </li>
                         <li>
-                            <a href="{{ route('contacts') }}">Контакты</a>
+                            <a href="plan.html">ДОХОДНОСТЬ</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('contacts') }}">СТАРТАПАМ</a>
                         </li>
 
                         <li class="p-0 d-lg-none mt-3 mt-lg-0">
