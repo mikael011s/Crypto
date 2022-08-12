@@ -5,8 +5,13 @@ body,
     background: $root-body !important;
 }
 
+.page-inner,
 .login {
-    background: $root-body;
+    background: $root-body !important;
+}
+
+.gradient-purple, .account-info {
+    
 }
 
 .gradient-lightgreen, .button--main, .button--more,

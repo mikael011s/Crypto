@@ -3,8 +3,9 @@ body,
   background: #00001c !important;
 }
 
+.page-inner,
 .login {
-  background: #00001c;
+  background: #00001c !important;
 }
 
 .gradient-lightgreen, .button--main, .button--more,
