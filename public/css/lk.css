@@ -1,0 +1,13 @@
+body,
+.page--splash {
+  background: #00001c !important;
+}
+
+.login {
+  background: #00001c;
+}
+
+.gradient-lightgreen, .button--main, .button--more,
+.bottom-navigation__icons li.centered, .card--style-plan-premium, .card--style-bg {
+  background: linear-gradient(90deg, #de9f17 0%, #d19c15 33%, #fff58a 67%, #ffd147 100%) !important;
+}

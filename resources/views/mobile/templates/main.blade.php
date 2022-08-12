@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('css/lk.css') }}">
 </head>
 <body>
     <script src="{{ asset('template-assets/cryptex/vendor/jquery/jquery-3.5.1.min.js') }}"></script>
