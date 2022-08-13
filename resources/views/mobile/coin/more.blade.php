@@ -7,7 +7,7 @@
         <!-- PAGE CONTENT -->
         <div class="page__content page__content--full">
             <div class="account-info account-info--details">
-                <div class="account-info__icon"><img src="images/logos/bitcoin-colored.png" alt="" title=""/></div>
+{{--                <div class="account-info__icon"><img src="images/logos/bitcoin-colored.png" alt="" title=""/></div>--}}
                 <div class="account-info__title" style="text-transform: uppercase;font-weight: bolder;font-size: 15px;margin-bottom: 0px;">{{ $coin }}</div>
                 <div class="account-info__total" style="margin-top: -2px;">
                     {{ \Illuminate\Support\Facades\Auth::user()->balance_rau * \App\Models\Setting::where('param', 'rau_price')->first()->value }}
