@@ -66,3 +66,7 @@ body,
 .header--page {
   background: #00001c;
 }
+
+.account-info__svg {
+  margin-bottom: -1px;
+}

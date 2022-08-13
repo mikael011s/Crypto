@@ -8,6 +8,6 @@ class CoinController extends Controller
 {
     public function viewCoin($coin)
     {
-        return view('mobile.coin.more');
+        return view('mobile.coin.more', compact('coin'));
     }
 }
