@@ -25,9 +25,15 @@
             </div>
 
             <div class="account-buttons">
-                <a href="{{ route('m-by') }}"><img src="/template-assets/cryptex/images/icons/bottom.svg" alt="" title=""/><span>КУПИТЬ</span></a>
-                <a href="javascript:alert('Продажа пока недоступна');"><img src="/template-assets/cryptex/images/icons/top.svg" alt="" title=""/><span>ПРОДАТЬ</span></a>
-                <a href="javascript:alert('Обмен пока недоступен');"><img src="/template-assets/cryptex/images/icons/swap.svg" alt="" title=""/><span>ОБМЕН</span></a>
+                <a href="{{ route('m-by') }}" class="gradient-dark-blue">
+                    <img src="/template-assets/cryptex/images/icons/bottom.svg" alt="" title=""/><span>КУПИТЬ</span>
+                </a>
+                <a href="javascript:alert('Продажа пока недоступна');" class="gradient-dark-blue">
+                    <img src="/template-assets/cryptex/images/icons/top.svg" alt="" title=""/><span>ПРОДАТЬ</span>
+                </a>
+                <a href="javascript:alert('Обмен пока недоступен');" class="gradient-dark-blue">
+                    <img src="/template-assets/cryptex/images/icons/swap.svg" alt="" title=""/><span>ОБМЕН</span>
+                </a>
             </div>
 
             <div class="page-inner">

@@ -11,10 +11,24 @@ body,
 }
 
 .gradient-purple, .account-info {
-    
+
 }
 
 .gradient-lightgreen, .button--main, .button--more,
 .bottom-navigation__icons li.centered, .card--style-plan-premium, .card--style-bg {
     background: linear-gradient(90deg, #de9f17 0%, #d19c15 33%, #fff58a 67%, #ffd147 100%) !important;
+}
+
+.gradient-dark-blue,
+.account-buttons a {
+    background: linear-gradient(180deg, #04083F 0%, rgba(0, 0, 28, 0.7) 100%);
+}
+
+.account-buttons a {
+    color: rgba(#fff, 80%);
+    font-size: 9px;
+
+    img {
+        margin-bottom: 7px;
+    }
 }
