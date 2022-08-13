@@ -1,4 +1,6 @@
 $root-body: #00001c;
+$linear__gold: linear-gradient(90deg, #de9f17 0%, #d19c15 33%, #fff58a 67%, #ffd147 100%);
+$linear__dark-to-light: linear-gradient(180deg, rgba(0, 0, 28, 0.7) 0%, #171756 100%);
 
 body,
 .page--splash {
@@ -16,12 +18,12 @@ body,
 
 .gradient-lightgreen, .button--main, .button--more,
 .bottom-navigation__icons li.centered, .card--style-plan-premium, .card--style-bg {
-    background: linear-gradient(90deg, #de9f17 0%, #d19c15 33%, #fff58a 67%, #ffd147 100%) !important;
+    background: $linear__gold !important;
 }
 
 .gradient-dark-blue,
 .account-buttons a {
-    background: linear-gradient(180deg, rgba(0, 0, 28, 0.7) 0%, #171756 100%);
+    background: $linear__dark-to-light;
 }
 
 .account-buttons a {
@@ -39,4 +41,10 @@ body,
 
 .swiper-slide {
     border-radius: 7px !important;
+}
+
+.swiper-slide-active {
+    .caption__link a {
+        background: $linear__gold;
+    }
 }

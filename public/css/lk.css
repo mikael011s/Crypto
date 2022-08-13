@@ -33,3 +33,7 @@ body,
 .swiper-slide {
   border-radius: 7px !important;
 }
+
+.swiper-slide-active .caption__link a {
+  background: linear-gradient(90deg, #de9f17 0%, #d19c15 33%, #fff58a 67%, #ffd147 100%);
+}
