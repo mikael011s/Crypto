@@ -20,8 +20,10 @@
                     |
                     <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span></div>
                 <svg class="account-info__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <path d="M0,0 Q50,201 100,0 L100,100 0,100 Z" fill="#0f0638"/>
+                    <path d="M0,0 Q50,201 100,0 L100,100 0,100 Z" fill="#00001C"/>
                 </svg>
+
+
             </div>
 
             <div class="account-buttons">
@@ -71,29 +73,31 @@
                 <div class="swiper-container slider-simple slider-simple--round-corners slider-init-bottom mb-40 stats-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slider-simple__slide" style="background-image:url(images/photos/image-1.jpg);">
-                            <div class="slider-simple__caption caption caption--gradient">
-                                <div class="caption__content">
-                                    <div class="page__title-bar">
-                                        <h3>Динамика изменения курса RAu COIN (неделя)</h3>
-                                    </div>
+                            <a href="{{ route('coin-more', 'rau') }}">
+                                <div class="slider-simple__caption caption caption--gradient">
+                                    <div class="caption__content">
+                                        <div class="page__title-bar">
+                                            <h3>Динамика курса RAu COIN (неделя)</h3>
+                                        </div>
 
-                                    <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
-                                    <br>
-                                    <div class="caption__info">
-                                        <b>1 RAu</b> - <b>{{ \App\Models\Setting::where('param', 'rau_price')->first()->value }}₽</b>
-                                    </div>
-                                    <div class="caption__info">
-                                        <strong>Рост за последний день:</strong>
-                                        <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span>
+                                        <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
+                                        <br>
+                                        <div class="caption__info">
+                                            <b>1 RAu</b> - <b>{{ \App\Models\Setting::where('param', 'rau_price')->first()->value }}₽</b>
+                                        </div>
+                                        <div class="caption__info">
+                                            <strong>Рост за последний день:</strong>
+                                            <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide slider-simple__slide" style="background-image:url(images/photos/image-2.jpg);">
                             <div class="slider-simple__caption caption caption--gradient">
                                 <div class="caption__content">
                                     <div class="page__title-bar">
-                                        <h3>Динамика изменения курса Bitcoin (неделя)</h3>
+                                        <h3>Динамика курса Bitcoin (неделя)</h3>
                                     </div>
 
                                     <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
@@ -107,7 +111,7 @@
                             <div class="slider-simple__caption caption caption--gradient">
                                 <div class="caption__content">
                                     <div class="page__title-bar">
-                                        <h3>Динамика изменения курса Ethereum (неделя)</h3>
+                                        <h3>Динамика курса Ethereum (неделя)</h3>
                                     </div>
 
                                     <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
@@ -165,7 +169,8 @@
                                             }
 
                                             for ($i = count($items) -1 ; $i >= count($items) - 7; $i--) {
-                                                echo "'{$items[$i]['new_price']}',";
+                                                if (isset($items[$i]))
+                                                    echo "'{$items[$i]['new_price']}',";
                                             }
                                         @endphp]
                                     }
@@ -215,27 +220,27 @@
                 </div>
 
                 <div class="cards cards--11">
-                    <a class="card-coin" href="details.html">
+                    <a class="card-coin gradient-light-dark-blue" href="details.html">
                         <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/bitcoin.png" alt="" title=""/><span>Bitcoin <b>BTC</b></span></div>
                         <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>
                         <div class="card-coin__price"><strong>$41,827.71</strong><span class="plus">+10%</span></div>
                     </a>
-                    <a class="card-coin" href="details.html">
+                    <a class="card-coin gradient-light-dark-blue" href="details.html">
                         <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/ethereum.png" alt="" title=""/><span>Ethereum <b>ETH</b></span></div>
                         <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>
                         <div class="card-coin__price"><strong>$3,250.30</strong><span class="plus">+8%</span></div>
                     </a>
-                    <a class="card-coin" href="details.html">
+                    <a class="card-coin gradient-light-dark-blue" href="details.html">
                         <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/elrond.png" alt="" title=""/><span>Elrond <b>EGLD</b></span></div>
                         <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>
                         <div class="card-coin__price"><strong>$320</strong><span class="plus">+5%</span></div>
                     </a>
-                    <a class="card-coin" href="details.html">
+                    <a class="card-coin gradient-light-dark-blue" href="details.html">
                         <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/sandbox.png" alt="" title=""/><span>The Sandbox <b>SAND</b></span></div>
                         <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>
                         <div class="card-coin__price"><strong>$6,5</strong><span class="plus">+5%</span></div>
                     </a>
-                    <a class="card-coin" href="details.html">
+                    <a class="card-coin gradient-light-dark-blue" href="details.html">
                         <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/solana.png" alt="" title=""/><span>Solana <b>SOL</b></span></div>
                         <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>
                         <div class="card-coin__price"><strong>$140</strong><span class="plus">+4%</span></div>

@@ -45,6 +45,8 @@ Route::prefix('mobile')->group(function () {
         Route::view('rau/by', 'mobile.rau.by')->name('m-by');
         Route::view('rau/sell', 'mobile.rau.sell')->name('m-sell');
         Route::view('rau/swap', 'mobile.rau.swap')->name('m-swap');
+
+        Route::get('coin/{coin}', 'App\Http\Controllers\CoinController@viewCoin')->name('coin-more');
     });
 });
 

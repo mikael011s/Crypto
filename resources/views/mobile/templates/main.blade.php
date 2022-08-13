@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>@yield('title', 'Mike Group')</title>
+    <title>@yield('title', 'RAu COIN')</title>
 
     <link rel="stylesheet" href="{{ asset('template-assets/cryptex/vendor/swiper/swiper.min.css') }}">
     <link rel="stylesheet" href="{{ asset('template-assets/cryptex/css/style.css') }}">
@@ -39,8 +39,8 @@
                         <div class="swiper-slide">
                             <div class="subnav-header closepanel"><img src="/template-assets/cryptex/images/icons/arrow-back.svg" alt="" title="" /></div>
                             <div class="user-details">
-                                <div class="user-details__thumb"><img src="/template-assets/cryptex/images/photos/avatar-5.jpg" alt="" title=""/></div>
-                                <div class="user-details__title"><span>Hello</span> Pieter Vanderbeld</div>
+{{--                                <div class="user-details__thumb"><img src="/template-assets/cryptex/images/photos/avatar-5.jpg" alt="" title=""/></div>--}}
+                                <div class="user-details__title"><span>Добрый день, </span> {{ \Illuminate\Support\Facades\Auth::user()->name }}</div>
                             </div>
                             <nav class="main-nav">
                                 <ul>

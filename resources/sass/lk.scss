@@ -1,6 +1,10 @@
 $root-body: #00001c;
 $linear__gold: linear-gradient(90deg, #de9f17 0%, #d19c15 33%, #fff58a 67%, #ffd147 100%);
 $linear__dark-to-light: linear-gradient(180deg, rgba(0, 0, 28, 1) 0%, #171756 100%);
+$linear__light-to-dark: linear-gradient(180deg, #171756 0%, rgba(0, 0, 28, 1) 100%);
+
+// Colors
+$green: #1dd71d;
 
 body,
 .page--splash {
@@ -13,7 +17,18 @@ body,
 }
 
 .gradient-purple, .account-info {
+    background: $linear__gold !important;
+    color: #000;
 
+    .account-info__total {
+        font-weight: bold;
+        //font-size: 40px;
+    }
+
+    .plus {
+        color: #000 !important;
+        font-weight: bold;
+    }
 }
 
 .gradient-lightgreen, .button--main, .button--more,
@@ -26,8 +41,11 @@ body,
     background: $linear__dark-to-light;
 }
 
+.gradient-light-dark-blue {
+    background: $linear__light-to-dark;
+}
+
 .account-buttons a {
-    color: rgba(#fff, 80%);
     font-size: 9px;
 
     img {
@@ -36,12 +54,23 @@ body,
 }
 
 .card-coin__price .plus {
-    color: #1dd71d;
+    color: $green;
 }
 
 .swiper-slide {
+    background: $linear__light-to-dark !important;
     border-radius: 7px !important;
+    padding: 0px 0px !important;
 }
+
+.slider-simple .caption--gradient {
+    background: transparent !important;
+}
+
+.slider-simple .caption {
+    height: calc(100% - 35px);
+}
+
 
 .swiper-slide-active {
     .caption__link a {

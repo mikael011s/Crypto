@@ -8,6 +8,18 @@ body,
   background: #00001c !important;
 }
 
+.gradient-purple, .account-info {
+  background: linear-gradient(90deg, #de9f17 0%, #d19c15 33%, #fff58a 67%, #ffd147 100%) !important;
+  color: #000;
+}
+.gradient-purple .account-info__total, .account-info .account-info__total {
+  font-weight: bold;
+}
+.gradient-purple .plus, .account-info .plus {
+  color: #000 !important;
+  font-weight: bold;
+}
+
 .gradient-lightgreen, .button--main, .button--more,
 .bottom-navigation__icons li.centered, .card--style-plan-premium, .card--style-bg {
   background: linear-gradient(90deg, #de9f17 0%, #d19c15 33%, #fff58a 67%, #ffd147 100%) !important;
@@ -18,8 +30,11 @@ body,
   background: linear-gradient(180deg, rgb(0, 0, 28) 0%, #171756 100%);
 }
 
+.gradient-light-dark-blue {
+  background: linear-gradient(180deg, #171756 0%, rgb(0, 0, 28) 100%);
+}
+
 .account-buttons a {
-  color: rgba(255, 255, 255, 0.8);
   font-size: 9px;
 }
 .account-buttons a img {
@@ -31,7 +46,17 @@ body,
 }
 
 .swiper-slide {
+  background: linear-gradient(180deg, #171756 0%, rgb(0, 0, 28) 100%) !important;
   border-radius: 7px !important;
+  padding: 0px 0px !important;
+}
+
+.slider-simple .caption--gradient {
+  background: transparent !important;
+}
+
+.slider-simple .caption {
+  height: calc(100% - 35px);
 }
 
 .swiper-slide-active .caption__link a {
