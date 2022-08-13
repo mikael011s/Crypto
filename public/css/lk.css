@@ -25,3 +25,11 @@ body,
 .account-buttons a img {
   margin-bottom: 7px;
 }
+
+.card-coin__price .plus {
+  color: #1dd71d;
+}
+
+.swiper-slide {
+  border-radius: 7px !important;
+}
