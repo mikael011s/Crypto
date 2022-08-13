@@ -15,7 +15,7 @@ body,
 
 .gradient-dark-blue,
 .account-buttons a {
-  background: linear-gradient(180deg, #04083F 0%, rgba(0, 0, 28, 0.7) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 28, 0.7) 0%, #171756 100%);
 }
 
 .account-buttons a {
