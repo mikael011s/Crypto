@@ -94,3 +94,13 @@ body,
 .form__input--23 {
     width: calc(((100% / 3 ) * 2) - 15px);
 }
+
+body.with-panel-left-reveal .panel--left {
+    background: $root-body;
+}
+
+//.panel__navigation {
+//    .swiper-slide {
+//        background: $root-body !important;
+//    }
+//}

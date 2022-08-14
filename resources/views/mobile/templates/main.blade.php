@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#00001c">
 
     <title>@yield('title', 'RAu COIN')</title>
 
@@ -39,16 +40,16 @@
                         <div class="swiper-slide">
                             <div class="subnav-header closepanel"><img src="/template-assets/cryptex/images/icons/arrow-back.svg" alt="" title="" /></div>
                             <div class="user-details">
-{{--                                <div class="user-details__thumb"><img src="/template-assets/cryptex/images/photos/avatar-5.jpg" alt="" title=""/></div>--}}
+                                <div class="user-details__thumb"><img src="{{ asset('images/rau.png') }}" alt="" title=""/></div>
                                 <div class="user-details__title"><span>Добрый день, </span> {{ \Illuminate\Support\Facades\Auth::user()->name }}</div>
                             </div>
                             <nav class="main-nav">
                                 <ul>
-                                    <li><a href="user-profile.html"><img src="/template-assets/cryptex/images/icons/user.svg" alt="" title="" /><span>Мой аккаунт</span></a></li>
-                                    <li><a href="forms.html"><img src="/template-assets/cryptex/images/icons/settings.svg" alt="" title="" /><span>Настройки</span></a></li>
-                                    <li class="subnav opensubnav"><a href="#"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>Депозит</span></a></li>
-                                    <li><a href="wallet.html"><img src="/template-assets/cryptex/images/icons/wallet.svg" alt="" title="" /><span>Мои финансы</span></a></li>
-                                    <li><a href="contact.html"><img src="/template-assets/cryptex/images/icons/contact.svg" alt="" title="" /><span>Поддержка</span></a></li>
+                                    <li><a href="{{ route('m-profile') }}"><img src="/template-assets/cryptex/images/icons/user.svg" alt="" title="" /><span>Мой аккаунт</span></a></li>
+                                    <li><a href="{{ route('m-wallet') }}"><img src="/template-assets/cryptex/images/icons/wallet.svg" alt="" title="" /><span>Мой счёт</span></a></li>
+                                    <li><a href="{{ route('coin-more', 'rau') }}"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>RAu COIN</span></a></li>
+                                    <li><a href="{{ route('m-by') }}"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>Купить</span></a></li>
+                                    <li><a href="{{ route('m-stats') }}"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>Курсы валют</span></a></li>
                                 </ul>
                             </nav>
                             <div class="buttons buttons--centered">
@@ -66,20 +67,20 @@
                                 @csrf
                             </form>
                         </div>
-                        <div class="swiper-slide">
-                            <nav class="main-nav">
-                                <ul>
-                                    <li><a href="cards.html"><img src="/template-assets/cryptex/images/icons/blocks.svg" alt="" title="" /><span>Cards</span></a></li>
-                                    <li><a href="sliders.html"><img src="/template-assets/cryptex/images/icons/slider.svg" alt="" title="" /><span>Sliders</span></a></li>
-                                    <li><a href="forms.html"><img src="/template-assets/cryptex/images/icons/form.svg" alt="" title="" /><span>Forms</span></a></li>
-                                    <li><a href="tables.html"><img src="/template-assets/cryptex/images/icons/tables.svg" alt="" title="" /><span>Tables</span></a></li>
-                                    <li><a href="tabs-toggles.html"><img src="/template-assets/cryptex/images/icons/tabs.svg" alt="" title="" /><span>Tabs</span></a></li>
-                                    <li><a href="#" data-popup="social" class="open-popup"><img src="/template-assets/cryptex/images/icons/love.svg" alt="" title="" /><span>Social</span></a></li>
-                                    <li><a href="#" data-popup="notifications" class="open-popup"><img src="/template-assets/cryptex/images/icons/popup.svg" alt="" title="" /><span>Popups</span></a></li>
-                                    <li><a href="#" data-popup="alert" class="open-popup"><img src="/template-assets/cryptex/images/icons/notifications.svg" alt="" title="" /><span>Notifications</span></a></li>
-                                </ul>
-                            </nav>
-                        </div>
+{{--                        <div class="swiper-slide">--}}
+{{--                            <nav class="main-nav">--}}
+{{--                                <ul>--}}
+{{--                                    <li><a href="cards.html"><img src="/template-assets/cryptex/images/icons/blocks.svg" alt="" title="" /><span>Cards</span></a></li>--}}
+{{--                                    <li><a href="sliders.html"><img src="/template-assets/cryptex/images/icons/slider.svg" alt="" title="" /><span>Sliders</span></a></li>--}}
+{{--                                    <li><a href="forms.html"><img src="/template-assets/cryptex/images/icons/form.svg" alt="" title="" /><span>Forms</span></a></li>--}}
+{{--                                    <li><a href="tables.html"><img src="/template-assets/cryptex/images/icons/tables.svg" alt="" title="" /><span>Tables</span></a></li>--}}
+{{--                                    <li><a href="tabs-toggles.html"><img src="/template-assets/cryptex/images/icons/tabs.svg" alt="" title="" /><span>Tabs</span></a></li>--}}
+{{--                                    <li><a href="#" data-popup="social" class="open-popup"><img src="/template-assets/cryptex/images/icons/love.svg" alt="" title="" /><span>Social</span></a></li>--}}
+{{--                                    <li><a href="#" data-popup="notifications" class="open-popup"><img src="/template-assets/cryptex/images/icons/popup.svg" alt="" title="" /><span>Popups</span></a></li>--}}
+{{--                                    <li><a href="#" data-popup="alert" class="open-popup"><img src="/template-assets/cryptex/images/icons/notifications.svg" alt="" title="" /><span>Notifications</span></a></li>--}}
+{{--                                </ul>--}}
+{{--                            </nav>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>
@@ -98,7 +99,7 @@
                         <li><a href="{{ route('m-dashboard') }}"><img src="{{ asset('template-assets/cryptex/images/icons/blocks.svg') }}" alt="" title="" /></a></li>
                         <li><a href="{{ route('m-stats') }}"><img src="{{ asset('template-assets/cryptex/images/icons/stats.svg') }}" alt="" title="" /></a></li>
                         <li class="centered"><a href="{{ route('m-wallet') }}"><img src="{{ asset('template-assets/cryptex/images/icons/wallet.svg') }}" alt="" title="" /></a></li>
-                        <li><a href="#" class="open-popup" data-popup="notifications"><img src="{{ asset('template-assets/cryptex/images/icons/notifications.svg') }}" alt="" title="" /><i>3</i></a></li>
+                        <li><a href="#" class="open-popup" data-popup="notifications"><img src="{{ asset('template-assets/cryptex/images/icons/notifications.svg') }}" alt="" title="" /><i>1</i></a></li>
                         <li><a href="{{ route('m-contact') }}"><img src="{{ asset('template-assets/cryptex/images/icons/contact.svg') }}" alt="" title="" /></a></li>
                     </ul>
                 </div>
@@ -122,15 +123,15 @@
         <div id="popup-notifications">
             <div class="popup popup--notifications">
                 <div class="popup__close"><a href="#" class="close-popup" data-popup="notifications"><img src="{{ asset('template-assets/cryptex/images/icons/close.svg') }}" alt="" title=""/></a></div>
-                <h2 class="popup__title">Your latest notifications!</h2>
+                <h2 class="popup__title">Последние уведомления</h2>
                 <ul class="notifications pt-20">
-                    <li><a href="details.html">Bitcoin</a> is up 10%</li>
-                    <li><a href="details.html">Ethereum</a> is down 5% in the last 7 days</li>
-                    <li>Your BTC - ETH swap was succesfully done!</li>
-                    <li>Received a $100 payment from <a href="#">Robert J.</a></li>
-                    <li><a href="#">Jenifer F.</a> replied to your message</li>
+{{--                    <li><a href="details.html">Bitcoin</a> is up 10%</li>--}}
+{{--                    <li><a href="details.html">Ethereum</a> is down 5% in the last 7 days</li>--}}
+{{--                    <li>Your BTC - ETH swap was succesfully done!</li>--}}
+{{--                    <li>Received a $100 payment from <a href="#">Robert J.</a></li>--}}
+                    <li>Вас приветствует компания MIKE GROUP, благодарим за доверие к нашему проекту! С нами Вы получите гарантированный доход!</li>
                 </ul>
-                <a href="#" class="button button--full button--main">View All Notifications</a>
+                <a href="#" class="button button--full button--main">Отметить прочитанными</a>
             </div>
         </div>
     @endif

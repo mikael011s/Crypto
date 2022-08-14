@@ -79,3 +79,7 @@ body,
 .form__input--23 {
   width: calc(66.6666666667% - 15px);
 }
+
+body.with-panel-left-reveal .panel--left {
+  background: #00001c;
+}
