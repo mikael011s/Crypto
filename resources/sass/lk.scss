@@ -85,3 +85,12 @@ body,
 .account-info__svg {
     margin-bottom: -1px;
 }
+
+.form__coin-icon img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.form__input--23 {
+    width: calc(((100% / 3 ) * 2) - 15px);
+}

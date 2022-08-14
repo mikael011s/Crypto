@@ -18,7 +18,7 @@
                         <h3 class="mb-0 fw-bolder">Покупаю на</h3>
                         <div class="form__row d-flex align-items-center justify-space">
                             <input type="text" name="Text" value="" class="form__input form__input--23" placeholder="" oninput="editRub()" id="rub_input" />
-                            <div class="form__coin-icon"><span>Руб.</span></div>
+                            <div class="form__coin-icon"><img src="{{ asset('images/ruble.png') }}" alt="" title=""/><span>Руб.</span></div>
                         </div>
                     </div>
                 </div>
@@ -27,8 +27,28 @@
                         <h3 class="mb-0 fw-bolder">Получаю</h3>
                         <div class="form__row d-flex align-items-center justify-space">
                             <input type="text" name="Text" value="" class="form__input form__input--23" placeholder="" oninput="editRau()" id="rau_input" />
-                            <div class="form__coin-icon"><span>RAu</span></div>
+                            <div class="form__coin-icon"><img src="{{ asset('images/rau.png') }}" alt="" title=""/><span>RAu</span></div>
                         </div>
+                    </div>
+                </div>
+                <div class="fieldset" style="background: transparent;border: 2px solid #ffc700;padding-right: 16px;">
+                    <div class="alert alert-warning">
+                        <h3 class="mb-0 fw-bolder mb-0 pb-0">
+                            Курс RAu COIN на {{ date('d.m.Y') }} - {{ \App\Models\Setting::where('param', 'rau_price')->first()->value }} руб.
+                        </h3>
+                    </div>
+                </div>
+                <div class="fieldset">
+                    <div class="form">
+                        <h3 class="mb-0 fw-bolder">Выберите платёжную систему</h3>
+                        <div class="card-selector">
+                            <input type="radio" name="excard" id="c1" value="1" /><label for="c1">Payeer <span></span></label>
+                        </div>
+                        <div class="card-selector mb-0">
+                            <input type="radio" name="excard" id="c2" value="2" /><label for="c2">Оплата по счёту <span></span></label>
+                        </div>
+                        <br><br>
+                        <div class="" id="show-paypal-info">Вы будете перенаправлены на страницу платёжной системы.</div>
                     </div>
                 </div>
             </form>
