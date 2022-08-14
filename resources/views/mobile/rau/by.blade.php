@@ -33,9 +33,9 @@
                 </div>
                 <div class="fieldset" style="background: transparent;border: 2px solid #ffc700;padding-right: 16px;">
                     <div class="alert alert-warning">
-                        <h3 class="mb-0 fw-bolder mb-0 pb-0">
-                            Курс RAu COIN на {{ date('d.m.Y') }} - {{ \App\Models\Setting::where('param', 'rau_price')->first()->value }} руб.
-                        </h3>
+                        <h4 class="mb-0 fw-bolder mb-0 pb-0" style="color:#ffc700;">
+                            Курс RAu COIN на {{ date('d.m.Y') }} - {{ \App\Models\Setting::where('param', 'rau_price')->first()->value }} ₽
+                        </h4>
                     </div>
                 </div>
                 <div class="fieldset">

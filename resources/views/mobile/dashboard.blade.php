@@ -10,7 +10,7 @@
                 <div class="account-info__title">ВАШ БАЛАНС</div>
                 <div class="account-info__total">
                     {{ \Illuminate\Support\Facades\Auth::user()->balance_rau * \App\Models\Setting::where('param', 'rau_price')->first()->value }}
-                    <span style="font-size: 15px;font-weight: 300;position: absolute;margin-top: 20px;margin-left: 2px;">₽</span>
+                    <span style="font-size: 19px;font-weight: 600;position: absolute;margin-top: 15px;margin-left: 2px;">₽</span>
                 </div>
                 <div class="account-info__stats">
                     <span class="plus">

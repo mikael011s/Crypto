@@ -33,9 +33,8 @@
             <h2 class="page__title">Способы связи</h2>
             <div class="fieldset">
                 <ul class="custom-listing">
-                    <li class="address"><span>Address:</span> New York 23066 / Pacific Street / Brooklyn </li>
-                    <li class="email"><span>Email:</span> email@yourwebsite.com </li>
-                    <li class="phone"><span>Mobile:</span> +900 456 567 77</li>
+                    <li class="email"><span>Email:</span> mail@redaurumcoin.com </li>
+                    <li class="phone"><span>Mobile:</span> +4 4203 7699633</li>
                 </ul>
             </div>
 

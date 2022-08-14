@@ -46,11 +46,11 @@
                 <div class="cards cards--11">
                     <div class="card-coin gradient-light-dark-blue">
                         <div class="card-coin__logo"><span>Общая эмиссия: <b>Сумма эмиссии в рублях на старте</b></span></div>
-                        <div class="card-coin__price"><strong> 7 000 000 000 руб.</strong></div>
+                        <div class="card-coin__price"><strong> 7 000 000 000 ₽</strong></div>
                     </div>
                     <div class="card-coin gradient-light-dark-blue">
                         <div class="card-coin__logo"><span>Объем: <b>24 часа </b></span></div>
-                        <div class="card-coin__price"><strong>9 456 780 руб.</strong></div>
+                        <div class="card-coin__price"><strong>9 456 780 ₽</strong></div>
                     </div>
                     <div class="card-coin gradient-light-dark-blue">
                         <div class="card-coin__logo"><span>Оборот валюты: <b>Количество монет в обращении</b></span></div>
@@ -59,11 +59,11 @@
                 </div>
                 <div class="card-coin gradient-light-dark-blue">
                     <div class="card-coin__logo"><span>Максимальный запас</span></div>
-                    <div class="card-coin__price"><strong>{{ number_format(1000000 * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }}</strong></div>
+                    <div class="card-coin__price"><strong>{{ number_format(100000000 * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }} ₽</strong></div>
                 </div>
                 <div class="card-coin gradient-light-dark-blue">
                     <div class="card-coin__logo"><span>Общее предложение</span></div>
-                    <div class="card-coin__price"><strong>{{ number_format((1000000 - \App\Models\User::all()->sum('balance_rau')) * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }}</strong></div>
+                    <div class="card-coin__price"><strong>{{ number_format((100000000 - \App\Models\User::all()->sum('balance_rau')) * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }} ₽</strong></div>
                 </div>
             </div>
         </div>

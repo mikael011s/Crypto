@@ -27,7 +27,7 @@
                         <h3 class="mb-0 fw-bolder">Цена с учётом курса</h3>
                         <div class="form__row d-flex align-items-center justify-space">
                             <input type="text" name="Text" value="" class="form__input form__input--23" placeholder="" oninput="editRub()" id="rub_input" readonly />
-                            <div class="form__coin-icon"><span>Руб.</span></div>
+                            <div class="form__coin-icon"><span>₽</span></div>
                         </div>
                     </div>
                 </div>
