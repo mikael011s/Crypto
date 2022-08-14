@@ -31,10 +31,10 @@
                 <a href="{{ route('m-by') }}" class="gradient-dark-blue">
                     <img src="/template-assets/cryptex/images/icons/bottom.svg" alt="" title=""/><span>КУПИТЬ</span>
                 </a>
-                <a href="javascript:alert('Продажа пока недоступна');" class="gradient-dark-blue">
+                <a href="javascript:alert('Данная функция пока не доступна для Вас!');" class="gradient-dark-blue">
                     <img src="/template-assets/cryptex/images/icons/top.svg" alt="" title=""/><span>ПРОДАТЬ</span>
                 </a>
-                <a href="javascript:alert('Обмен пока недоступен');" class="gradient-dark-blue">
+                <a href="javascript:alert('Данная функция пока не доступна для Вас!');" class="gradient-dark-blue">
                     <img src="/template-assets/cryptex/images/icons/swap.svg" alt="" title=""/><span>ОБМЕН</span>
                 </a>
             </div>
