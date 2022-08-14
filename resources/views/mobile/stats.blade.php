@@ -9,12 +9,12 @@
 
             <div class="search__form">
                 <form>
-                    <input type="text" class="search__input" id="" name="" value="" placeholder="Search Cryptocurrencies">
+                    <input type="text" class="search__input" id="" name="" value="" placeholder="Поиск криптовалюты">
                     <input type="submit" class="search__submit" value="Send">
                 </form>
             </div>
 
-            <h2 class="page__title">Cryptocurrencies</h2>
+            <h2 class="page__title">Криптовалюты</h2>
 
             <div class="cards cards--11">
                 <a class="card-coin gradient-light-dark-blue" href="details.html">
