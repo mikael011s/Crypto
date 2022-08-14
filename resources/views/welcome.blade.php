@@ -740,9 +740,9 @@
                         <div class="single-slide">
                             <div class="testimonial__content">
                                 <div class="icon"><i class="fas fa-quote-left"></i></div>
-                                <p>"Кто не рискует тот не пьет шампанское" пока RAu COIN растет я буду вкладывать в него. И желаю проекту только процвктание</p>
-                                <h3 class="name">Егор Каменов</h3>
-                                <span class="designation text-white">Частный инвестор</span>
+                                <p>"Кто не рискует тот не пьет шампанское" пока RAu COIN растет я буду вкладывать в него. И желаю проекту только успехов и процветания</p>
+                                <h3 class="name">Екатерина Каменова</h3>
+                                <span class="designation text-white">Офис менеджер</span>
                             </div>
                         </div>
                     </div>
@@ -770,15 +770,15 @@
                         <div class="post__item-thumb">
                             <img src="/template-assets/digihyip/images/blog/item1.png" alt="blog">
                             <div class="thumb__content">
-                                <h3 class="title"><a href="blog-details.html">В мире уже более 1000 различных криптовалют</a></h3>
+                                <h3 class="title"><a href="https://vc.ru/u/688290-andrey-plat/407701-osnovnye-trendy-kriptovalyut-na-2022-2025">Во всем мире уже более 300 млн пользователей криптовалюты</a></h3>
                                 <ul class="post-meta d-flex flex-wrap m-0 justify-content-between">
                                     <li>
                                         <i class="fas fa-user"></i>
-                                        Генадий Фридман
+                                        Портал VC.ru
                                     </li>
                                     <li>
                                         <i class="fas fa-calendar"></i>
-                                        12 августа 2022
+                                        21 апреля 2022
                                     </li>
                                 </ul>
                             </div>
@@ -790,11 +790,11 @@
                         <div class="post__item-thumb">
                             <img src="/template-assets/digihyip/images/blog/item2.png" alt="blog">
                             <div class="thumb__content">
-                                <h3 class="title"><a href="blog-details.html">Биткоин осенью ожидает резкий рост в связи ....</a></h3>
+                                <h3 class="title"><a href="https://www.rbc.ru/crypto/news/62f4e8789a7947cab926bb5d">Аналитик спрогнозировал новую волну снижения цены биткоина</a></h3>
                                 <ul class="post-meta d-flex flex-wrap m-0 justify-content-between">
                                     <li>
                                         <i class="fas fa-user"></i>
-                                        Thomas Addican
+                                        Подробнее на РБК
                                     </li>
                                     <li>
                                         <i class="fas fa-calendar"></i>
@@ -810,11 +810,11 @@
                         <div class="post__item-thumb">
                             <img src="/template-assets/digihyip/images/blog/item3.png" alt="blog">
                             <div class="thumb__content">
-                                <h3 class="title"><a href="blog-details.html">Скоро криптовалютой можно будет рсчитываться в магазинах</a></h3>
+                                <h3 class="title"><a href="https://www.rbc.ru/crypto/news/5a1696169a79478d6a4f44c8">Словарь портала РБК.ru: Что такое криптовалюта?</a></h3>
                                 <ul class="post-meta d-flex flex-wrap m-0 justify-content-between">
                                     <li>
                                         <i class="fas fa-user"></i>
-                                        Денис Арчаков
+                                        Подробнее на РБК
                                     </li>
                                     <li>
                                         <i class="fas fa-calendar"></i>

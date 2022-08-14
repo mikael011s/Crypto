@@ -65,7 +65,7 @@
                             <a href="{{ route('about') }}">О RAU COIN</a>
                         </li>
                         <li>
-                            <a href="plan.html">ДОХОДНОСТЬ</a>
+                            <a href="plan.html">Faq</a>
                         </li>
                         <li>
                             <a href="plan.html">СТАРТАПАМ</a>
@@ -111,7 +111,7 @@
                     <div class="col-xl-3 col-lg-3 col-sm-6">
                         <div class="footer__widget">
                             <h3 class="widget-title">MIKE GROUP</h3>
-                            <p>Группа компаний MIKE GROUP включает в себя несколько инвест проектов включая Хейдж Фонд MIKE Capital который инвестирует в самые высокодоходные мировые проекты</p>
+                            <p>Компания MIKE GROUP состоит из нескольких инвестиционных проектов включая Хейдж Фонд MIKE Capital который инвестирует в самые высокодоходные мировые проекты и компании</p>
                             <ul class="social-links">
                                 <li><a class="facebook-bg" href="#0"><i class="lab la-facebook-f"></i></a></li>
                                 <li><a class="twitter-bg" href="#0"><i class="lab la-twitter"></i></a></li>
@@ -127,8 +127,6 @@
                                 <li><a href="{{ route('about') }}">Подробнее о RAuCOIN</a></li>
                                 <li><a href="{{ route('rules') }}">Правила</a></li>
                                 <li><a href="{{ route('privacy-policy') }}">Договор оферты</a></li>
-                                <li><a href="{{ route('login') }}">Личный кабинет</a></li>
-                                <li><a href="{{ route('rules') }}">Условия</a></li>
                             </ul>
                         </div>
                     </div>
@@ -136,10 +134,8 @@
                         <div class="footer__widget">
                             <h3 class="widget-title">Компания</h3>
                             <ul class="footer-links">
-                                <li><a href="{{ route('about') }}">О проекте</a></li>
-{{--                                <li><a href="{{ route('investors') }}">Партнерам</a></li>--}}
-                                <li><a href="{{ route('investors') }}">Инвесторам</a></li>
-{{--                                <li><a href="">Faq</a></li>--}}
+                                <li><a href="{{ route('plans') }}">Faq</a></li>
+                                <li><a href="{{ route('login') }}">Стартапам</a></li>
                                 <li><a href="{{ route('contacts') }}">Контакты</a></li>
                             </ul>
                         </div>
@@ -148,11 +144,9 @@
                         <div class="footer__widget">
                             <h3 class="widget-title">Развитие</h3>
                             <ul class="footer-links">
-                                <li><a href="{{ route('plans') }}">Цели</a></li>
+                                <li><a href="{{ route('plans') }}">Партнерам</a></li>
                                 <li><a href="{{ route('login') }}">Развитие</a></li>
                                 <li><a href="{{ route('investment-offers') }}">Инвестиции</a></li>
-                                <li><a href="/">Партнеры в РФ</a></li>
-                                <li><a href="{{ route('news') }}">Новости</a></li>
                             </ul>
                         </div>
                     </div>

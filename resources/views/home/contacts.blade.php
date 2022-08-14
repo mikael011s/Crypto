@@ -42,7 +42,7 @@
                             <h3 class="title">По вопросам</h3>
                             <ul class="contacts">
                                 <li><a href="mailto:demo@gmail.com">mail@redaurumcoin.com</a></li>
-                                <li><a href="mailto:demo@gmail.com">info@redaurumcoin.com</a></li>
+                                <li><a href="mailto:demo@gmail.com">+4 4203 7699633</a></li>
                             </ul>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                             <h3 class="title">По предложениям </h3>
                             <ul class="contacts">
                                 <li><a href="tel:02834">partners@redaurumcoin.com</a></li>
-                                <li><a href="tel:02834">finance@redaurumcoin.com</a></li>
+                                <li><a href="tel:02834">+4 4203 7699633</a></li>
                             </ul>
                         </div>
                     </div>

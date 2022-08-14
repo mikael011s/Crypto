@@ -62,3 +62,31 @@ git show diff resources/views/layouts/land.blade.php
 git show --diff resources/views/layouts/land.blade.php
 git diff resources/views/layouts/land.blade.php
 git diff resources/views/welcome.blade.php
+git status
+git checkout resources/views/layouts/land.blade.php
+gill pull origin
+git pull origin
+git add .
+git commit -m "Update main"
+git push origin
+git push origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
+git pull origin
