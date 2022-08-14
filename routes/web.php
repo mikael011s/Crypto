@@ -26,8 +26,8 @@ Route::prefix('home')->group(function () {
     Route::view('/investors', 'home.investors')->name('investors');
     Route::view('/investors/offers', 'home.investment-offers')->name('investment-offers');
     Route::view('/privacy/policy', 'home.privacy-policy')->name('privacy-policy');
-    Route::view('/privacy/rules', 'home.privacy-rules')->name('rules');
-    Route::view('/privacy/documents', 'home.privacy-documents')->name('documents');
+//    Route::view('/privacy/rules', 'home.privacy-rules')->name('rules');
+//    Route::view('/privacy/documents', 'home.privacy-documents')->name('documents');
 });
 
 // Мобильная версия

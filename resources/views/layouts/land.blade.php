@@ -125,8 +125,8 @@
                             <h3 class="widget-title">Разделы</h3>
                             <ul class="footer-links">
                                 <li><a href="{{ route('about') }}">Подробнее о RAuCOIN</a></li>
-                                <li><a href="{{ route('rules') }}">Правила</a></li>
-                                <li><a href="{{ route('privacy-policy') }}">Договор оферты</a></li>
+                                <li><a href="/home/privacy/policy#overview">Правила</a></li>
+                                <li><a href="/home/privacy/policy#data-collection">Договор оферты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -145,8 +145,8 @@
                             <h3 class="widget-title">Развитие</h3>
                             <ul class="footer-links">
                                 <li><a href="{{ route('plans') }}">Партнерам</a></li>
-                                <li><a href="{{ route('login') }}">Развитие</a></li>
-                                <li><a href="{{ route('investment-offers') }}">Инвестиции</a></li>
+                                <li><a href="/home/privacy/policy#cookie">Развитие</a></li>
+                                <li><a href="/home/privacy/policy#security">Инвестиции</a></li>
                             </ul>
                         </div>
                     </div>
