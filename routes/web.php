@@ -25,6 +25,7 @@ Route::prefix('home')->group(function () {
     Route::view('/about/faq', 'home.faq')->name('faq');
     Route::view('/news', 'home.news')->name('news');
     Route::view('/investors', 'home.investors')->name('investors');
+    Route::view('/startup', 'home.startup')->name('startup');
     Route::view('/investors/offers', 'home.investment-offers')->name('investment-offers');
     Route::view('/privacy/policy', 'home.privacy-policy')->name('privacy-policy');
 //    Route::view('/privacy/rules', 'home.privacy-rules')->name('rules');

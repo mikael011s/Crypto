@@ -68,7 +68,7 @@
                             <a href="{{ route('faq') }}">Faq</a>
                         </li>
                         <li>
-                            <a href="plan.html">СТАРТАПАМ</a>
+                            <a href="{{ route('startup') }}">СТАРТАПАМ</a>
                         </li>
                         <li>
                             <a href="{{ route('contacts') }}">Контакты</a>
@@ -135,7 +135,7 @@
                             <h3 class="widget-title">Компания</h3>
                             <ul class="footer-links">
                                 <li><a href="{{ route('faq') }}">Faq</a></li>
-                                <li><a href="{{ route('login') }}">Стартапам</a></li>
+                                <li><a href="{{ route('startup') }}">Стартапам</a></li>
                                 <li><a href="{{ route('contacts') }}">Контакты</a></li>
                             </ul>
                         </div>
