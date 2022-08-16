@@ -144,7 +144,7 @@
                         <div class="footer__widget">
                             <h3 class="widget-title">Развитие</h3>
                             <ul class="footer-links">
-                                <li><a href="{{ route('plans') }}">Партнерам</a></li>
+                                <li><a href="/#for-partners">Партнерам</a></li>
                                 <li><a href="/home/privacy/policy#cookie">Развитие</a></li>
                                 <li><a href="/home/privacy/policy#security">Инвестиции</a></li>
                             </ul>

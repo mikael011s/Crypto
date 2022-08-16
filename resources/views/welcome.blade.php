@@ -324,7 +324,7 @@
 
 
     <!-- Referral Section Starts Here -->
-    <section class="referral-section padding-top padding-bottom section-bg">
+    <section class="referral-section padding-top padding-bottom section-bg" id="for-partners">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 align-self-end d-none d-lg-block">
