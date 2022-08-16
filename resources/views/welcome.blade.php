@@ -563,7 +563,7 @@
                                             <p class="name">Сергей Филипов</p>
                                         </div>
                                     </td>
-                                    <td data-label="Amount"><span class="amount">$1500</span></td>
+                                    <td data-label="Amount"><span class="amount">₽1500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
                                     <td data-label="Date"><span class="date">08 августа 2022</span></td>
                                 </tr>
@@ -576,7 +576,7 @@
                                             <p class="name">Александр Мануковский</p>
                                         </div>
                                     </td>
-                                    <td data-label="Amount"><span class="amount">$4500</span></td>
+                                    <td data-label="Amount"><span class="amount">₽4500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
                                     <td data-label="Date"><span class="date">08 августа 2022</span></td>
                                 </tr>
@@ -589,7 +589,7 @@
                                             <p class="name">Иван Сопрыкин</p>
                                         </div>
                                     </td>
-                                    <td data-label="Amount"><span class="amount">$500</span></td>
+                                    <td data-label="Amount"><span class="amount">₽500</span></td>
                                     <td data-label="Wallet"><span class="wallet">VISA</span></td>
                                     <td data-label="Date"><span class="date">08 августа 2022</span></td>
                                 </tr>
@@ -602,7 +602,7 @@
                                             <p class="name">Михаил Нестеров</p>
                                         </div>
                                     </td>
-                                    <td data-label="Amount"><span class="amount">$1500</span></td>
+                                    <td data-label="Amount"><span class="amount">₽1500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Master Card</span></td>
                                     <td data-label="Date"><span class="date">08 августа 2022</span></td>
                                 </tr>
@@ -615,7 +615,7 @@
                                             <p class="name">Данил Метрофанов</p>
                                         </div>
                                     </td>
-                                    <td data-label="Amount"><span class="amount">$2500</span></td>
+                                    <td data-label="Amount"><span class="amount">₽2500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
                                     <td data-label="Date"><span class="date">08 августа 2022</span></td>
                                 </tr>
@@ -642,7 +642,7 @@
                                             <p class="name">Галина Алексеевна</p>
                                         </div>
                                     </td>
-                                    <td data-label="Amount"><span class="amount">$300</span></td>
+                                    <td data-label="Amount"><span class="amount">₽300</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
                                     <td data-label="Date"><span class="date">08 августа 2022</span></td>
                                 </tr>
@@ -655,7 +655,7 @@
                                             <p class="name">Ирина Марченко</p>
                                         </div>
                                     </td>
-                                    <td data-label="Amount"><span class="amount">$1500</span></td>
+                                    <td data-label="Amount"><span class="amount">₽1500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
                                     <td data-label="Date"><span class="date">08 августа 2022</span></td>
                                 </tr>
@@ -668,7 +668,7 @@
                                             <p class="name">Надежда Кондратенко</p>
                                         </div>
                                     </td>
-                                    <td data-label="Amount"><span class="amount">$1000</span></td>
+                                    <td data-label="Amount"><span class="amount">₽1000</span></td>
                                     <td data-label="Wallet"><span class="wallet">VISA</span></td>
                                     <td data-label="Date"><span class="date">08 августа 2022</span></td>
                                 </tr>
@@ -681,7 +681,7 @@
                                             <p class="name">Александ Новиков</p>
                                         </div>
                                     </td>
-                                    <td data-label="Amount"><span class="amount">$800</span></td>
+                                    <td data-label="Amount"><span class="amount">₽800</span></td>
                                     <td data-label="Wallet"><span class="wallet">Master Card</span></td>
                                     <td data-label="Date"><span class="date">08 августа 2022</span></td>
                                 </tr>
@@ -694,7 +694,7 @@
                                             <p class="name">Дмитрий Галушкин</p>
                                         </div>
                                     </td>
-                                    <td data-label="Amount"><span class="amount">$900</span></td>
+                                    <td data-label="Amount"><span class="amount">₽900</span></td>
                                     <td data-label="Wallet"><span class="wallet">МИР</span></td>
                                     <td data-label="Date"><span class="date">08 августа 2022</span></td>
                                 </tr>
