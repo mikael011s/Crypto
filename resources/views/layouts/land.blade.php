@@ -65,7 +65,7 @@
                             <a href="{{ route('about') }}">О RAU COIN</a>
                         </li>
                         <li>
-                            <a href="plan.html">Faq</a>
+                            <a href="{{ route('faq') }}">Faq</a>
                         </li>
                         <li>
                             <a href="plan.html">СТАРТАПАМ</a>
@@ -134,7 +134,7 @@
                         <div class="footer__widget">
                             <h3 class="widget-title">Компания</h3>
                             <ul class="footer-links">
-                                <li><a href="{{ route('plans') }}">Faq</a></li>
+                                <li><a href="{{ route('faq') }}">Faq</a></li>
                                 <li><a href="{{ route('login') }}">Стартапам</a></li>
                                 <li><a href="{{ route('contacts') }}">Контакты</a></li>
                             </ul>
