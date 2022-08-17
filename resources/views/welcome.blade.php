@@ -23,7 +23,7 @@
                 <div class="banner__content">
                     <h1 class="title">RED AURUM COIN (RAu)</h1>
                     <p>Токен нового поколения - первая в мире восходящая криптовалюта</p>
-                    <a href="sign-in.html" class="cmn--btn">Начни зарабатывать</a>
+                    <a href="mobile" class="cmn--btn">Начни зарабатывать</a>
                 </div>
                 <div class="banner__thumb d-none d-lg-block">
                     <img src="/template-assets/digihyip/images/banner/thumb.png" alt="banner">
@@ -67,8 +67,8 @@
                             <li> Tesla</li>
                         </ul>
                         <div class="button__wrapper">
-                            <a href="about.html" class="cmn--btn">Хочу инвестировать</a>
-                            <a href="contact.html" class="cmn--btn2">Узнать больше о RAu COIN</a>
+                            <a href="mobile" class="cmn--btn">Хочу инвестировать</a>
+                            <a href="home/about" class="cmn--btn2">Узнать больше о RAu COIN</a>
                         </div>
                     </div>
                 </div>
@@ -341,7 +341,7 @@
                         <h2 class="section__header-title">10% Партнёрам</h2>
                         <p>Расскажи друзьям и близким об уникальном проекте RAu COIN, помоги заработать им, и заработай сам!</p>
                     </div>
-                    <a href="sign-up.html" class="cmn--btn">Вперед</a>
+                    <a href="mobile" class="cmn--btn">Вперед</a>
                 </div>
             </div>
         </div>
@@ -421,8 +421,8 @@
                         <p>Отслеживай в онлайн режиме статистику роста своих инвестиций, следи за динамикой рынка криптовалют и убедить в надежности RAu COIN.</p>
                     </div>
                     <div class="button__wrapper">
-                        <a href="sign-up.html" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-google-play"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">Для Android</p></div></a>
-                        <a href="sign-up.html" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-apple"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">Для IOS</p></div></a>
+                        <a href="mobile" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-google-play"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">Для Android</p></div></a>
+                        <a href="mobile" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-apple"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">Для IOS</p></div></a>
                     </div>
                     <div class="counter__wrapper row gy-4 gy-sm-5 pt-4 pt-sm-5">
                         <div class="col-6 col-sm-6 col-md-4 col-lg-6 col-xl-4">

@@ -61,7 +61,7 @@
                     <div class="section__header m-0">
                         <h2 class="section__header-title">RAu COIN - это гарантирванный доход</h2>
                         <span class="d-block"> Эмиссию данной уникальной валюты обьявила корпорация MIKE GROUP основанная крупными инвесторами в январе 2022 года </span>
-                        <a href="sign-up.html" class="cmn--btn mt-4">Купить RAu COIN</a>
+                        <a href="mobile" class="cmn--btn mt-4">Купить RAu COIN</a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -146,8 +146,8 @@
                             <li> Фин тех стартапы</li>
                         </ul>
                         <div class="button__wrapper">
-                            <a href="about.html" class="cmn--btn">Хочу инвестировать</a>
-                            <a href="contact.html" class="cmn--btn2">Узнать больше о RAu COIN</a>
+                            <a href="mobil" class="cmn--btn">Хочу инвестировать</a>
+                            <a href="startup" class="cmn--btn2">Для стартапов</a>
                         </div>
                     </div>
                 </div>
@@ -387,7 +387,7 @@
                             </div>
                             <div class="faq__item style--two">
                                 <div class="faq__item-title">
-                                    <h4 class="title">огу ли я отслеживать динамику и рост прибыли?</h4>
+                                    <h4 class="title">Могу ли я отслеживать динамику и рост прибыли?</h4>
                                 </div>
                                 <div class="faq__item-content">
                                     <p>Да, для всех владельцев RAu COIN предусмотрен личный кабинет (мобильное приложение), где в режиме онлайн видна подробная статистика роста курса RAu COIN</p>
@@ -424,8 +424,8 @@
                                 <p>Отслеживай в онлайн режиме статистику роста своих инвестиций, следи за динамикой рынка криптовалют и убедить в надежности RAu COIN.</p>
                             </div>
                             <div class="button__wrapper">
-                                <a href="sign-up.html" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-google-play"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">для Android</p></div></a>
-                                <a href="sign-up.html" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-apple"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">для IOS</p></div></a>
+                                <a href="mobile" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-google-play"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">для Android</p></div></a>
+                                <a href="mobile" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-apple"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">для IOS</p></div></a>
                             </div>
                         </div>
                     </div>

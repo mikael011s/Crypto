@@ -5,7 +5,7 @@
     <div class="inner-banner section-bg overflow-hidden">
         <div class="container">
             <div class="inner__banner__content text-center">
-                <h2 class="title">RAu COIN - это гарантирванный доход</h2>
+                <h2 class="title">Инвестиции стартапам</h2>
                 <ul class="breadcums d-flex flex-wrap justify-content-center">
                 </ul>
             </div>
@@ -28,169 +28,32 @@
                 <div class="col-lg-6">
                     <div class="choose__us__content">
                         <div class="section__header mb-0">
-                            <h2 class="section__header-title">Корпорация MIKE CROUP эмитент RAu COIN </h2>
-                            <p>Компания MIKE GROUP основанная крупными и успешными инвесторами начинает свою деятельность в странах СНГ</p>
+                            <h2 class="section__header-title">Проект RAu COIN - инвестирование в стартапы </h2>
+                            <p>Компания MIKE GROUP ведет поиск и отбор стартапов для SMART - инвестирования</p>
                         </div>
-                        <p>MIKE GROUP это официально зарегистриованая компания в Великобритании, осуществляющая свою деятельность в странах Европы и США .
-                            Получив колосальный опыт в инвестировании, мы создали инвестиционную платформу, которая предоставляет возможность частным инвесторам вкладывать деньги в успешный бизнес в России, в странах СНГ, Европе и США посредством приобретения валюты проекта - RAu COIN  </p>
-                        </p>В работе специалисты компании ориентируются на выбор крупных иностранных компаний, основными критериями которых является надежность и долгосрочность:</p>
-                        </p>Каждый проект выбирается со всей ответственностью и проходит ряд сложных проверок, а так же тщательного, взвешенного анализа</p>
-                        </p>Средний доход в проекте от 0.8% до 3% - это средний показатель в зависимости от направлений инвестирования</p>
-                        </p>Бизнес индустрии куда корпорация MIKE CROUP инвестирует средства</p>
+                        <p>Многие владельцы стартапов отчаянно нуждаются в деньгах, а поэтому готовы принять первое встречное предложение </p>
+                        </p>В краткосрочной перспективе это не так плохо: наличие капитала всегда лучше его отсутствия, — но такой подход может иметь долгосрочные последствия</p>
+                        </p>Деньги не залог развития, а лишь его составляющая. Без нашей экспертной помощи такое вложение теряет огромную часть своей ценности.</p>
+                        </p>Таким образом, в стартап-сфере SMART-инвестиция с нашей стороны — это вливание в проект финансовых и иных ресурсов, которых ему не хватает для достижения поставленных бизнес-целей.</p>
+                        </p>Наша компания под инвестированием в стартапы понимает не только вливание денег, но и полное спровождение стартапа, помощь в организационных работах, юридическим сопровождением в части решением административных преград, а так же: </p>
                         <ul class="info__list d-flex flex-wrap mt-4">
-                            <li> Кино индустрия</li>
-                            <li> Криптовалюты</li>
-                            <li> IT индустрия</li>
-                            <li> Нефтедобыча и переработка</li>
-                            <li> Технологии нейросетей</li>
-                            <li> Фин тех стартапы</li>
+                            <li> собственный опыт и знания</li>
+                            <li> технологические средства</li>
+                            <li> инструменты и методики развития бизнеса</li>
+                            <li> помощь с доступом к международному рынку</li>
+                            <li> нетворкинг, в том числе менторство и связи внутри индустрии</li>
+                            <li> А так же иную помощь</li>
                         </ul>
                         <div class="button__wrapper">
-                            <a href="about.html" class="cmn--btn">Хочу инвестировать</a>
-                            <a href="contact.html" class="cmn--btn2">Узнать больше о RAu COIN</a>
+                            <a href="about/contacts" class="cmn--btn">Направить заявку</a>
+                            <a href="about" class="cmn--btn2">Узнать больше о RAu COIN</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Plan Section Starts Here -->
-    <section class="plan-section padding-bottom">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-10">
-                    <div class="section__header text-center">
-                        <h2 class="section__header-title">Доходность по срокам</h2>
-                        <p>В зависимости от периода владения RAU COIN вложенные инвестиций дают высокую маржинальность</p>
-                    </div>
-                </div>
-            </div>
-            <div class="plan__slider">
-                <div class="single-slide">
-                    <div class="plan__item">
-                        <div class="plan__item-header">
-                            <h2 class="plan-parcent">20%</h2>
-                            <p class="plan-parcent-info">В течении 15 дней</p>
-                        </div>
-                        <div class="plan__item-body">
-                            <ul class="plan__info">
-                                <li>
-                                    <span class="title">Куплено на :</span>
-                                    <span class="value"> 10 000 RUR</span>
-                                </li>
-                                <li>
-                                    <span class="title">Получен доход :</span>
-                                    <span class="value"> 12 000 RUR</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="plan__item-footer">
-                            <p class="footer-info"> Прибыль 2000 RUR</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slide">
-                    <div class="plan__item">
-                        <div class="plan__item-header">
-                            <h2 class="plan-parcent">120%</h2>
-                            <p class="plan-parcent-info">В течении 90 дней</p>
-                        </div>
-                        <div class="plan__item-body">
-                            <ul class="plan__info">
-                                <li>
-                                    <span class="title">Куплено на :</span>
-                                    <span class="value">50 000 RUR</span>
-                                </li>
-                                <li>
-                                    <span class="title">Получен доход :</span>
-                                    <span class="value">110 000 RUR</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="plan__item-footer">
-                            <p class="footer-info">ПРИБЫЛЬ 60 000 RUR</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slide">
-                    <div class="plan__item">
-                        <div class="plan__item-header">
-                            <h2 class="plan-parcent">240%</h2>
-                            <p class="plan-parcent-info">В течении 180 дней</p>
-                        </div>
-                        <div class="plan__item-body">
-                            <ul class="plan__info">
-                                <li>
-                                    <span class="title">Куплено на :</span>
-                                    <span class="value">100 000 RUR</span>
-                                </li>
-                                <li>
-                                    <span class="title">Получен доход :</span>
-                                    <span class="value">340 000 RUR</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="plan__item-footer">
-                            <p class="footer-info">ПРИБЫЛЬ 240 000 RUR</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slide">
-                    <div class="plan__item">
-                        <div class="plan__item-header">
-                            <h2 class="plan-parcent">550%</h2>
-                            <p class="plan-parcent-info">В течении 12 мес</p>
-                        </div>
-                        <div class="plan__item-body">
-                            <ul class="plan__info">
-                                <li>
-                                    <span class="title">Куплено на :</span>
-                                    <span class="value">300 000 RUR</span>
-                                </li>
-                                <li>
-                                    <span class="title">Получен доход :</span>
-                                    <span class="value">1 950 000 RUR</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="plan__item-footer">
-                            <p class="footer-info">ПРИБЫЛЬ 1 650 000 RUR </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Plan Section Ends Here -->
-
-
-    <!-- Referral Section Starts Here -->
-    <section class="referral-section padding-bottom section-bg-two">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 align-self-end d-none d-lg-block">
-                    <div class="section__thumb rtl me-5">
-                        <img src="/template-assets/digihyip/images/referral/thumb.png" alt="referral">
-                        <div class="shapes">
-                            <img src="/template-assets/digihyip/images/referral/clock.png" alt="referral" class="shape shape1">
-                            <img src="/template-assets/digihyip/images/referral/man.png" alt="referral" class="shape shape2">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="section__header">
-                        <h2 class="section__header-title">10% Партнерам</h2>
-                        <p>Партнерская программа работает по принципу реферальной ссылки. Имеет 1 уровень и приносит Вам 10% от суммы, на которую приобрели RAu COIN привлеченные Вами пользователи </p>
-                    </div>
-                    <a href="sign-up.html" class="cmn--btn">ВПЕРЁД</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Referral Section Ends Here -->
-
-
+    
     <!-- Investor Section Starts Here -->
     <section class="investor-section padding-top padding-bottom">
         <div class="container">
@@ -287,7 +150,7 @@
                             </div>
                             <div class="faq__item style--two">
                                 <div class="faq__item-title">
-                                    <h4 class="title">огу ли я отслеживать динамику и рост прибыли?</h4>
+                                    <h4 class="title">Могу ли я отслеживать динамику и рост прибыли?</h4>
                                 </div>
                                 <div class="faq__item-content">
                                     <p>Да, для всех владельцев RAu COIN предусмотрен личный кабинет (мобильное приложение), где в режиме онлайн видна подробная статистика роста курса RAu COIN</p>

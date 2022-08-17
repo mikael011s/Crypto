@@ -101,3 +101,13 @@ git commit -m "Контент ленда"
 git push origin
 git push origin
 git pull origin
+git status
+git add .
+git commit -m "Land"
+git push origin
+git push origin
+git pull origin
+git push origin
+git pull origin
+git pull origin
+git pull origin
