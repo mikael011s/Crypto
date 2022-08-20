@@ -32,7 +32,10 @@
                     <div class="account-info__chart"><canvas id="btc_chart" width="100%" height="60"></canvas></div>
                 @elseif($coin == 'ETH')
                     <div class="account-info__total" style="margin-top: -2px;">
-                        {{ \App\Models\Setting::where('param', 'rau_price')->first()->value }}
+                        @php
+                            $rates = \App\Models\Rate::where('coin', $coin . '_RUB')->get();
+                            echo $rates[count($rates) - 1]['rate'];
+                        @endphp
                         <span style="font-size: 15px;font-weight: 300;position: absolute;margin-top: 20px;margin-left: 2px;">₽</span>
                     </div>
                     <div class="account-info__stats">
