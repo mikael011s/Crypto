@@ -28,6 +28,7 @@ Route::prefix('home')->group(function () {
     Route::view('/startup', 'home.startup')->name('startup');
     Route::view('/investors/offers', 'home.investment-offers')->name('investment-offers');
     Route::view('/privacy/policy', 'home.privacy-policy')->name('privacy-policy');
+    Route::get('/coins/{coin}', [\App\Http\Controllers\Api\Coins\SetController::class, 'iterate'])->name('privacy-policy');
 //    Route::view('/privacy/rules', 'home.privacy-rules')->name('rules');
 //    Route::view('/privacy/documents', 'home.privacy-documents')->name('documents');
 });

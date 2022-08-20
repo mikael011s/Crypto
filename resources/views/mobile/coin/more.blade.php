@@ -9,28 +9,46 @@
             <div class="account-info account-info--details">
 {{--                <div class="account-info__icon"><img src="images/logos/bitcoin-colored.png" alt="" title=""/></div>--}}
                 <div class="account-info__title" style="text-transform: uppercase;font-weight: bolder;font-size: 15px;margin-bottom: 0px;">{{ $coin }}</div>
-                <div class="account-info__total" style="margin-top: -2px;">
-                    {{ \Illuminate\Support\Facades\Auth::user()->balance_rau * \App\Models\Setting::where('param', 'rau_price')->first()->value }}
-                    <span style="font-size: 15px;font-weight: 300;position: absolute;margin-top: 20px;margin-left: 2px;">₽</span>
-                </div>
-                <div class="account-info__stats">
-                    <span class="plus">
-                        {{ \Illuminate\Support\Facades\Auth::user()->balance_rau }}<span style="font-size: 11px;padding: 0px;margin-left: 1px;">RAu</span>
-
-                    </span>
-                    |
-                    <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span>
-                </div>
-                <div class="account-info__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
-                <div class="account-selectors">
-                    <span>1Д</span>
-                    <span class="selected">1Н</span>
-                    <span>1М</span>
-                    <span>3М</span>
-                    <span>6М</span>
-                    <span>1Г</span>
-                    <span>3Г</span>
-                </div>
+                @if($coin == 'RAU')
+                    <div class="account-info__total" style="margin-top: -2px;">
+                        {{ \App\Models\Setting::where('param', 'rau_price')->first()->value }}
+                        <span style="font-size: 15px;font-weight: 300;position: absolute;margin-top: 20px;margin-left: 2px;">₽</span>
+                    </div>
+                    <div class="account-info__stats">
+                        <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span>
+                    </div>
+                    <div class="account-info__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
+                @elseif($coin == 'BTC')
+                    <div class="account-info__total" style="margin-top: -2px;">
+                        @php
+                            $rates = \App\Models\Rate::where('coin', $coin . '_RUB')->get();
+                            echo $rates[count($rates) - 1]['rate'];
+                        @endphp
+                        <span style="font-size: 15px;font-weight: 300;position: absolute;margin-top: 20px;margin-left: 2px;">₽</span>
+                    </div>
+                    <div class="account-info__stats">
+                        <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span>
+                    </div>
+                    <div class="account-info__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
+                @elseif($coin == 'ETH')
+                    <div class="account-info__total" style="margin-top: -2px;">
+                        {{ \App\Models\Setting::where('param', 'rau_price')->first()->value }}
+                        <span style="font-size: 15px;font-weight: 300;position: absolute;margin-top: 20px;margin-left: 2px;">₽</span>
+                    </div>
+                    <div class="account-info__stats">
+                        <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span>
+                    </div>
+                    <div class="account-info__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
+                @endif
+{{--                <div class="account-selectors">--}}
+{{--                    <span>1Д</span>--}}
+{{--                    <span class="selected">1Н</span>--}}
+{{--                    <span>1М</span>--}}
+{{--                    <span>3М</span>--}}
+{{--                    <span>6М</span>--}}
+{{--                    <span>1Г</span>--}}
+{{--                    <span>3Г</span>--}}
+{{--                </div>--}}
 
                 <svg class="account-info__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <path d="M0,0 Q50,201 100,0 L100,100 0,100 Z" fill="#00001c"/>
@@ -70,6 +88,7 @@
     </div>
 
     <script>
+        @if ($coin == 'RAU')
         document.addEventListener("DOMContentLoaded", function(event) {
             {
 
@@ -150,5 +169,7 @@
                 });
             }
         });
+
+        @endif
     </script>
 @endsection

@@ -95,32 +95,36 @@
                             </a>
                         </div>
                         <div class="swiper-slide slider-simple__slide" style="background-image:url(images/photos/image-2.jpg);">
-                            <div class="slider-simple__caption caption caption--gradient">
-                                <div class="caption__content">
-                                    <div class="page__title-bar">
-                                        <h3>Динамика курса Bitcoin (неделя)</h3>
-                                    </div>
+                            <a href="{{ route('coin-more', 'btc') }}">
+                                <div class="slider-simple__caption caption caption--gradient">
+                                    <div class="caption__content">
+                                        <div class="page__title-bar">
+                                            <h3>Динамика курса Bitcoin (неделя)</h3>
+                                        </div>
 
-                                    <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
-                                    <br>
-                                    <div class="caption__info"><b>2.5 BTC</b> <b>$41,904</b></div>
-                                    <div class="caption__info"><strong>$104,750</strong> <span class="plus">+12%</span></div>
+                                        <div class="caption__chart"><canvas id="btc_chart" width="100%" height="60"></canvas></div>
+                                        <br>
+                                        <div class="caption__info"><b>2.5 BTC</b> <b>$41,904</b></div>
+                                        <div class="caption__info"><strong>$104,750</strong> <span class="plus">+12%</span></div>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide slider-simple__slide" style="background-image:url(images/photos/image-3.jpg);">
-                            <div class="slider-simple__caption caption caption--gradient">
-                                <div class="caption__content">
-                                    <div class="page__title-bar">
-                                        <h3>Динамика курса Ethereum (неделя)</h3>
-                                    </div>
+                            <a href="{{ route('coin-more', 'eth') }}">
+                                <div class="slider-simple__caption caption caption--gradient">
+                                    <div class="caption__content">
+                                        <div class="page__title-bar">
+                                            <h3>Динамика курса Ethereum (неделя)</h3>
+                                        </div>
 
-                                    <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
-                                    <br>
-                                    <div class="caption__info"><b>2.5 BTC</b> <b>$41,904</b></div>
-                                    <div class="caption__info"><strong>$104,750</strong> <span class="plus">+12%</span></div>
+                                        <div class="caption__chart"><canvas id="eth_chart" width="100%" height="60"></canvas></div>
+                                        <br>
+                                        <div class="caption__info"><b>2.5 BTC</b> <b>$41,904</b></div>
+                                        <div class="caption__info"><strong>$104,750</strong> <span class="plus">+12%</span></div>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-pagination slider-simple__pagination slider-init-bottom__pagination"></div>
@@ -195,88 +199,7 @@
 
         <!-- CHART -->
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function(event) {
-                {
-
-                    var rauChart = document.getElementById('rau_chart')
-                    var ctx = rauChart.getContext('2d');
-                    new Chart(ctx, {
-                        type: 'line',
-                        data: {
-                            labels: [
-                                "{{ date('d.m.Y', strtotime('-7 days')) }}",
-                                "{{ date('d.m.Y', strtotime('-6 days')) }}",
-                                "{{ date('d.m.Y', strtotime('-5 days')) }}",
-                                "{{ date('d.m.Y', strtotime('-4 days')) }}",
-                                "{{ date('d.m.Y', strtotime('-3 days')) }}",
-                                "{{ date('d.m.Y', strtotime('-2 days')) }}",
-                                "{{ date('d.m.Y', strtotime('-1 days')) }}"
-                            ],
-                            datasets: [{
-                                label: "",
-                                borderColor: "#d9ac2a",
-                                pointBorderColor: "#d9ac2a",
-                                pointBackgroundColor: "rgba(255, 255, 255, 1)",
-                                pointHoverBackgroundColor: "#d9ac2a",
-                                pointHoverBorderColor: "#d9ac2a",
-                                pointBorderWidth: 2,
-                                pointHoverRadius: 5,
-                                pointRadius: 5,
-                                pointHoverBorderWidth: 0,
-                                fill: false,
-                                borderWidth: 3,
-
-                                // Тут надо вывести 7 чисел
-                                data:
-                                    [@php
-                                        $rows = \App\Models\RauHistory::all()->sortByDesc('id')->take(7)->toArray();
-
-                                        $items = [];
-                                        foreach ($rows as $row) {
-                                            $items[] = $row;
-                                        }
-
-                                        for ($i = count($items) -1 ; $i >= count($items) - 7; $i--) {
-                                            if (isset($items[$i]))
-                                                echo "'{$items[$i]['new_price']}',";
-                                        }
-                                    @endphp]
-                            }
-                            ]
-                        },
-                        options: {
-                            legend: {
-                                display: false
-                            },
-                            scales: {
-                                yAxes: [{
-                                    ticks: {
-                                        display: true
-                                    },
-                                    gridLines: {
-                                        drawTicks: true,
-                                        display: true,
-                                        drawBorder: true
-                                    }
-
-                                }],
-                                xAxes: [{
-                                    gridLines: {
-                                        zeroLineColor: "transparent",
-                                        display: false,
-                                        drawBorder: false
-                                    },
-                                    ticks: {
-                                        display: false
-                                    }
-                                }]
-                            }
-                        }
-                    });
-                }
-            });
-        </script>
+        @include('mobile.charts.scripts')
 
         <!-- END CHART -->
 @endsection

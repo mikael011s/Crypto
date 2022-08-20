@@ -25,8 +25,6 @@ class CoinController extends Controller
             ];
         }
 
-        dd($data);
-
         return view('mobile.coin.more', compact('coin', 'data'));
     }
 }
