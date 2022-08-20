@@ -16,12 +16,15 @@ class TradeController extends Controller
     {
         $client = new \GuzzleHttp\Client();
 
-        $response = $client->get( self::$url . "trade/ticker", [
+        $response = json_decode($client->get( self::$url . "trade/ticker", [
             \GuzzleHttp\RequestOptions::JSON => [
                 'pair' => "{$coin}_RUB"
             ]
-        ]);
+        ])->getBody());
 
-        return (array) json_decode($response->getBody())->pairs;
+        if ($response->success !== false)
+            return (array) $response->pairs;
+        else
+            return false;
     }
 }
