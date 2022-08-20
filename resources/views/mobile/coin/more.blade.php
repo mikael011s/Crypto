@@ -29,7 +29,7 @@
                     <div class="account-info__stats">
                         <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span>
                     </div>
-                    <div class="account-info__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
+                    <div class="account-info__chart"><canvas id="btc_chart" width="100%" height="60"></canvas></div>
                 @elseif($coin == 'ETH')
                     <div class="account-info__total" style="margin-top: -2px;">
                         {{ \App\Models\Setting::where('param', 'rau_price')->first()->value }}
@@ -38,7 +38,7 @@
                     <div class="account-info__stats">
                         <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span>
                     </div>
-                    <div class="account-info__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
+                    <div class="account-info__chart"><canvas id="eth_chart" width="100%" height="60"></canvas></div>
                 @endif
 {{--                <div class="account-selectors">--}}
 {{--                    <span>1Д</span>--}}
@@ -87,89 +87,108 @@
         </div>
     </div>
 
+    @include('mobile.charts.scripts')
     <script>
-        @if ($coin == 'RAU')
-        document.addEventListener("DOMContentLoaded", function(event) {
-            {
-
-                var rauChart = document.getElementById('rau_chart')
-                var ctx = rauChart.getContext('2d');
-                new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: [
-                            "{{ date('d.m.Y', strtotime('-7 days')) }}",
-                            "{{ date('d.m.Y', strtotime('-6 days')) }}",
-                            "{{ date('d.m.Y', strtotime('-5 days')) }}",
-                            "{{ date('d.m.Y', strtotime('-4 days')) }}",
-                            "{{ date('d.m.Y', strtotime('-3 days')) }}",
-                            "{{ date('d.m.Y', strtotime('-2 days')) }}",
-                            "{{ date('d.m.Y', strtotime('-1 days')) }}"
-                        ],
-                        datasets: [{
-                            label: "",
-                            borderColor: "#000",
-                            pointBorderColor: "#000",
-                            pointBackgroundColor: "rgba(255, 255, 255, 1)",
-                            pointHoverBackgroundColor: "#000",
-                            pointHoverBorderColor: "#000",
-                            pointBorderWidth: 2,
-                            pointHoverRadius: 5,
-                            pointRadius: 5,
-                            pointHoverBorderWidth: 0,
-                            fill: false,
-                            borderWidth: 3,
-
-                            // Тут надо вывести 7 чисел
-                            data:
-                                [@php
-                                    $rows = \App\Models\RauHistory::all()->sortByDesc('id')->take(7)->toArray();
-
-                                    $items = [];
-                                    foreach ($rows as $row) {
-                                        $items[] = $row;
-                                    }
-
-                                    for ($i = count($items) -1 ; $i >= count($items) - 7; $i--) {
-                                        if (isset($items[$i]))
-                                            echo "'{$items[$i]['new_price']}',";
-                                    }
-                                @endphp]
-                        }
-                        ]
-                    },
-                    options: {
-                        legend: {
-                            display: false
-                        },
-                        scales: {
-                            yAxes: [{
-                                ticks: {
-                                    display: true
-                                },
-                                gridLines: {
-                                    drawTicks: true,
-                                    display: true,
-                                    drawBorder: true
-                                }
-
-                            }],
-                            xAxes: [{
-                                gridLines: {
-                                    zeroLineColor: "transparent",
-                                    display: false,
-                                    drawBorder: false
-                                },
-                                ticks: {
-                                    display: false
-                                }
-                            }]
-                        }
-                    }
-                });
-            }
+        $(document).ready(function () {
+            {{ $coin }}_CHART['datasets'].borderColor = "#000";
         });
 
-        @endif
+        // datasets: [{
+        //     label: "",
+        //     borderColor: "#000",
+        //     pointBorderColor: "#000",
+        //     pointBackgroundColor: "rgba(255, 255, 255, 1)",
+        //     pointHoverBackgroundColor: "#000",
+        //     pointHoverBorderColor: "#000",
+        //     pointBorderWidth: 2,
+        //     pointHoverRadius: 5,
+        //     pointRadius: 5,
+        //     pointHoverBorderWidth: 0,
+        //     fill: false,
+        //     borderWidth: 3,
+
+{{--        @if ($coin == 'RAU')--}}
+{{--        document.addEventListener("DOMContentLoaded", function(event) {--}}
+{{--            {--}}
+
+{{--                var rauChart = document.getElementById('rau_chart')--}}
+{{--                var ctx = rauChart.getContext('2d');--}}
+{{--                new Chart(ctx, {--}}
+{{--                    type: 'line',--}}
+{{--                    data: {--}}
+{{--                        labels: [--}}
+{{--                            "{{ date('d.m.Y', strtotime('-7 days')) }}",--}}
+{{--                            "{{ date('d.m.Y', strtotime('-6 days')) }}",--}}
+{{--                            "{{ date('d.m.Y', strtotime('-5 days')) }}",--}}
+{{--                            "{{ date('d.m.Y', strtotime('-4 days')) }}",--}}
+{{--                            "{{ date('d.m.Y', strtotime('-3 days')) }}",--}}
+{{--                            "{{ date('d.m.Y', strtotime('-2 days')) }}",--}}
+{{--                            "{{ date('d.m.Y', strtotime('-1 days')) }}"--}}
+{{--                        ],--}}
+{{--                        datasets: [{--}}
+{{--                            label: "",--}}
+{{--                            borderColor: "#000",--}}
+{{--                            pointBorderColor: "#000",--}}
+{{--                            pointBackgroundColor: "rgba(255, 255, 255, 1)",--}}
+{{--                            pointHoverBackgroundColor: "#000",--}}
+{{--                            pointHoverBorderColor: "#000",--}}
+{{--                            pointBorderWidth: 2,--}}
+{{--                            pointHoverRadius: 5,--}}
+{{--                            pointRadius: 5,--}}
+{{--                            pointHoverBorderWidth: 0,--}}
+{{--                            fill: false,--}}
+{{--                            borderWidth: 3,--}}
+
+{{--                            // Тут надо вывести 7 чисел--}}
+{{--                            data:--}}
+{{--                                [@php--}}
+{{--                                    $rows = \App\Models\RauHistory::all()->sortByDesc('id')->take(7)->toArray();--}}
+
+{{--                                    $items = [];--}}
+{{--                                    foreach ($rows as $row) {--}}
+{{--                                        $items[] = $row;--}}
+{{--                                    }--}}
+
+{{--                                    for ($i = count($items) -1 ; $i >= count($items) - 7; $i--) {--}}
+{{--                                        if (isset($items[$i]))--}}
+{{--                                            echo "'{$items[$i]['new_price']}',";--}}
+{{--                                    }--}}
+{{--                                @endphp]--}}
+{{--                        }--}}
+{{--                        ]--}}
+{{--                    },--}}
+{{--                    options: {--}}
+{{--                        legend: {--}}
+{{--                            display: false--}}
+{{--                        },--}}
+{{--                        scales: {--}}
+{{--                            yAxes: [{--}}
+{{--                                ticks: {--}}
+{{--                                    display: true--}}
+{{--                                },--}}
+{{--                                gridLines: {--}}
+{{--                                    drawTicks: true,--}}
+{{--                                    display: true,--}}
+{{--                                    drawBorder: true--}}
+{{--                                }--}}
+
+{{--                            }],--}}
+{{--                            xAxes: [{--}}
+{{--                                gridLines: {--}}
+{{--                                    zeroLineColor: "transparent",--}}
+{{--                                    display: false,--}}
+{{--                                    drawBorder: false--}}
+{{--                                },--}}
+{{--                                ticks: {--}}
+{{--                                    display: false--}}
+{{--                                }--}}
+{{--                            }]--}}
+{{--                        }--}}
+{{--                    }--}}
+{{--                });--}}
+{{--            }--}}
+{{--        });--}}
+
+{{--        @endif--}}
     </script>
 @endsection
