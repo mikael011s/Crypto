@@ -16,47 +16,263 @@
 
             <h2 class="page__title">Криптовалюты</h2>
 
-            <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
-                <div class="tradingview-widget-container__widget"></div>
-                <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/currencies/" rel="noopener" target="_blank"><span class="blue-text">Форекс</span></a> от TradingView</div>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-                    {
-                        "colorTheme": "dark",
-                        "dateRange": "12M",
-                        "showChart": false,
-                        "locale": "ru",
-                        "largeChartUrl": "",
-                        "isTransparent": true,
-                        "showSymbolLogo": true,
-                        "showFloatingTooltip": false,
-                        "width": "380",
-                        "height": "465",
-                        "tabs": [
-                        {
-                            "title": "Форекс",
-                            "symbols": [
+            <div class="cards cards--11">
+                <a class="card-coin gradient-light-dark-blue" href="details.html">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme": "dark",
+                                "dateRange": "1M",
+                                "showChart": false,
+                                "locale": "ru",
+                                "largeChartUrl": "",
+                                "isTransparent": true,
+                                "showSymbolLogo": true,
+                                "showFloatingTooltip": false,
+                                "width": "100%",
+                                "height": "63",
+                                "tabs": [
                                 {
-                                    "s": "BINANCE:BTCUSDT"
-                                },
-                                {
-                                    "s": "BINANCE:SOLUSDT"
-                                },
-                                {
-                                    "s": "BINANCE:ETHUSDT"
-                                },
-                                {
-                                    "s": "BYBIT:SANDUSDT"
+                                    "title": "Форекс",
+                                    "symbols": [
+                                        {
+                                            "s": "BINANCE:BTCUSDT"
+                                        }
+                                    ],
+                                    "originalTitle": "Forex"
                                 }
-                            ],
-                            "originalTitle": "Forex"
-                        }
-                    ]
-                    }
-                </script>
+                            ]
+                            }
+                        </script>
+                    </div>
+                </a>
+                <a class="card-coin gradient-light-dark-blue" href="details.html">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme": "dark",
+                                "dateRange": "1M",
+                                "showChart": false,
+                                "locale": "ru",
+                                "largeChartUrl": "",
+                                "isTransparent": true,
+                                "showSymbolLogo": true,
+                                "showFloatingTooltip": false,
+                                "width": "100%",
+                                "height": "63",
+                                "tabs": [
+                                {
+                                    "title": "Форекс",
+                                    "symbols": [
+                                        {
+                                            "s": "BINANCE:ETHUSDT"
+                                        }
+                                    ],
+                                    "originalTitle": "Forex"
+                                }
+                            ]
+                            }
+                        </script>
+                    </div>
+                </a>
+                <a class="card-coin gradient-light-dark-blue" href="details.html">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme": "dark",
+                                "dateRange": "1M",
+                                "showChart": false,
+                                "locale": "ru",
+                                "largeChartUrl": "",
+                                "isTransparent": true,
+                                "showSymbolLogo": true,
+                                "showFloatingTooltip": false,
+                                "width": "100%",
+                                "height": "63",
+                                "tabs": [
+                                {
+                                    "title": "Форекс",
+                                    "symbols": [
+                                        {
+                                            "s": "BINANCE:SOLUSDT"
+                                        }
+                                    ],
+                                    "originalTitle": "Forex"
+                                }
+                            ]
+                            }
+                        </script>
+                    </div>
+                </a>
+                <a class="card-coin gradient-light-dark-blue" href="details.html">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme": "dark",
+                                "dateRange": "1M",
+                                "showChart": false,
+                                "locale": "ru",
+                                "largeChartUrl": "",
+                                "isTransparent": true,
+                                "showSymbolLogo": true,
+                                "showFloatingTooltip": false,
+                                "width": "100%",
+                                "height": "63",
+                                "tabs": [
+                                {
+                                    "title": "Форекс",
+                                    "symbols": [
+                                        {
+                                            "s": "BINANCE:DOGEUSDT"
+                                        }
+                                    ],
+                                    "originalTitle": "Forex"
+                                }
+                            ]
+                            }
+                        </script>
+                    </div>
+                </a>
+                <a class="card-coin gradient-light-dark-blue" href="details.html">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme": "dark",
+                                "dateRange": "1M",
+                                "showChart": false,
+                                "locale": "ru",
+                                "largeChartUrl": "",
+                                "isTransparent": true,
+                                "showSymbolLogo": true,
+                                "showFloatingTooltip": false,
+                                "width": "100%",
+                                "height": "63",
+                                "tabs": [
+                                {
+                                    "title": "Форекс",
+                                    "symbols": [
+                                        {
+                                            "s": "BINANCE:XRPUSDT"
+                                        }
+                                    ],
+                                    "originalTitle": "Forex"
+                                }
+                            ]
+                            }
+                        </script>
+                    </div>
+                </a>
+                <a class="card-coin gradient-light-dark-blue" href="details.html">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme": "dark",
+                                "dateRange": "1M",
+                                "showChart": false,
+                                "locale": "ru",
+                                "largeChartUrl": "",
+                                "isTransparent": true,
+                                "showSymbolLogo": true,
+                                "showFloatingTooltip": false,
+                                "width": "100%",
+                                "height": "63",
+                                "tabs": [
+                                {
+                                    "title": "Форекс",
+                                    "symbols": [
+                                        {
+                                            "s": "BINANCE:LTCUSDT"
+                                        }
+                                    ],
+                                    "originalTitle": "Forex"
+                                }
+                            ]
+                            }
+                        </script>
+                    </div>
+                </a>
+                <a class="card-coin gradient-light-dark-blue" href="details.html">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme": "dark",
+                                "dateRange": "1M",
+                                "showChart": false,
+                                "locale": "ru",
+                                "largeChartUrl": "",
+                                "isTransparent": true,
+                                "showSymbolLogo": true,
+                                "showFloatingTooltip": false,
+                                "width": "100%",
+                                "height": "63",
+                                "tabs": [
+                                {
+                                    "title": "Форекс",
+                                    "symbols": [
+                                        {
+                                            "s": "BINANCE:EOSUSDT"
+                                        }
+                                    ],
+                                    "originalTitle": "Forex"
+                                }
+                            ]
+                            }
+                        </script>
+                    </div>
+                </a>
+                <a class="card-coin gradient-light-dark-blue" href="details.html">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                            {
+                                "colorTheme": "dark",
+                                "dateRange": "1M",
+                                "showChart": false,
+                                "locale": "ru",
+                                "largeChartUrl": "",
+                                "isTransparent": true,
+                                "showSymbolLogo": true,
+                                "showFloatingTooltip": false,
+                                "width": "100%",
+                                "height": "63",
+                                "tabs": [
+                                {
+                                    "title": "Форекс",
+                                    "symbols": [
+                                        {
+                                            "s": "BINANCE:XLMUSDT"
+                                        }
+                                    ],
+                                    "originalTitle": "Forex"
+                                }
+                            ]
+                            }
+                        </script>
+                    </div>
+                </a>
+                {{--                    <a class="card-coin gradient-light-dark-blue" href="details.html">--}}
+                {{--                        <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/elrond.png" alt="" title=""/><span>Elrond <b>EGLD</b></span></div>--}}
+                {{--                        <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>--}}
+                {{--                        <div class="card-coin__price"><strong>$320</strong><span class="plus">+5%</span></div>--}}
+                {{--                    </a>--}}
+                {{--                    <a class="card-coin gradient-light-dark-blue" href="details.html">--}}
+                {{--                        <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/sandbox.png" alt="" title=""/><span>The Sandbox <b>SAND</b></span></div>--}}
+                {{--                        <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>--}}
+                {{--                        <div class="card-coin__price"><strong>$6,5</strong><span class="plus">+5%</span></div>--}}
+                {{--                    </a>--}}
+                {{--                    <a class="card-coin gradient-light-dark-blue" href="details.html">--}}
+                {{--                        <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/solana.png" alt="" title=""/><span>Solana <b>SOL</b></span></div>--}}
+                {{--                        <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>--}}
+                {{--                        <div class="card-coin__price"><strong>$140</strong><span class="plus">+4%</span></div>--}}
+                {{--                    </a>--}}
             </div>
-            <!-- TradingView Widget END -->
-
         </div>
     </div>
 @endsection
