@@ -118,16 +118,12 @@
                         // Тут надо вывести 7 чисел
                         data:
                             [@php
-                                $rows = \App\Models\Rate::where('coin', 'BTC_RUB')->take(7)->get()->toArray();
+                                $rows = \App\Models\Rate::where('coin', 'BTC_RUB')->get()->toArray();
 
-                                $items = [];
-                                foreach ($rows as $row) {
-                                    $items[] = $row;
-                                }
-
-                                for ($i = count($items) -1 ; $i >= count($items) - 7; $i--) {
-                                    if (isset($items[$i]))
-                                        echo "'{$items[$i]['rate']}',";
+                                $count = 1;
+                                while ($count != 8) {
+                                    echo "'{$rows[count($rows) - $count]['rate']}',";
+                                    $count = $count + 1;
                                 }
                             @endphp]
                     }
@@ -200,16 +196,12 @@
                         // Тут надо вывести 7 чисел
                         data:
                             [@php
-                                $rows = \App\Models\Rate::where('coin', 'ETH_RUB')->take(7)->get()->toArray();
+                                $rows = \App\Models\Rate::where('coin', 'ETH_RUB')->get()->toArray();
 
-                                $items = [];
-                                foreach ($rows as $row) {
-                                    $items[] = $row;
-                                }
-
-                                for ($i = count($items) -1 ; $i >= count($items) - 7; $i--) {
-                                    if (isset($items[$i]))
-                                        echo "'{$items[$i]['rate']}',";
+                                $count = 1;
+                                while ($count != 8) {
+                                    echo "'{$rows[count($rows) - $count]['rate']}',";
+                                    $count = $count + 1;
                                 }
                             @endphp]
                     }
