@@ -59,33 +59,48 @@
             </div>
 
             <div class="page-inner page-inner--with-bottom-button">
-                <h2 class="page__title">О RAu COIN</h2>
+                @if($coin == 'RAU')
+                    <h2 class="page__title">О RAu COIN</h2>
 
-                <p class="welcome">
-                    RAu COIN - цифровая валюта созданная с августе 2022 года инвестиционной компанией MIKE GROUP. Уникальность валюты в регулировании курса за счёт качественного инвестиционного портфеля компании MIKE GROUP
-                </p>
-                <div class="cards cards--11">
-                    <div class="card-coin gradient-light-dark-blue">
-                        <div class="card-coin__logo"><span>Общая эмиссия: <b>Сумма эмиссии в рублях на старте</b></span></div>
-                        <div class="card-coin__price"><strong> 7 000 000 000 ₽</strong></div>
+                    <p class="welcome">
+                        RAu COIN - цифровая валюта созданная а августе 2022 года инвестиционной компанией MIKE GROUP. Уникальность валюты в регулировании курса за счёт качественного инвестиционного портфеля компании MIKE GROUP
+                    </p>
+
+                    <div class="cards cards--11">
+                        <div class="card-coin gradient-light-dark-blue">
+                            <div class="card-coin__logo"><span>Общая эмиссия: <b>Сумма эмиссии в рублях на старте</b></span></div>
+                            <div class="card-coin__price"><strong> 7 000 000 000 ₽</strong></div>
+                        </div>
+                        <div class="card-coin gradient-light-dark-blue">
+                            <div class="card-coin__logo"><span>Объем: <b>24 часа </b></span></div>
+                            <div class="card-coin__price"><strong>9 456 780 ₽</strong></div>
+                        </div>
+                        <div class="card-coin gradient-light-dark-blue">
+                            <div class="card-coin__logo"><span>Оборот валюты: <b>Количество монет в обращении</b></span></div>
+                            <div class="card-coin__price"><strong>135096,8571 RAu</strong></div>
+                        </div>
                     </div>
                     <div class="card-coin gradient-light-dark-blue">
-                        <div class="card-coin__logo"><span>Объем: <b>24 часа </b></span></div>
-                        <div class="card-coin__price"><strong>9 456 780 ₽</strong></div>
+                        <div class="card-coin__logo"><span>Максимальный запас</span></div>
+                        <div class="card-coin__price"><strong>{{ number_format(100000000 * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }} ₽</strong></div>
                     </div>
                     <div class="card-coin gradient-light-dark-blue">
-                        <div class="card-coin__logo"><span>Оборот валюты: <b>Количество монет в обращении</b></span></div>
-                        <div class="card-coin__price"><strong>135096,8571 RAu</strong></div>
+                        <div class="card-coin__logo"><span>Общее предложение</span></div>
+                        <div class="card-coin__price"><strong>{{ number_format((100000000 - \App\Models\User::all()->sum('balance_rau')) * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }} ₽</strong></div>
                     </div>
-                </div>
-                <div class="card-coin gradient-light-dark-blue">
-                    <div class="card-coin__logo"><span>Максимальный запас</span></div>
-                    <div class="card-coin__price"><strong>{{ number_format(100000000 * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }} ₽</strong></div>
-                </div>
-                <div class="card-coin gradient-light-dark-blue">
-                    <div class="card-coin__logo"><span>Общее предложение</span></div>
-                    <div class="card-coin__price"><strong>{{ number_format((100000000 - \App\Models\User::all()->sum('balance_rau')) * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }} ₽</strong></div>
-                </div>
+                @elseif($coin == 'BTC')
+                    <h2 class="page__title">О Bitcoin</h2>
+
+                    <p class="welcome">
+                        Биткоин — самая торгуемая в мире криптовалюта, представляющая собой значительную часть криптовалютного рынка. Это первая цифровая монета, которая остается самой известной в мире криптовалютой.
+                    </p>
+                @elseif($coin == 'ETH')
+                    <h2 class="page__title">Об Etherium</h2>
+
+                    <p class="welcome">
+                        Эфириум — вторая по известности в мире блокчейн-сеть — представляет собой платформу для создания децентрализованных приложений на основе технологии блокчейн и смарт-контрактов
+                    </p>
+                @endif
             </div>
         </div>
     </div>

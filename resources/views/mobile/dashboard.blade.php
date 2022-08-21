@@ -104,8 +104,12 @@
 
                                         <div class="caption__chart"><canvas id="btc_chart" width="100%" height="60"></canvas></div>
                                         <br>
-                                        <div class="caption__info"><b>2.5 BTC</b> <b>$41,904</b></div>
-                                        <div class="caption__info"><strong>$104,750</strong> <span class="plus">+12%</span></div>
+                                        <div class="caption__info"><b>1 BTC</b> - <b>
+                                                @php
+                                                    $rates = \App\Models\Rate::where('coin', 'BTC_RUB')->get();
+                                                    echo $rates[count($rates) - 1]['rate'];
+                                                @endphp₽
+                                            </b></div>
                                     </div>
                                 </div>
                             </a>
@@ -120,8 +124,12 @@
 
                                         <div class="caption__chart"><canvas id="eth_chart" width="100%" height="60"></canvas></div>
                                         <br>
-                                        <div class="caption__info"><b>2.5 BTC</b> <b>$41,904</b></div>
-                                        <div class="caption__info"><strong>$104,750</strong> <span class="plus">+12%</span></div>
+                                        <div class="caption__info"><b>1 ETH</b> - <b>
+                                                @php
+                                                    $rates = \App\Models\Rate::where('coin', 'ETH_RUB')->get();
+                                                    echo $rates[count($rates) - 1]['rate'];
+                                                @endphp₽
+                                            </b></div>
                                     </div>
                                 </div>
                             </a>
@@ -142,28 +150,38 @@
                     <a class="card-coin gradient-light-dark-blue" href="details.html">
                         <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/bitcoin.png" alt="" title=""/><span>Bitcoin <b>BTC</b></span></div>
                         <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>
-                        <div class="card-coin__price"><strong>$41,827.71</strong><span class="plus">+10%</span></div>
+                        <div class="card-coin__price"><strong>
+                                @php
+                                    $rates = \App\Models\Rate::where('coin', 'BTC_RUB')->get();
+                                    echo $rates[count($rates) - 1]['rate'];
+                                @endphp
+                            </strong>₽</div>
                     </a>
                     <a class="card-coin gradient-light-dark-blue" href="details.html">
                         <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/ethereum.png" alt="" title=""/><span>Ethereum <b>ETH</b></span></div>
                         <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>
-                        <div class="card-coin__price"><strong>$3,250.30</strong><span class="plus">+8%</span></div>
+                        <div class="card-coin__price"><strong>
+                                @php
+                                    $rates = \App\Models\Rate::where('coin', 'ETH_RUB')->get();
+                                    echo $rates[count($rates) - 1]['rate'];
+                                @endphp
+                            </strong>₽</div>
                     </a>
-                    <a class="card-coin gradient-light-dark-blue" href="details.html">
-                        <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/elrond.png" alt="" title=""/><span>Elrond <b>EGLD</b></span></div>
-                        <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>
-                        <div class="card-coin__price"><strong>$320</strong><span class="plus">+5%</span></div>
-                    </a>
-                    <a class="card-coin gradient-light-dark-blue" href="details.html">
-                        <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/sandbox.png" alt="" title=""/><span>The Sandbox <b>SAND</b></span></div>
-                        <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>
-                        <div class="card-coin__price"><strong>$6,5</strong><span class="plus">+5%</span></div>
-                    </a>
-                    <a class="card-coin gradient-light-dark-blue" href="details.html">
-                        <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/solana.png" alt="" title=""/><span>Solana <b>SOL</b></span></div>
-                        <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>
-                        <div class="card-coin__price"><strong>$140</strong><span class="plus">+4%</span></div>
-                    </a>
+{{--                    <a class="card-coin gradient-light-dark-blue" href="details.html">--}}
+{{--                        <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/elrond.png" alt="" title=""/><span>Elrond <b>EGLD</b></span></div>--}}
+{{--                        <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>--}}
+{{--                        <div class="card-coin__price"><strong>$320</strong><span class="plus">+5%</span></div>--}}
+{{--                    </a>--}}
+{{--                    <a class="card-coin gradient-light-dark-blue" href="details.html">--}}
+{{--                        <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/sandbox.png" alt="" title=""/><span>The Sandbox <b>SAND</b></span></div>--}}
+{{--                        <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>--}}
+{{--                        <div class="card-coin__price"><strong>$6,5</strong><span class="plus">+5%</span></div>--}}
+{{--                    </a>--}}
+{{--                    <a class="card-coin gradient-light-dark-blue" href="details.html">--}}
+{{--                        <div class="card-coin__logo"><img src="/template-assets/cryptex/images/logos/solana.png" alt="" title=""/><span>Solana <b>SOL</b></span></div>--}}
+{{--                        <div class="card-coin__chart"><canvas class="chartup" width="50" height="30"></canvas></div>--}}
+{{--                        <div class="card-coin__price"><strong>$140</strong><span class="plus">+4%</span></div>--}}
+{{--                    </a>--}}
                 </div>
             </div>
         </div>
