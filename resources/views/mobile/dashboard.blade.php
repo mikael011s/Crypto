@@ -160,20 +160,20 @@
                             "isTransparent": true,
                             "showSymbolLogo": true,
                             "showFloatingTooltip": false,
-                            "width": "380",
+                            "width": "100%",
                             "height": "465",
                             "tabs": [
                             {
                                 "title": "Форекс",
                                 "symbols": [
                                     {
-                                        "s": "BINANCE:BTCRUB"
+                                        "s": "BINANCE:BTCUSDT"
                                     },
                                     {
-                                        "s": "BINANCE:SOLRUB"
+                                        "s": "BINANCE:SOLUSDT"
                                     },
                                     {
-                                        "s": "BINANCE:ETHRUB"
+                                        "s": "BINANCE:ETHUSDT"
                                     },
                                     {
                                         "s": "BYBIT:SANDUSDT"
