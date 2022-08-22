@@ -29,11 +29,11 @@
                                 {
                                     "symbols": [
                                         [
-                                            "BINANCE:BTCRUB|1M"
+                                            "BINANCE:BTCUSDT|1M"
                                         ]
                                     ],
-                                    "chartOnly": false,
-                                    "width": "414",
+                                    "chartOnly": true,
+                                    "width": "100%",
                                     "height": "333",
                                     "locale": "ru",
                                     "colorTheme": "dark",
@@ -58,17 +58,44 @@
                     </div>
                     <!-- TradingView Widget END -->
                 @elseif($coin == 'ETH')
-                    <div class="account-info__total" style="margin-top: -2px;">
-                        @php
-                            $rates = \App\Models\Rate::where('coin', $coin . '_RUB')->get();
-                            echo $rates[count($rates) - 1]['rate'];
-                        @endphp
-                        <span style="font-size: 15px;font-weight: 300;position: absolute;margin-top: 20px;margin-left: 2px;">₽</span>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_1613d"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/BTCRUB/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">Курс BTCRUB</span></a> от TradingView</div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                            new TradingView.MediumWidget(
+                                {
+                                    "symbols": [
+                                        [
+                                            "BINANCE:ETHUSDT|1M"
+                                        ]
+                                    ],
+                                    "chartOnly": true,
+                                    "width": "100%",
+                                    "height": "333",
+                                    "locale": "ru",
+                                    "colorTheme": "dark",
+                                    "autosize": false,
+                                    "showVolume": false,
+                                    "hideDateRanges": false,
+                                    "scalePosition": "left",
+                                    "scaleMode": "Normal",
+                                    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                    "noTimeScale": false,
+                                    "valuesTracking": "1",
+                                    "chartType": "line",
+                                    "fontColor": "rgba(0, 0, 0, 1)",
+                                    "gridLineColor": "rgba(0, 0, 0, 0.3)",
+                                    "backgroundColor": "rgba(19, 23, 34, 0)",
+                                    "color": "rgba(0, 0, 0, 1)",
+                                    "lineWidth": 2,
+                                    "container_id": "tradingview_1613d"
+                                }
+                            );
+                        </script>
                     </div>
-                    <div class="account-info__stats">
-                        <span class="plus">+{{ \App\Models\RauHistory::all()->sortByDesc('id')->first()->up_percent }}%</span>
-                    </div>
-                    <div class="account-info__chart"><canvas id="eth_chart" width="100%" height="60"></canvas></div>
+                    <!-- TradingView Widget END -->
                 @endif
 {{--                <div class="account-selectors">--}}
 {{--                    <span>1Д</span>--}}

@@ -102,14 +102,46 @@
                                             <h3>Динамика курса Bitcoin (неделя)</h3>
                                         </div>
 
-                                        <div class="caption__chart"><canvas id="btc_chart" width="100%" height="60"></canvas></div>
-                                        <br>
-                                        <div class="caption__info"><b>1 BTC</b> - <b>
-                                                @php
-                                                    $rates = \App\Models\Rate::where('coin', 'BTC_RUB')->get();
-                                                    echo $rates[count($rates) - 1]['rate'];
-                                                @endphp₽
-                                            </b></div>
+                                        <!-- TradingView Widget BEGIN -->
+                                        <div class="tradingview-widget-container">
+                                            <div id="tradingview_64e07"></div>
+                                            <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/BTCRUB/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">График BTCRUB</span></a> от TradingView</div>
+                                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                            <script type="text/javascript">
+                                                new TradingView.MediumWidget(
+                                                    {
+                                                        "symbols": [
+                                                            [
+                                                                "BINANCE:BTCRUB|7D"
+                                                            ]
+                                                        ],
+                                                        "chartOnly": true,
+                                                        "width": "313",
+                                                        "height": "187",
+                                                        "locale": "ru",
+                                                        "colorTheme": "dark",
+                                                        "autosize": false,
+                                                        "showVolume": false,
+                                                        "hideDateRanges": true,
+                                                        "scalePosition": "left",
+                                                        "scaleMode": "Normal",
+                                                        "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                                        "noTimeScale": false,
+                                                        "valuesTracking": "1",
+                                                        "chartType": "area",
+                                                        "fontColor": "rgba(182, 182, 182, 1)",
+                                                        "gridLineColor": "rgba(0, 0, 0, 0.3)",
+                                                        "backgroundColor": "rgba(19, 23, 34, 0)",
+                                                        "lineWidth": 3,
+                                                        "lineColor": "rgba(255, 235, 59, 1)",
+                                                        "topColor": "rgba(255, 235, 59, 0.14)",
+                                                        "bottomColor": "rgba(41, 98, 255, 0)",
+                                                        "container_id": "tradingview_64e07"
+                                                    }
+                                                );
+                                            </script>
+                                        </div>
+                                        <!-- TradingView Widget END -->
                                     </div>
                                 </div>
                             </a>
@@ -122,14 +154,46 @@
                                             <h3>Динамика курса Ethereum (неделя)</h3>
                                         </div>
 
-                                        <div class="caption__chart"><canvas id="eth_chart" width="100%" height="60"></canvas></div>
-                                        <br>
-                                        <div class="caption__info"><b>1 ETH</b> - <b>
-                                                @php
-                                                    $rates = \App\Models\Rate::where('coin', 'ETH_RUB')->get();
-                                                    echo $rates[count($rates) - 1]['rate'];
-                                                @endphp₽
-                                            </b></div>
+                                        <!-- TradingView Widget BEGIN -->
+                                        <div class="tradingview-widget-container">
+                                            <div id="tradingview_286e0"></div>
+                                            <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/ETHRUB/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">Курс ETHRUB</span></a> от TradingView</div>
+                                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                            <script type="text/javascript">
+                                                new TradingView.MediumWidget(
+                                                    {
+                                                        "symbols": [
+                                                            [
+                                                                "BINANCE:ETHRUB|12M"
+                                                            ]
+                                                        ],
+                                                        "chartOnly": true,
+                                                        "width": "313",
+                                                        "height": "187",
+                                                        "locale": "ru",
+                                                        "colorTheme": "dark",
+                                                        "autosize": false,
+                                                        "showVolume": false,
+                                                        "hideDateRanges": true,
+                                                        "scalePosition": "left",
+                                                        "scaleMode": "Normal",
+                                                        "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                                        "noTimeScale": false,
+                                                        "valuesTracking": "1",
+                                                        "chartType": "area",
+                                                        "fontColor": "rgba(182, 182, 182, 1)",
+                                                        "gridLineColor": "rgba(0, 0, 0, 0.3)",
+                                                        "backgroundColor": "rgba(19, 23, 34, 0)",
+                                                        "lineWidth": 3,
+                                                        "lineColor": "rgba(255, 235, 59, 1)",
+                                                        "topColor": "rgba(255, 235, 59, 0.14)",
+                                                        "bottomColor": "rgba(41, 98, 255, 0)",
+                                                        "container_id": "tradingview_286e0"
+                                                    }
+                                                );
+                                            </script>
+                                        </div>
+                                        <!-- TradingView Widget END -->
                                     </div>
                                 </div>
                             </a>
