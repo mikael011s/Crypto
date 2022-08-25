@@ -116,7 +116,7 @@
                                                             ]
                                                         ],
                                                         "chartOnly": true,
-                                                        "width": "313",
+                                                        "width": "100%",
                                                         "height": "187",
                                                         "locale": "ru",
                                                         "colorTheme": "dark",
@@ -168,7 +168,7 @@
                                                             ]
                                                         ],
                                                         "chartOnly": true,
-                                                        "width": "313",
+                                                        "width": "100%",
                                                         "height": "187",
                                                         "locale": "ru",
                                                         "colorTheme": "dark",
@@ -210,7 +210,7 @@
                     </div>
                 </div>
 
-                <div class="cards cards--11">
+                <div class="cards cryptos-cards cards--11">
                     <a class="card-coin gradient-light-dark-blue" href="details.html">
                         <!-- TradingView Widget BEGIN -->
                         <div class="tradingview-widget-container">

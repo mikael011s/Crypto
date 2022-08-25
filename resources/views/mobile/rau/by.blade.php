@@ -40,6 +40,25 @@
                 </div>
                 <div class="fieldset">
                     <div class="form">
+                        <h3 class="mb-0 fw-bolder">Выберите тариф</h3>
+                        <div class="card-selector">
+                            <input type="radio" name="excard" id="c1" value="1" /><label for="c1">30 дней<span></span></label>
+                        </div>
+                        <div class="card-selector">
+                            <input type="radio" name="excard" id="c2" value="2" /><label for="c2">90 дней<span></span></label>
+                        </div>
+                        <div class="card-selector">
+                            <input type="radio" name="excard" id="c3" value="3" /><label for="c3">180 дней<span></span></label>
+                        </div>
+                        <div class="card-selector mb-0">
+                            <input type="radio" name="excard" id="c4" value="4" /><label for="c4">12 месяцев <span></span></label>
+                        </div>
+                        <br><br>
+{{--                        <div class="" id="show-paypal-info">Вы будете перенаправлены на страницу платёжной системы.</div>--}}
+                    </div>
+                </div>
+                <div class="fieldset">
+                    <div class="form">
                         <h3 class="mb-0 fw-bolder">Выберите платёжную систему</h3>
                         <div class="card-selector">
                             <input type="radio" name="excard" id="c1" value="1" /><label for="c1">Payeer <span></span></label>

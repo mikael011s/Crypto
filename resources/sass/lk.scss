@@ -110,7 +110,24 @@ body.with-panel-left-reveal .panel--left {
     margin-top: 10px;
 }
 
-.card-coin {
-    width: 100%;
-    padding: 10px 0;
+.cryptos-cards {
+    .card-coin {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.bottom-navigation--gradient {
+    background: linear-gradient(180deg, rgba(41, 31, 87, 0) 0%, rgba(41, 31, 87, 0) 30%, #151553 30%, #010120 100%);
+}
+
+
+@media (max-width: 360px) {
+    .card-coin__logo span b {
+        font-size: 1rem;
+    }
+
+    .card-coin__price strong {
+        font-size: 13px;
+    }
 }

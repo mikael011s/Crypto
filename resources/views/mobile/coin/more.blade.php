@@ -120,7 +120,7 @@
                         RAu COIN - цифровая валюта созданная а августе 2022 года инвестиционной компанией MIKE GROUP. Уникальность валюты в регулировании курса за счёт качественного инвестиционного портфеля компании MIKE GROUP
                     </p>
 
-                    <div class="cards cards--11">
+                    <div class="cards cards--11 coin-info">
                         <div class="card-coin gradient-light-dark-blue">
                             <div class="card-coin__logo"><span>Общая эмиссия: <b>Сумма эмиссии в рублях на старте</b></span></div>
                             <div class="card-coin__price"><strong> 7 000 000 000 ₽</strong></div>
@@ -159,11 +159,7 @@
         </div>
     </div>
 
-    @include('mobile.charts.scripts')
     <script>
-        $(document).ready(function () {
-            {{ $coin }}_CHART['datasets'].borderColor = "#000";
-        });
 
         // datasets: [{
         //     label: "",
@@ -179,89 +175,89 @@
         //     fill: false,
         //     borderWidth: 3,
 
-{{--        @if ($coin == 'RAU')--}}
-{{--        document.addEventListener("DOMContentLoaded", function(event) {--}}
-{{--            {--}}
+        @if ($coin == 'RAU')
+        document.addEventListener("DOMContentLoaded", function(event) {
+            {
 
-{{--                var rauChart = document.getElementById('rau_chart')--}}
-{{--                var ctx = rauChart.getContext('2d');--}}
-{{--                new Chart(ctx, {--}}
-{{--                    type: 'line',--}}
-{{--                    data: {--}}
-{{--                        labels: [--}}
-{{--                            "{{ date('d.m.Y', strtotime('-7 days')) }}",--}}
-{{--                            "{{ date('d.m.Y', strtotime('-6 days')) }}",--}}
-{{--                            "{{ date('d.m.Y', strtotime('-5 days')) }}",--}}
-{{--                            "{{ date('d.m.Y', strtotime('-4 days')) }}",--}}
-{{--                            "{{ date('d.m.Y', strtotime('-3 days')) }}",--}}
-{{--                            "{{ date('d.m.Y', strtotime('-2 days')) }}",--}}
-{{--                            "{{ date('d.m.Y', strtotime('-1 days')) }}"--}}
-{{--                        ],--}}
-{{--                        datasets: [{--}}
-{{--                            label: "",--}}
-{{--                            borderColor: "#000",--}}
-{{--                            pointBorderColor: "#000",--}}
-{{--                            pointBackgroundColor: "rgba(255, 255, 255, 1)",--}}
-{{--                            pointHoverBackgroundColor: "#000",--}}
-{{--                            pointHoverBorderColor: "#000",--}}
-{{--                            pointBorderWidth: 2,--}}
-{{--                            pointHoverRadius: 5,--}}
-{{--                            pointRadius: 5,--}}
-{{--                            pointHoverBorderWidth: 0,--}}
-{{--                            fill: false,--}}
-{{--                            borderWidth: 3,--}}
+                var rauChart = document.getElementById('rau_chart')
+                var ctx = rauChart.getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: [
+                            "{{ date('d.m.Y', strtotime('-7 days')) }}",
+                            "{{ date('d.m.Y', strtotime('-6 days')) }}",
+                            "{{ date('d.m.Y', strtotime('-5 days')) }}",
+                            "{{ date('d.m.Y', strtotime('-4 days')) }}",
+                            "{{ date('d.m.Y', strtotime('-3 days')) }}",
+                            "{{ date('d.m.Y', strtotime('-2 days')) }}",
+                            "{{ date('d.m.Y', strtotime('-1 days')) }}"
+                        ],
+                        datasets: [{
+                            label: "",
+                            borderColor: "#000",
+                            pointBorderColor: "#000",
+                            pointBackgroundColor: "rgba(255, 255, 255, 1)",
+                            pointHoverBackgroundColor: "#000",
+                            pointHoverBorderColor: "#000",
+                            pointBorderWidth: 2,
+                            pointHoverRadius: 5,
+                            pointRadius: 5,
+                            pointHoverBorderWidth: 0,
+                            fill: false,
+                            borderWidth: 3,
 
-{{--                            // Тут надо вывести 7 чисел--}}
-{{--                            data:--}}
-{{--                                [@php--}}
-{{--                                    $rows = \App\Models\RauHistory::all()->sortByDesc('id')->take(7)->toArray();--}}
+                            // Тут надо вывести 7 чисел
+                            data:
+                                [@php
+                                    $rows = \App\Models\RauHistory::all()->sortByDesc('id')->take(7)->toArray();
 
-{{--                                    $items = [];--}}
-{{--                                    foreach ($rows as $row) {--}}
-{{--                                        $items[] = $row;--}}
-{{--                                    }--}}
+                                    $items = [];
+                                    foreach ($rows as $row) {
+                                        $items[] = $row;
+                                    }
 
-{{--                                    for ($i = count($items) -1 ; $i >= count($items) - 7; $i--) {--}}
-{{--                                        if (isset($items[$i]))--}}
-{{--                                            echo "'{$items[$i]['new_price']}',";--}}
-{{--                                    }--}}
-{{--                                @endphp]--}}
-{{--                        }--}}
-{{--                        ]--}}
-{{--                    },--}}
-{{--                    options: {--}}
-{{--                        legend: {--}}
-{{--                            display: false--}}
-{{--                        },--}}
-{{--                        scales: {--}}
-{{--                            yAxes: [{--}}
-{{--                                ticks: {--}}
-{{--                                    display: true--}}
-{{--                                },--}}
-{{--                                gridLines: {--}}
-{{--                                    drawTicks: true,--}}
-{{--                                    display: true,--}}
-{{--                                    drawBorder: true--}}
-{{--                                }--}}
+                                    for ($i = count($items) -1 ; $i >= count($items) - 7; $i--) {
+                                        if (isset($items[$i]))
+                                            echo "'{$items[$i]['new_price']}',";
+                                    }
+                                @endphp]
+                        }
+                        ]
+                    },
+                    options: {
+                        legend: {
+                            display: false
+                        },
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    display: true
+                                },
+                                gridLines: {
+                                    drawTicks: true,
+                                    display: true,
+                                    drawBorder: true
+                                }
 
-{{--                            }],--}}
-{{--                            xAxes: [{--}}
-{{--                                gridLines: {--}}
-{{--                                    zeroLineColor: "transparent",--}}
-{{--                                    display: false,--}}
-{{--                                    drawBorder: false--}}
-{{--                                },--}}
-{{--                                ticks: {--}}
-{{--                                    display: false--}}
-{{--                                }--}}
-{{--                            }]--}}
-{{--                        }--}}
-{{--                    }--}}
-{{--                });--}}
-{{--            }--}}
-{{--        });--}}
+                            }],
+                            xAxes: [{
+                                gridLines: {
+                                    zeroLineColor: "transparent",
+                                    display: false,
+                                    drawBorder: false
+                                },
+                                ticks: {
+                                    display: false
+                                }
+                            }]
+                        }
+                    }
+                });
+            }
+        });
 
-{{--        @endif--}}
+        @endif
     </script>
 
     <style>
