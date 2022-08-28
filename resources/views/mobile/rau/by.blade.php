@@ -18,7 +18,7 @@
                         <h3 class="mb-0 fw-bolder">Покупаю на</h3>
                         <div class="form__row d-flex align-items-center justify-space">
                             <input type="text" name="Text" value="" class="form__input form__input--23" placeholder="" oninput="editRub()" id="rub_input" />
-                            <div class="form__coin-icon"><img src="{{ asset('images/ruble.png') }}" alt="" title=""/><span>Руб.</span></div>
+                            <div class="form__coin-icon"><img src="{{ asset('ima ges/ruble.png') }}" alt="" title=""/><span>Руб.</span></div>
                         </div>
                     </div>
                 </div>

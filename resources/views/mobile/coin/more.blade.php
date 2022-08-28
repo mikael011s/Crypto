@@ -122,7 +122,7 @@
 
                     <div class="cards cards--11 coin-info">
                         <div class="card-coin gradient-light-dark-blue">
-                            <div class="card-coin__logo"><span>Общая эмиссия: <b>Сумма эмиссии в рублях на старте</b></span></div>
+                            <div class="card-coin__logo"><span>Общая эмиссия: <b>Стартовая эмиссия</b></span></div>
                             <div class="card-coin__price"><strong> 7 000 000 000 ₽</strong></div>
                         </div>
                         <div class="card-coin gradient-light-dark-blue">
@@ -139,8 +139,8 @@
                         <div class="card-coin__price"><strong>{{ number_format(100000000 * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }} ₽</strong></div>
                     </div>
                     <div class="card-coin gradient-light-dark-blue">
-                        <div class="card-coin__logo"><span>Общее предложение</span></div>
-                        <div class="card-coin__price"><strong>{{ number_format((100000000 - \App\Models\User::all()->sum('balance_rau')) * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }} ₽</strong></div>
+                        <div class="card-coin__logo"><span>Общее предложение</span></div> <!-- \App\Models\User::all()->sum('balance_rau') -->
+                        <div class="card-coin__price"><strong>{{ number_format((100000000 * \App\Models\Setting::where('param', 'rau_price')->first()->value) - 9456780, 0, ',', ' ') }} ₽</strong></div>
                     </div>
                 @elseif($coin == 'BTC')
                     <h2 class="page__title">О Bitcoin</h2>
