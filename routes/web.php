@@ -52,6 +52,8 @@ Route::prefix('mobile')->group(function () {
         Route::view('profile', 'mobile.rau.swap')->name('m-profile');
 
         Route::get('coin/{coin}', 'App\Http\Controllers\CoinController@viewCoin')->name('coin-more');
+
+        Route::post('payment/init', 'App\Http\Controllers\PaymentController@initPay')->name('payment.init');
     });
 });
 

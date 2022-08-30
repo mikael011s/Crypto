@@ -12,12 +12,13 @@
         <!-- PAGE CONTENT -->
         <div class="page__content page__content--with-header page__content--with-bottom-nav">
             <h2 class="page__title">Купить RAu</h2>
-            <form id="Form" method="post" action="checkout.html">
+            <form id="payment_form" method="post">
+                @csrf
                 <div class="fieldset">
                     <div class="form">
                         <h3 class="mb-0 fw-bolder">Покупаю на</h3>
                         <div class="form__row d-flex align-items-center justify-space">
-                            <input type="text" name="Text" value="" class="form__input form__input--23" placeholder="" oninput="editRub()" id="rub_input" />
+                            <input type="text" name="rau-col" value="" class="form__input form__input--23" placeholder="" oninput="editRub()" id="rub_input" />
                             <div class="form__coin-icon"><img src="{{ asset('ima ges/ruble.png') }}" alt="" title=""/><span>Руб.</span></div>
                         </div>
                     </div>
@@ -38,36 +39,56 @@
                         </h4>
                     </div>
                 </div>
-                <div class="fieldset">
-                    <div class="form">
-                        <h3 class="mb-0 fw-bolder">Выберите тариф</h3>
-                        <div class="card-selector">
-                            <input type="radio" name="excard" id="c1" value="1" /><label for="c1">30 дней<span></span></label>
-                        </div>
-                        <div class="card-selector">
-                            <input type="radio" name="excard" id="c2" value="2" /><label for="c2">90 дней<span></span></label>
-                        </div>
-                        <div class="card-selector">
-                            <input type="radio" name="excard" id="c3" value="3" /><label for="c3">180 дней<span></span></label>
-                        </div>
-                        <div class="card-selector mb-0">
-                            <input type="radio" name="excard" id="c4" value="4" /><label for="c4">12 месяцев <span></span></label>
-                        </div>
-                        <br><br>
+{{--                <div class="fieldset">--}}
+{{--                    <div class="form">--}}
+{{--                        <h3 class="mb-0 fw-bolder">Выберите тариф</h3>--}}
+{{--                        <div class="card-selector">--}}
+{{--                            <input type="radio" name="excard" id="c1" value="1" /><label for="c1">30 дней<span></span></label>--}}
+{{--                        </div>--}}
+{{--                        <div class="card-selector">--}}
+{{--                            <input type="radio" name="excard" id="c2" value="2" /><label for="c2">90 дней<span></span></label>--}}
+{{--                        </div>--}}
+{{--                        <div class="card-selector">--}}
+{{--                            <input type="radio" name="excard" id="c3" value="3" /><label for="c3">180 дней<span></span></label>--}}
+{{--                        </div>--}}
+{{--                        <div class="card-selector mb-0">--}}
+{{--                            <input type="radio" name="excard" id="c4" value="4" /><label for="c4">12 месяцев <span></span></label>--}}
+{{--                        </div>--}}
+{{--                        <br><br>--}}
 {{--                        <div class="" id="show-paypal-info">Вы будете перенаправлены на страницу платёжной системы.</div>--}}
-                    </div>
-                </div>
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="fieldset">
                     <div class="form">
                         <h3 class="mb-0 fw-bolder">Выберите платёжную систему</h3>
                         <div class="card-selector">
-                            <input type="radio" name="excard" id="c1" value="1" /><label for="c1">Payeer <span></span></label>
+                            <input type="radio" name="payment_system" id="c1" value="payeer" /><label for="c1">Payeer <span></span></label>
                         </div>
                         <div class="card-selector mb-0">
-                            <input type="radio" name="excard" id="c2" value="2" /><label for="c2">Оплата по счёту <span></span></label>
+                            <input type="radio" name="payment_system" id="c2" value="freekassa" /><label for="c2">Freekassa <span></span></label>
                         </div>
                         <br><br>
                         <div class="" id="show-paypal-info">Вы будете перенаправлены на страницу платёжной системы.</div>
+                    </div>
+                </div>
+                <div class="fieldset freekassa-payments-block hide">
+                    <div class="form">
+                        <h3 class="mb-0 fw-bolder">Выберите способ оплаты</h3>
+                        <div class="card-selector">
+                            <input type="radio" name="freekassa_payment-system" id="fc0" value="10" /><label for="fc0">Qiwi <span></span></label>
+                        </div>
+                        <div class="card-selector">
+                            <input type="radio" name="freekassa_payment-system" id="fc2" value="6" checked /><label for="fc2">ЮMoney — Рекомендуем <span></span></label>
+                        </div>
+                        <div class="card-selector">
+                            <input type="radio" name="freekassa_payment-system" id="fc3" value="4" /><label for="fc3">VISA RUB <span></span></label>
+                        </div>
+                        <div class="card-selector">
+                            <input type="radio" name="freekassa_payment-system" id="fc4" value="8" /><label for="fc4">MasterCard RUB <span></span></label>
+                        </div>
+                        <div class="card-selector mb-0">
+                            <input type="radio" name="freekassa_payment-system" id="fc5" value="12" /><label for="fc5">МИР <span></span></label>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -79,11 +100,58 @@
     </div>
     <!-- PAGE END -->
     <div class="bottom-fixed-button">
-        <a href="#" data-popup="success" class="button button--full button--main open-popup">Перейти к оплате</a>
+        <a href="#" data-popup="success" class="button button--full button--main open-popup" id="got_to_pay">Перейти к оплате</a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript">
+        $('[name="freekassa_payment-system"]').on('change', function () {
+            let paymentSystem = $(this).val();
+        });
+
+        // Отправка формы
+        $('#got_to_pay').on('click', function () {
+            var paymentSystem = $('input[name="freekassa_payment-system"]:checked').val();
+
+            console.log(paymentSystem);
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('input[name="_token"]').val()
+                }
+            });
+
+            $.ajax({
+                url: "{{ route('payment.init') }}",
+                type: "POST",
+                data: {
+                    "_token": $('input[name="_token"]').val(),
+                    "col": $('[name="rau-col"]').val(),
+                    "payment-system": $('[name="payment_system"]').val(),
+                    "freekassa_payment-system": paymentSystem,
+                },
+                success: function (response) {
+                    console.log(response);
+
+                    if (response['status'] === 400) {
+                        alert(response['body']['error']);
+                    } else {
+                        window.location.href = response['body']['location'];
+                    }
+                }
+            });
+        });
+
+        // Изменение способа оплаты
+        $('[name="payment_system"]').on('change', function () {
+            if (this.value === 'freekassa') {
+                $('.freekassa-payments-block').removeClass('hide');
+            } else {
+                $('.freekassa-payments-block').addClass('hide');
+            }
+        })
+
+        // Калькулятор суммы
         const rauPrice = {{ \App\Models\Setting::where('param', 'rau_price')->first()->value }};
 
         let rubInput = $('#rub_input'),

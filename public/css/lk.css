@@ -102,3 +102,6 @@ body.with-panel-left-reveal .panel--left {
     font-size: 13px;
   }
 }
+.hide {
+  display: none;
+}
