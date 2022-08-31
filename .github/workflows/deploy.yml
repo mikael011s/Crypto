@@ -25,4 +25,4 @@ jobs:
       # - run: npm ci
       # - run: npm run build
       # Deploy
-      - run: cd dist && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . redaurmf_deploy@redaurmf.beget.tech:/home/r/redaurmf/redaurmf.beget.tech/public_html
+      - run: cd dist && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . redaurmf_dev@redaurmf.beget.tech:/
