@@ -39,6 +39,12 @@
                         </h4>
                     </div>
                 </div>
+                <div class="fieldset">
+                    <div class="round-block">
+                        <div class="mb-0 fw-bolder text">1 раунд</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
 {{--                <div class="fieldset">--}}
 {{--                    <div class="form">--}}
 {{--                        <h3 class="mb-0 fw-bolder">Выберите тариф</h3>--}}
@@ -101,6 +107,15 @@
     <!-- PAGE END -->
     <div class="bottom-fixed-button">
         <a href="#" data-popup="success" class="button button--full button--main open-popup" id="got_to_pay">Перейти к оплате</a>
+    </div>
+
+    <div id="popup-success">
+        <div class="popup popup--centered popup--shadow popup--success" style="display: block;">
+            <div class="popup__close"><a href="#" class="close-popup" data-popup="success"><img src="{{ asset('template-assets/cryptex/images/icons/close.svg') }}" alt="" title=""></a></div>
+            <div class="popup__icon"><img src="{{ asset('template-assets/cryptex/images/icons/checked.svg') }}" alt="" title=""></div>
+            <h2 class="popup__title">Success !</h2>
+            <p class="popup__text">This is an alert example. Creativity is breaking out of established patterns to look at things in a different way.</p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

@@ -135,3 +135,13 @@ body.with-panel-left-reveal .panel--left {
 .hide {
     display: none;
 }
+
+.round-block {
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+}
