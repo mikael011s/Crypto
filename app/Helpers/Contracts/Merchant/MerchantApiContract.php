@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\Contracts;
+namespace App\Helpers\Contracts\Merchant;
 
 interface MerchantApiContract
 {

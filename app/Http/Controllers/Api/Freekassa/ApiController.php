@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers\Api\Freekassa;
 
-use App\Helpers\Contracts\MerchantApiContract;
+use App\Helpers\Contracts\Merchant\MerchantApiContract;
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Auth;
-use MongoDB\Driver\Server;
 
 class ApiController extends Controller implements MerchantApiContract
 {
