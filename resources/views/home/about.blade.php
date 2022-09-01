@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="feature__item__two-content">
                                     <h3 class="title mb-2">Эмиссия RAu COIN</h3>
-                                    <p>Общий объем эмиссии составляет 100 000 000  RAu COIN, по курсу в рубля на старте это 7 000 000 000 рублей   </p>
+                                    <p>Общий объем эмиссии составляет 100 000 000  RAu COIN, по курсу в рублях на старте это 7 000 000 000 рублей   </p>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@
                             Получив колосальный опыт в инвестировании, мы создали инвестиционную платформу, которая предоставляет возможность частным инвесторам вкладывать деньги в успешный бизнес в России, в странах СНГ, Европе и США посредством приобретения валюты проекта - RAu COIN  </p>
                         </p>В работе специалисты компании ориентируются на выбор крупных иностранных компаний, основными критериями которых является надежность и долгосрочность:</p>
                         </p>Каждый проект выбирается со всей ответственностью и проходит ряд сложных проверок, а так же тщательного, взвешенного анализа</p>
-                        </p>Средний доход в проекте от 0.8% до 3% - это средний показатель в зависимости от направлений инвестирования</p>
+                        </p>Средний доход в проекте от 0.3% до 0,8% - это средний показатель в зависимости от направлений инвестирования</p>
                         </p>Бизнес индустрии куда корпорация MIKE CROUP инвестирует средства</p>
                         <ul class="info__list d-flex flex-wrap mt-4">
                             <li> Кино индустрия</li>
@@ -161,101 +161,105 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
                     <div class="section__header text-center">
-                        <h2 class="section__header-title">Доходность по срокам</h2>
+                        <h2 class="section__header-title">Доходность Раундов</h2>
                         <p>В зависимости от периода владения RAU COIN вложенные инвестиций дают высокую маржинальность</p>
                     </div>
                 </div>
             </div>
-            <div class="plan__slider">
-                <div class="single-slide">
+             <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
                     <div class="plan__item">
                         <div class="plan__item-header">
-                            <h2 class="plan-parcent">20%</h2>
-                            <p class="plan-parcent-info">В течении 15 дней</p>
+                            <h2 class="plan-parcent">Раунд 1</h2>
+                            <p class="plan-parcent-info">Период - до 31.12.2022</p>
                         </div>
                         <div class="plan__item-body">
                             <ul class="plan__info">
                                 <li>
-                                    <span class="title">Куплено на :</span>
-                                    <span class="value"> 10 000 RUR</span>
+                                    <span class="title">Продажи :</span>
+                                    <span class="value">Открытые</span>
                                 </li>
                                 <li>
-                                    <span class="title">Получен доход :</span>
-                                    <span class="value"> 12 000 RUR</span>
+                                    <span class="title">Реализация эмисси :</span>
+                                    <span class="value">до 30%</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="plan__item-footer">
-                            <p class="footer-info"> Прибыль 2000 RUR</p>
+                            <p class="footer-info">Можно продать до 10% портфеля</p>
+                            <p class="footer-info">Доходность раунда до 50% </p>
                         </div>
                     </div>
                 </div>
-                <div class="single-slide">
+                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
                     <div class="plan__item">
                         <div class="plan__item-header">
-                            <h2 class="plan-parcent">120%</h2>
-                            <p class="plan-parcent-info">В течении 90 дней</p>
+                            <h2 class="plan-parcent">Раунд 2</h2>
+                            <p class="plan-parcent-info">Период до 30.06.2023</p>
                         </div>
                         <div class="plan__item-body">
                             <ul class="plan__info">
                                 <li>
-                                    <span class="title">Куплено на :</span>
-                                    <span class="value">50 000 RUR</span>
+                                    <span class="title">Продажи :</span>
+                                    <span class="value">Закрытые</span>
                                 </li>
                                 <li>
-                                    <span class="title">Получен доход :</span>
-                                    <span class="value">110 000 RUR</span>
+                                    <span class="title">Реализация эмиссии :</span>
+                                    <span class="value">до 50%</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="plan__item-footer">
-                            <p class="footer-info">ПРИБЫЛЬ 60 000 RUR</p>
+                            <p class="footer-info"> Можно продать до 30% портфеля</p>
+                            <p class="footer-info"> Доходность раунда до 80%</p>
                         </div>
                     </div>
                 </div>
-                <div class="single-slide">
+                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
                     <div class="plan__item">
                         <div class="plan__item-header">
-                            <h2 class="plan-parcent">240%</h2>
-                            <p class="plan-parcent-info">В течении 180 дней</p>
+                            <h2 class="plan-parcent"> Раунд 3</h2>
+                            <p class="plan-parcent-info">Период до 31.12.2023</p>
                         </div>
                         <div class="plan__item-body">
                             <ul class="plan__info">
                                 <li>
-                                    <span class="title">Куплено на :</span>
-                                    <span class="value">100 000 RUR</span>
+                                    <span class="title">Продажи :</span>
+                                    <span class="value">Закрытые</span>
                                 </li>
                                 <li>
-                                    <span class="title">Получен доход :</span>
-                                    <span class="value">340 000 RUR</span>
+                                    <span class="title">Реализация эмиссии :</span>
+                                    <span class="value">100%</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="plan__item-footer">
-                            <p class="footer-info">ПРИБЫЛЬ 240 000 RUR</p>
+                            <p class="footer-info"> Можно продать до 50% портфеля</p>
+                            <p class="footer-info"> Доходность раунда до 80%</p>
                         </div>
                     </div>
                 </div>
-                <div class="single-slide">
+                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
                     <div class="plan__item">
                         <div class="plan__item-header">
-                            <h2 class="plan-parcent">550%</h2>
-                            <p class="plan-parcent-info">В течении 12 мес</p>
+                            <h2 class="plan-parcent">Биржа</h2>
+                            <p class="plan-parcent-info">С 01.01.2024г.</p>
                         </div>
                         <div class="plan__item-body">
                             <ul class="plan__info">
                                 <li>
-                                    <span class="title">Куплено на :</span>
-                                    <span class="value">300 000 RUR</span>
+                                    <span class="title">Продажи :</span>
+                                    <span class="value">Открытые</span>
                                 </li>
                                 <li>
-                                    <span class="title">Получен доход :</span>
-                                    <span class="value">1 950 000 RUR</span>
+                                    <span class="title">Реализация эмиссии :</span>
+                                    <span class="value">Прекращена</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="plan__item-footer">
-                            <p class="footer-info">ПРИБЫЛЬ 1 650 000 RUR </p>
+                            <p class="footer-info"> Свободная продажа 100% портфеля</p>
+                            <p class="footer-info"> Доходность от 100% и выше</p>
                         </div>
                     </div>
                 </div>
@@ -310,7 +314,7 @@
                         </div>
                         <div class="investor__item-content">
                             <h3 class="name">Николай Патрухин</h3>
-                            <p class="invest-amount">Инвестировал 2,3 млн RUR</p>
+                            <p class="invest-amount">Инвестировал 2,3 млн RUB</p>
                         </div>
                     </div>
                 </div>
@@ -321,7 +325,7 @@
                         </div>
                         <div class="investor__item-content">
                             <h3 class="name">Ника Сафронова</h3>
-                            <p class="invest-amount">Ивестировала 350 тыс RUR</p>
+                            <p class="invest-amount">Ивестировала 350 тыс RUB</p>
                         </div>
                     </div>
                 </div>
@@ -332,7 +336,7 @@
                         </div>
                         <div class="investor__item-content">
                             <h3 class="name">Михаил Глазков</h3>
-                            <p class="invest-amount">Инвестировал 950 тыс RUR</p>
+                            <p class="invest-amount">Инвестировал 950 тыс RUB</p>
                         </div>
                     </div>
                 </div>
@@ -343,7 +347,7 @@
                         </div>
                         <div class="investor__item-content">
                             <h3 class="name">Ильяз Камилов</h3>
-                            <p class="invest-amount">Инвестировал 1,3 млн RUR</p>
+                            <p class="invest-amount">Инвестировал 1,3 млн RUB</p>
                         </div>
                     </div>
                 </div>
@@ -374,7 +378,7 @@
                                     <h4 class="title">Снимается ли комиссия при покупке или продаже RAu?</h4>
                                 </div>
                                 <div class="faq__item-content">
-                                    <p>Комиссия при покупке RAu COIN или при дальнейшей продаже полностью отсутствует</p>
+                                    <p>Наш сервис никаких комиссий не взымает, однако при покупке RAu COIN оплата происходит с учетом комиссии предусмотренной банковским шлюзом, и размер её зависит от выбранного метода оплаты, при дальнейшей продаже RAu COIN комиссия полностью отсутствует!</p>
                                 </div>
                             </div>
                             <div class="faq__item style--two open active">
@@ -382,7 +386,7 @@
                                     <h4 class="title">Когда мои инвестиции начинают приносить прибыль?</h4>
                                 </div>
                                 <div class="faq__item-content">
-                                    <p>Курс RAu COIN растёт ежедневно от 0,8 до 3%, поэтому Ваши инвестиции начинают работать буквально с первого дня приобретения RAu COIN</p>
+                                    <p>Курс RAu COIN растёт ежедневно от 0,3% до 0,8%, поэтому Ваши инвестиции начинают работать буквально с первого дня приобретения RAu COIN</p>
                                 </div>
                             </div>
                             <div class="faq__item style--two">
@@ -458,7 +462,7 @@
                                     <div class="icon">
                                         <img src="/template-assets/digihyip/images/download/icon3.png" alt="counter">
                                     </div>
-                                    <h2 class="title"><span class="odometer" data-odometer-final="2">0</span>Млн</h2>
+                                    <h2 class="title"><span class="odometer" data-odometer-final="0.6">0</span>Млн</h2>
                                 </div>
                                 <p class="info">Выведено</p>
                             </div>

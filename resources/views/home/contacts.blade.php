@@ -29,7 +29,7 @@
                         </div>
                         <div class="content">
                             <h3 class="title">Офис компании</h3>
-                            <p>28 Benin, south San Francisco, United States of America</p>
+                            <p>Nova North, 11 Bressenden Pl, London SW1E 5BY,Great Britain</p>
                         </div>
                     </div>
                 </div>
