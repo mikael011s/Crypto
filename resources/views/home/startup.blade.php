@@ -22,7 +22,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 d-none d-lg-block">
                     <div class="section__thumb rtl">
-                        <img src="/template-assets/digihyip/images/choose-us/thumb1.png" alt="choose-us">
+                        <img src="/template-assets/digihyip/images/choose-us/thumb111.png" alt="choose-us">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -137,7 +137,7 @@
                                     <h4 class="title">Снимается ли комиссия при покупке или продаже RAu?</h4>
                                 </div>
                                 <div class="faq__item-content">
-                                    <p>Комиссия при покупке RAu COIN или при дальнейшей продаже полностью отсутствует</p>
+                                    <p>Наш сервис никаких комиссий не взымает, однако при покупке RAu COIN оплата происходит с учетом комиссии предусмотренной банковским шлюзом, и размер её зависит от выбранного метода оплаты, при дальнейшей продаже RAu COIN комиссия полностью отсутствует!</p>
                                 </div>
                             </div>
                             <div class="faq__item style--two open active">
@@ -221,7 +221,7 @@
                                     <div class="icon">
                                         <img src="/template-assets/digihyip/images/download/icon3.png" alt="counter">
                                     </div>
-                                    <h2 class="title"><span class="odometer" data-odometer-final="2">0</span>Млн</h2>
+                                    <h2 class="title"><span class="odometer" data-odometer-final="0.6">0</span>Млн</h2>
                                 </div>
                                 <p class="info">Выведено</p>
                             </div>

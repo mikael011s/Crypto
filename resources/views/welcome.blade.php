@@ -53,7 +53,7 @@
                     <div class="choose__us__content">
                         <div class="section__header mb-0">
                             <h2 class="section__header-title">Инвестируйте в уникальный COIN (RAu) </h2>
-                            <p>RAu COIN – это актив, который растет ежегодно в среднем на 550%. И наш проект гарантирует этот рост!</p>
+                            <p>RAu COIN – это актив, который растет ежегодно в среднем от 80% до 150%. И наш проект гарантирует этот рост!</p>
                         </div>
                         <p>55 из 100 банков мира, крупнейших по размерам активов под управлением, уже инвестировали в компании, связанные с криптовалютой и/или блокчейном.
 Ряд государств (в том числе передовых) стоит на пути принятия криптовалют, а это значит, что их наравне с другими видами активов начинают регулировать и делать частью обычной жизни граждан </p>
@@ -85,7 +85,7 @@
                 <div class="col-lg-6 col-md-10">
                     <div class="section__header text-center">
                         <h2 class="section__header-title">Доходность портфеля RAuCOIN</h2>
-                        <p>Компания MIKE GROUP реализовала возможность умножать инвестиции от продажи RAu COIN в крупных международных компаниях и ярких доходных стартапах </p>
+                        <p>Компания MIKE GROUP реализовала возможность умножать инвестиции от продажи RAu COIN в крупных международных компаниях и ярких доходных стартапах, и объявляет о старте "Раундов" по привлечению инвесторов </p>
                     </div>
                 </div>
             </div>
@@ -93,92 +93,96 @@
                 <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
                     <div class="plan__item">
                         <div class="plan__item-header">
-                            <h2 class="plan-parcent">20%</h2>
-                            <p class="plan-parcent-info">В течении 15 дней</p>
+                            <h2 class="plan-parcent">Раунд 1</h2>
+                            <p class="plan-parcent-info">Период - до 31.12.2022</p>
                         </div>
                         <div class="plan__item-body">
                             <ul class="plan__info">
                                 <li>
-                                    <span class="title">Мин :</span>
-                                    <span class="value">1000 RUR</span>
+                                    <span class="title">Продажи :</span>
+                                    <span class="value">Открытые</span>
                                 </li>
                                 <li>
-                                    <span class="title">Макс :</span>
-                                    <span class="value">300 000 RUR</span>
+                                    <span class="title">Реализация эмисси :</span>
+                                    <span class="value">до 30%</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="plan__item-footer">
-                            <p class="footer-info">БЕЗ КАПИТАЛИЗАЦИИ</p>
+                            <p class="footer-info">Можно продать до 10% портфеля</p>
+                            <p class="footer-info">Доходность раунда до 50% </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
                     <div class="plan__item">
                         <div class="plan__item-header">
-                            <h2 class="plan-parcent">120%</h2>
-                            <p class="plan-parcent-info">В течении 90 дней</p>
+                            <h2 class="plan-parcent">Раунд 2</h2>
+                            <p class="plan-parcent-info">Период до 30.06.2023</p>
                         </div>
                         <div class="plan__item-body">
                             <ul class="plan__info">
                                 <li>
-                                    <span class="title">Мин :</span>
-                                    <span class="value">3000 RUR</span>
+                                    <span class="title">Продажи :</span>
+                                    <span class="value">Закрытые</span>
                                 </li>
                                 <li>
-                                    <span class="title">Макс :</span>
-                                    <span class="value">600 000 RUR</span>
+                                    <span class="title">Реализация эмиссии :</span>
+                                    <span class="value">до 50%</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="plan__item-footer">
-                            <p class="footer-info"> С КАПИТАЛИЗАЦИЕЙ</p>
+                            <p class="footer-info"> Можно продать до 30% портфеля</p>
+                            <p class="footer-info"> Доходность раунда до 80%</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
                     <div class="plan__item">
                         <div class="plan__item-header">
-                            <h2 class="plan-parcent">240%</h2>
-                            <p class="plan-parcent-info">В течении 180 дней</p>
+                            <h2 class="plan-parcent"> Раунд 3</h2>
+                            <p class="plan-parcent-info">Период до 31.12.2023</p>
                         </div>
                         <div class="plan__item-body">
                             <ul class="plan__info">
                                 <li>
-                                    <span class="title">Мин :</span>
-                                    <span class="value">3000 RUR</span>
+                                    <span class="title">Продажи :</span>
+                                    <span class="value">Закрытые</span>
                                 </li>
                                 <li>
-                                    <span class="title">Макс :</span>
-                                    <span class="value">600 000 RUR</span>
+                                    <span class="title">Реализация эмиссии :</span>
+                                    <span class="value">100%</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="plan__item-footer">
-                            <p class="footer-info"> С РЕИНВЕСТИРОВАНИЕМ</p>
+                            <p class="footer-info"> Можно продать до 50% портфеля</p>
+                            <p class="footer-info"> Доходность раунда до 80%</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
                     <div class="plan__item">
                         <div class="plan__item-header">
-                            <h2 class="plan-parcent">550%</h2>
-                            <p class="plan-parcent-info">В год и далее ежегодно</p>
+                            <h2 class="plan-parcent">Биржа</h2>
+                            <p class="plan-parcent-info">С 01.01.2024г.</p>
                         </div>
                         <div class="plan__item-body">
                             <ul class="plan__info">
                                 <li>
-                                    <span class="title">Мин :</span>
-                                    <span class="value">10 000 RUR</span>
+                                    <span class="title">Продажи :</span>
+                                    <span class="value">Открытые</span>
                                 </li>
                                 <li>
-                                    <span class="title">Макс :</span>
-                                    <span class="value">999 999 999 RUR</span>
+                                    <span class="title">Реализация эмиссии :</span>
+                                    <span class="value">Прекращена</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="plan__item-footer">
-                            <p class="footer-info"> ЕЖЕГОДНАЯ КАПИТАЛИЗАЦИЯ</p>
+                            <p class="footer-info"> Свободная продажа 100% портфеля</p>
+                            <p class="footer-info"> Доходность от 100% и выше</p>
                         </div>
                     </div>
                 </div>
@@ -207,37 +211,36 @@
                             <div class="row g-4">
                                 <div class="col-md-6 col-lg-12 col-xl-6 col-sm-6">
                                     <div class="form-group">
-                                        <label class="form-label">На какой срок приобретается RAu</label>
+                                        <label class="form-label">Выбор раунда RAu COIN</label>
                                         <select class="nice-select w-100 h-50">
-                                            <option>Выберите срок владения RAu</option>
-                                            <option>15 дней</option>
-                                            <option>90 дней</option>
-                                            <option>180 дней</option>
-                                            <option>12 месяцев</option>
+                                            <option>Раунд 1</option>
+                                            <option>Раунд 2</option>
+                                            <option>Раунд 3</option>
+                                            <option>Биржа</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-12 col-xl-6 col-sm-6">
                                     <div class="form-group">
-                                        <label class="form-label">Рост инвестиций</label>
+                                        <label class="form-label">Сумма покупки</label>
                                         <select class="nice-select w-100 h-50">
-                                            <option>20%</option>
-                                            <option>120%</option>
-                                            <option>240%</option>
-                                            <option>550%</option>
+                                            <option>100 000 ₽</option>
+                                            <option>50 000 ₽</option>
+                                            <option>10 000 ₽</option>
+                                            <option>3 000 ₽</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-12 col-xl-6 col-sm-6">
                                     <div class="form-group">
                                         <label class="form-label">Доход</label>
-                                        <input type="text" class="form-control form--control" placeholder="$60,000">
+                                        <input type="text" class="form-control form--control" placeholder="50 000 ₽">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-12 col-xl-6 col-sm-6">
                                     <div class="form-group">
                                         <label class="form-label">Капитализация</label>
-                                        <input type="text" class="form-control form--control" placeholder="$800000">
+                                        <input type="text" class="form-control form--control" placeholder="150 000 ₽">
                                     </div>
                                 </div>
                             </div>
@@ -257,7 +260,7 @@
                 <div class="col-lg-6 col-md-10">
                     <div class="section__header text-center">
                         <h2 class="section__header-title">В чем приемущества нашей площадки?</h2>
-                        <p>Мы самый уникальный и гарантированно прибыльный проект в области цифровых активов!  </p>
+                        <p>Мы самый уникальный и гарантированно прибыльный проект в области цифровых активов! RAu COIN выпущен как универсальная структура, создающая возможность координации и распределения капитала для достижения общей цели - получения стабильного дохода!  </p>
                     </div>
                 </div>
             </div>
@@ -368,7 +371,7 @@
                         </div>
                         <div class="investor__item-content">
                             <h3 class="name">Николай Патрухин</h3>
-                            <p class="invest-amount">Инвестировал 2,3 млн RUR</p>
+                            <p class="invest-amount">Инвестировал 2,3 млн RUB</p>
                         </div>
                     </div>
                 </div>
@@ -379,7 +382,7 @@
                         </div>
                         <div class="investor__item-content">
                             <h3 class="name">Ника Сафронова</h3>
-                            <p class="invest-amount">Ивестировала 350 тыс RUR</p>
+                            <p class="invest-amount">Ивестировала 350 тыс RUB</p>
                         </div>
                     </div>
                 </div>
@@ -390,7 +393,7 @@
                         </div>
                         <div class="investor__item-content">
                             <h3 class="name">Михаил Глазков</h3>
-                            <p class="invest-amount">Инвестировал 950 тыс RUR</p>
+                            <p class="invest-amount">Инвестировал 950 тыс RUB</p>
                         </div>
                     </div>
                 </div>
@@ -401,7 +404,7 @@
                         </div>
                         <div class="investor__item-content">
                             <h3 class="name">Ильяз Камилов</h3>
-                            <p class="invest-amount">Инвестировал 1,3 млн RUR</p>
+                            <p class="invest-amount">Инвестировал 1,3 млн RUB</p>
                         </div>
                     </div>
                 </div>
@@ -418,7 +421,7 @@
                 <div class="col-lg-7">
                     <div class="section__header">
                         <h2 class="section__header-title">Установи приложение RAuCOIN</h2>
-                        <p>Отслеживай в онлайн режиме статистику роста своих инвестиций, следи за динамикой рынка криптовалют и убедить в надежности RAu COIN.</p>
+                        <p>Отслеживай в онлайн режиме статистику роста своих инвестиций, следи за динамикой рынка криптовалют и убедись в надежности RAu COIN.</p>
                     </div>
                     <div class="button__wrapper">
                         <a href="mobile" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-google-play"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">Для Android</p></div></a>
@@ -453,7 +456,7 @@
                                     <div class="icon">
                                         <img src="/template-assets/digihyip/images/download/icon3.png" alt="counter">
                                     </div>
-                                    <h2 class="title"><span class="odometer" data-odometer-final="2">0</span>Млн</h2>
+                                    <h2 class="title"><span class="odometer" data-odometer-final="0.6">0</span>Млн</h2>
                                 </div>
                                 <p class="info">Выведено</p>
                             </div>
@@ -498,7 +501,7 @@
                                 <h4 class="title">Снимается ли комиссия при покупке или продаже RAu?</h4>
                             </div>
                             <div class="faq__item-content">
-                                <p>Комиссия при покупке RAu COIN или при дальнейшей продаже полностью отсутствует</p>
+                                <p>Наш сервис никаких комиссий не взымает, однако при покупке RAu COIN оплата происходит с учетом комиссии предусмотренной банковским шлюзом, и размер её зависит от выбранного метода оплаты, при дальнейшей продаже RAu COIN комиссия полностью отсутствует!</p>
                             </div>
                         </div>
                         <div class="faq__item open active">
@@ -506,7 +509,7 @@
                                 <h4 class="title">Когда мои инвестиции начинают приносить прибыль?</h4>
                             </div>
                             <div class="faq__item-content">
-                                <p>Курс RAu COIN растёт ежедневно от 0,8 до 3%, поэтому Ваши инвестиции начинают работать буквально с первого дня приобретения RAu COIN </p>
+                                <p>Курс RAu COIN растёт ежедневно от 0,2 до 0,8%, поэтому Ваши инвестиции начинают работать буквально с первого дня приобретения RAu COIN </p>
                             </div>
                         </div>
                         <div class="faq__item">
@@ -565,7 +568,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽1500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
-                                    <td data-label="Date"><span class="date">08 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">30 августа 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -578,7 +581,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽4500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
-                                    <td data-label="Date"><span class="date">08 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">30 августа 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -591,7 +594,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽500</span></td>
                                     <td data-label="Wallet"><span class="wallet">VISA</span></td>
-                                    <td data-label="Date"><span class="date">08 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">30 августа 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -604,7 +607,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽1500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Master Card</span></td>
-                                    <td data-label="Date"><span class="date">08 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">29 августа 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -617,7 +620,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽2500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
-                                    <td data-label="Date"><span class="date">08 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">29 августа 2022</span></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -644,7 +647,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽300</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
-                                    <td data-label="Date"><span class="date">08 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">30 августа 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -657,7 +660,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽1500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
-                                    <td data-label="Date"><span class="date">08 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">30 августа 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -670,7 +673,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽1000</span></td>
                                     <td data-label="Wallet"><span class="wallet">VISA</span></td>
-                                    <td data-label="Date"><span class="date">08 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">29 августа 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -683,7 +686,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽800</span></td>
                                     <td data-label="Wallet"><span class="wallet">Master Card</span></td>
-                                    <td data-label="Date"><span class="date">08 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">29 августа 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -696,7 +699,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽900</span></td>
                                     <td data-label="Wallet"><span class="wallet">МИР</span></td>
-                                    <td data-label="Date"><span class="date">08 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">29 августа 2022</span></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -829,7 +832,23 @@
         </div>
     </section>
     <!-- Blog Section Ends Here -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   var z = null;m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+   ym(90084243, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/90084243" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
     <!-- Brand Section Starts Here -->
     <div class="padding-top padding-bottom">
