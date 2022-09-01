@@ -41,8 +41,8 @@
                 </div>
                 <div class="fieldset">
                     <div class="round-block">
-                        <div class="mb-0 fw-bolder text">1 раунд</div>
-                        <a href="">Подробнее</a>
+                        <div class="mb-0 fw-bolder text" style="color:#ffb500;">1 Раунд</div>
+                        <a data-popup="success" class="open-popup" href="javascript:void(0);">Подробнее</a>
                     </div>
                 </div>
 {{--                <div class="fieldset">--}}
@@ -67,9 +67,9 @@
                 <div class="fieldset">
                     <div class="form">
                         <h3 class="mb-0 fw-bolder">Выберите платёжную систему</h3>
-                        <div class="card-selector">
-                            <input type="radio" name="payment_system" id="c1" value="payeer" /><label for="c1">Payeer <span></span></label>
-                        </div>
+{{--                        <div class="card-selector">--}}
+{{--                            <input type="radio" name="payment_system" id="c1" value="payeer" /><label for="c1">Payeer <span></span></label>--}}
+{{--                        </div>--}}
                         <div class="card-selector mb-0">
                             <input type="radio" name="payment_system" id="c2" value="freekassa" /><label for="c2">Freekassa <span></span></label>
                         </div>
@@ -84,16 +84,28 @@
                             <input type="radio" name="freekassa_payment-system" id="fc0" value="10" /><label for="fc0">Qiwi <span></span></label>
                         </div>
                         <div class="card-selector">
-                            <input type="radio" name="freekassa_payment-system" id="fc2" value="6" checked /><label for="fc2">ЮMoney — Рекомендуем <span></span></label>
+                            <input type="radio" name="freekassa_payment-system" id="fc2" value="6" checked /><label for="fc2">ЮКасса <span></span></label>
                         </div>
                         <div class="card-selector">
-                            <input type="radio" name="freekassa_payment-system" id="fc3" value="4" /><label for="fc3">VISA RUB <span></span></label>
+                            <input type="radio" name="freekassa_payment-system" id="fc3" value="13" /><label for="fc3">Онлайн банки <span></span></label>
                         </div>
                         <div class="card-selector">
-                            <input type="radio" name="freekassa_payment-system" id="fc4" value="8" /><label for="fc4">MasterCard RUB <span></span></label>
+                            <input type="radio" name="freekassa_payment-system" id="fc4" value="4" /><label for="fc4">Visa / Mastercard / Мир <span></span></label>
+                        </div>
+                        <div class="card-selector">
+                            <input type="radio" name="freekassa_payment-system" id="fc7" value="24" /><label for="fc7">BTC <span></span></label>
+                        </div>
+                        <div class="card-selector">
+                            <input type="radio" name="freekassa_payment-system" id="fc8" value="26" /><label for="fc8">ETH <span></span></label>
+                        </div>
+                        <div class="card-selector">
+                            <input type="radio" name="freekassa_payment-system" id="fc9" value="25" /><label for="fc9">LTC <span></span></label>
+                        </div>
+                        <div class="card-selector">
+                            <input type="radio" name="freekassa_payment-system" id="fc10" value="14" /><label for="fc10">USDT <span></span></label>
                         </div>
                         <div class="card-selector mb-0">
-                            <input type="radio" name="freekassa_payment-system" id="fc5" value="12" /><label for="fc5">МИР <span></span></label>
+                            <input type="radio" name="freekassa_payment-system" id="fc11" value="17" /><label for="fc11">BNB <span></span></label>
                         </div>
                     </div>
                 </div>
@@ -105,16 +117,33 @@
 
     </div>
     <!-- PAGE END -->
-    <div class="bottom-fixed-button">
-        <a href="#" data-popup="success" class="button button--full button--main open-popup" id="got_to_pay">Перейти к оплате</a>
+    <div class="bottom-fixed-button text-center">
+        <a href="#" class="button button--full button--main" id="got_to_pay">Перейти к оплате</a>
+        <p class="" style="font-size: 11px;margin-bottom: -25px;line-height: 11px;margin-top: 5px;">Нажимая кнопку Вы подтверждаете, что ознакомились с <br> <a href="">политикой и условиями сервиса</a>.</p>
     </div>
 
-    <div id="popup-success">
-        <div class="popup popup--centered popup--shadow popup--success" style="display: block;">
+    <div id="popup-success" >
+        <div class="popup popup--centered popup--shadow popup--success" style="height: 100%;width: 100%;position: fixed;top:0;left:0;">
             <div class="popup__close"><a href="#" class="close-popup" data-popup="success"><img src="{{ asset('template-assets/cryptex/images/icons/close.svg') }}" alt="" title=""></a></div>
             <div class="popup__icon"><img src="{{ asset('template-assets/cryptex/images/icons/checked.svg') }}" alt="" title=""></div>
-            <h2 class="popup__title">Success !</h2>
-            <p class="popup__text">This is an alert example. Creativity is breaking out of established patterns to look at things in a different way.</p>
+            <h2 class="popup__title">Раунд 1</h2>
+            <p class="popup__text">
+                Компания MIKE GROUP 15.08.2022г. объявляет старт продаж Rau COIN, стартовый курс 70 рублей — 1 RAU COIN
+                <br>
+                Период действия «Раунда 1» — с 15.08.2022г. По 31.12.2022 года. <br>
+                Общая эмиссия составляет 100 000 000 Rau COIN <br>
+                Объявляется открытая продажа Rau COIN <br>
+                Минимальное количество продаж «Раунда 1» должно составить не менее 30% от всей эмиссии RAu COIN <br>
+                Физическое или юридическое лицо купившее Rau COIN в первом раунде, имеет возможность в течении действия «Раунда 1» реализовать до 10% от всей суммы Rau COIN находящейся на балансе владельца.
+                <br><br>
+                Колебания курса RAu COIN в период действия «Раунда 1» планируются от +0,2% до +0,5% в сутки, и зависит от спроса и инвестиционных портфелей компании MIKE GROUP.
+                <br>
+                Общее планируемое изменение курса в период «Раунда 1» от + 27% до + 70%, средний показатель доходности 48,5%
+                <br>
+                После окончания «Раунда 1» прекращается свободная продажа RAu COIN.
+                <br><br>
+                <a href="{{ route('m-rounds') }}" class="button button--full button--main" id="got_to_pay">Подробнее о Раундах RAu COIN</a>
+            </p>
         </div>
     </div>
 

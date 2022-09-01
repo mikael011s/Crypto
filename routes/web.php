@@ -44,6 +44,7 @@ Route::prefix('mobile')->group(function () {
         Route::view('stat', 'mobile.stats')->name('m-stats');
         Route::view('contact', 'mobile.contact')->name('m-contact');
         Route::view('wallet', 'mobile.wallet')->name('m-wallet');
+        Route::view('rounds', 'mobile.rounds')->name('m-rounds');
 
         Route::view('rau/by', 'mobile.rau.by')->name('m-by');
         Route::view('rau/sell', 'mobile.rau.sell')->name('m-sell');
