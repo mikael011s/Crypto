@@ -53,7 +53,7 @@
 
                                     <li><a href="/home/privacy/policy#overview"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>Правила и условия</span></a></li>
                                     <li><a href="/home/privacy/policy#data-collection"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>Конфиденциальность</span></a></li>
-                                    <li><a href="/home/privacy/policy#security"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>Инвест планы</span></a></li>
+                                    <li><a href="{{ route('m-rounds') }}"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>Раунды</span></a></li>
                                 </ul>
                             </nav>
                             <div class="buttons buttons--centered">
