@@ -24,7 +24,7 @@ class PayRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'col' => 'required|integer|min:1|max:5000',
+            'col' => 'required|integer|min:1',
             'payment-system' => 'required|string'
         ];
     }

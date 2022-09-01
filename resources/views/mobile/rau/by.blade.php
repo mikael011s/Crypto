@@ -89,9 +89,9 @@
                         <div class="card-selector">
                             <input type="radio" name="freekassa_payment-system" id="fc3" value="13" /><label for="fc3">Онлайн банки <span></span></label>
                         </div>
-                        <div class="card-selector">
-                            <input type="radio" name="freekassa_payment-system" id="fc4" value="4" /><label for="fc4">Visa / Mastercard / Мир <span></span></label>
-                        </div>
+{{--                        <div class="card-selector">--}}
+{{--                            <input type="radio" name="freekassa_payment-system" id="fc4" value="4" /><label for="fc4">Visa / Mastercard / Мир <span></span></label>--}}
+{{--                        </div>--}}
                         <div class="card-selector">
                             <input type="radio" name="freekassa_payment-system" id="fc7" value="24" /><label for="fc7">BTC <span></span></label>
                         </div>
