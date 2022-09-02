@@ -46,6 +46,7 @@
                             <nav class="main-nav">
                                 <ul>
 {{--                                    <li><a href="{{ route('m-profile') }}"><img src="/template-assets/cryptex/images/icons/user.svg" alt="" title="" /><span>Мой аккаунт</span></a></li>--}}
+                                    <li><a href="{{ route('m-profile') }}"><img src="/template-assets/cryptex/images/icons/wallet.svg" alt="" title="" /><span>Профиль</span></a></li>
                                     <li><a href="{{ route('m-wallet') }}"><img src="/template-assets/cryptex/images/icons/wallet.svg" alt="" title="" /><span>Мой счёт</span></a></li>
                                     <li><a href="{{ route('coin-more', 'rau') }}"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>RAu COIN</span></a></li>
                                     <li><a href="{{ route('m-by') }}"><img src="/template-assets/cryptex/images/icons/listing.svg" alt="" title="" /><span>Купить</span></a></li>

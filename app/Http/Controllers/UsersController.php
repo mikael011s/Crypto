@@ -53,11 +53,11 @@ class UsersController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function edit($id)
     {
-        //
+
     }
 
     /**
@@ -65,11 +65,16 @@ class UsersController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, $id)
     {
-        //
+        User::find($id)->update([
+            'email' => $request->post('email'),
+            'name' => $request->post('name'),
+        ]);
+
+        return redirect()->back()->with('success', 'Данные успешно изменены');
     }
 
     /**
