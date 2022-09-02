@@ -13,7 +13,7 @@ class PostbackController extends Controller implements PostbackContract
 {
     public function payUserBalance(Request $request): int
     {
-        $this->checkSign($request);
+//        $this->checkSign($request);
         event(new UserBalancePayedEvent($request->all()));
 
         $user = User::where('email', $request->post('P_EMAIL'))->first();
