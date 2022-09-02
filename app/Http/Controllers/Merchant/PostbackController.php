@@ -13,11 +13,11 @@ class PostbackController extends Controller implements PostbackContract
 {
     public function payUserBalance(Request $request): int
     {
-//        $this->checkSign($request);
+        $this->checkSign($request);
         event(new UserBalancePayedEvent($request->all()));
 
         $user = User::where('email', $request->post('P_EMAIL'))->first();
-        $userNewBalance = $user->balance + $request->post('AMOUNT');
+        $userNewBalance = $user->balance + ConverterController::convertToRau($request->post('AMOUNT'));
 
         User::where('email', $request->post('P_EMAIL'))->update([
             'balance' => $userNewBalance
@@ -26,14 +26,12 @@ class PostbackController extends Controller implements PostbackContract
         return $userNewBalance;
     }
 
-    private function checkSign($request)
+    private function checkSign($request): void
     {
         $sign = md5($request->post('MERCHANT_ID').':'.$request->post('AMOUNT').':ezGke.jo/QZNp)c:'.$request->post('MERCHANT_ORDER_ID'));
 
         if ($sign !== $request->post('SIGN')) {
             exit ('403');
         }
-
-        return true;
     }
 }

@@ -11,6 +11,20 @@ use Symfony\Component\Console\Helper\Table;
 
 class RauCoinController extends Controller
 {
+    /**
+     * Get coin rate
+     * @return mixed
+     */
+    public function getRate()
+    {
+        return Setting::where('param', 'rau_price')->first()->value;
+    }
+
+    /**
+     * Edit rate move range
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function edit(Request $request)
     {
         // Меняем мин. значение
@@ -27,6 +41,10 @@ class RauCoinController extends Controller
         return Redirect::back()->with('success', 'Курс сохранён');
     }
 
+    /**
+     * Update coin rate
+     * @return void
+     */
     public function updateRate()
     {
         // Выделяем значения

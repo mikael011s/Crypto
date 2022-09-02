@@ -3,6 +3,7 @@
 namespace App\Listeners;
 
 use App\Events\UserBalancePayedEvent;
+use App\Http\Controllers\Merchant\ConverterController;
 use App\Models\User;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
@@ -29,7 +30,10 @@ class BalancePayListener
     {
         $data = $event->requestData;
         $user = User::where('email', $data['P_EMAIL'])->first();
-        $referral = User::find($user->referral)->first();
-        dd($referral);
+        $referral = User::where('id', $user->referral_id)->first();
+
+        User::where('id', $user->referral_id)->update([
+            'referral_balance' => $referral->referral_balance + (($data['AMOUNT'] / 100) * 10)
+        ]);
     }
 }

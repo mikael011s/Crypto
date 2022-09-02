@@ -32,7 +32,7 @@
                     <div class="form">
                         <h3 class="mb-0 fw-bolder">Ссылка для приглашения</h3>
                         <div class="form__row d-flex align-items-center justify-space">
-                            <input type="text" value="" class="form__input" placeholder="{{ config('app.url') }}/register/{{ \Illuminate\Support\Facades\Auth::id() }}" />
+                            <input type="text" value="{{ config('app.url') }}/mobile/register/{{ \Illuminate\Support\Facades\Auth::id() }}" class="form__input" placeholder="" />
                         </div>
                     </div>
                 </div>

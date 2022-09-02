@@ -38,6 +38,11 @@ Route::prefix('mobile')->group(function () {
 
     Auth::routes();
 
+    Route::get('/register/{id}', function ($id) {
+        setcookie('referral', $id);
+        return redirect()->route('register');
+    });
+
     Route::middleware('auth')->group(function () {
         Route::view('dashboard', 'mobile.dashboard')->name('m-dashboard');
         Route::view('stat', 'mobile.stats')->name('m-stats');
