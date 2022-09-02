@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Merchant;
 
+use App\Events\UserBalancePayedEvent;
 use App\Helpers\Contracts\Merchant\PostbackContract;
 use App\Http\Controllers\Controller;
+use App\Listeners\BalancePayListener;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -11,7 +13,8 @@ class PostbackController extends Controller implements PostbackContract
 {
     public function payUserBalance(Request $request): int
     {
-        $this->checkSign($request);
+//        $this->checkSign($request);
+        event(new UserBalancePayedEvent($request->all()));
 
         $user = User::where('email', $request->post('P_EMAIL'))->first();
         $userNewBalance = $user->balance + $request->post('AMOUNT');
