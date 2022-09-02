@@ -28,7 +28,6 @@ Route::prefix('home')->group(function () {
     Route::view('/startup', 'home.startup')->name('startup');
     Route::view('/investors/offers', 'home.investment-offers')->name('investment-offers');
     Route::view('/privacy/policy', 'home.privacy-policy')->name('privacy-policy');
-    Route::get('/coins/{coin}', [\App\Http\Controllers\Api\Coins\SetController::class, 'iterate'])->name('privacy-policy');
 //    Route::view('/privacy/rules', 'home.privacy-rules')->name('rules');
 //    Route::view('/privacy/documents', 'home.privacy-documents')->name('documents');
 });
@@ -50,11 +49,15 @@ Route::prefix('mobile')->group(function () {
         Route::view('rau/sell', 'mobile.rau.sell')->name('m-sell');
         Route::view('rau/swap', 'mobile.rau.swap')->name('m-swap');
 
-        Route::view('profile', 'mobile.rau.swap')->name('m-profile');
+        Route::view('profile', 'mobile.profile.show')->name('m-profile');
 
         Route::get('coin/{coin}', 'App\Http\Controllers\CoinController@viewCoin')->name('coin-more');
 
         Route::post('payment/init', 'App\Http\Controllers\PaymentController@initPay')->name('payment.init');
+
+        Route::resources([
+            'my-profile' => \App\Http\Controllers\UsersController::class
+        ]);
     });
 });
 
