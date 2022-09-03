@@ -86,7 +86,7 @@ class RegisterController extends Controller
         if (isset($_COOKIE['referral']))
             $referral = $_COOKIE['referral'];
         else
-            $referral = '';
+            $referral = null;
 
         return $referral;
     }
