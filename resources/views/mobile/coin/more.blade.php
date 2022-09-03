@@ -139,7 +139,7 @@
                         <div class="card-coin__price"><strong>{{ number_format(100000000 * \App\Models\Setting::where('param', 'rau_price')->first()->value, 0, ',', ' ') }} ₽</strong></div>
                     </div>
                     <div class="card-coin gradient-light-dark-blue">
-                        <div class="card-coin__logo"><span>Общее предложение</span></div> <!-- \App\Models\User::all()->sum('balance_rau') -->
+                        <div class="card-coin__logo"><span>Общее предложение</span></div> <!-- \App\Models\User::all()->sum('balance') -->
                         <div class="card-coin__price"><strong>{{ number_format((100000000 * \App\Models\Setting::where('param', 'rau_price')->first()->value) - 9456780, 0, ',', ' ') }} ₽</strong></div>
                     </div>
                 @elseif($coin == 'BTC')
