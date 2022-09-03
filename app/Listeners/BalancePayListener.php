@@ -32,8 +32,10 @@ class BalancePayListener
         $user = User::where('email', $data['P_EMAIL'])->first();
         $referral = User::where('id', $user->referral_id)->first();
 
-        User::where('id', $user->referral_id)->update([
-            'referral_balance' => $referral->referral_balance + (($data['AMOUNT'] / 100) * 10)
-        ]);
+        if ($referral !== null) {
+            User::where('id', $user->referral_id)->update([
+                'referral_balance' => $referral->referral_balance + (($data['AMOUNT'] / 100) * 10)
+            ]);
+        }
     }
 }
