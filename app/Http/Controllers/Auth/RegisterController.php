@@ -68,7 +68,16 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'referral_id' => $_COOKIE['referral']
+            'referral_id' => $_COOKIE['referral'],
+            'referral_code' => $this->generateReferralCode(),
         ]);
+    }
+
+    protected function generateReferralCode()
+    {
+        $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyz';
+        $referralCode = substr(str_shuffle($permitted_chars), 0, 6);
+
+        return strtoupper($referralCode);
     }
 }

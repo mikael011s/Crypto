@@ -30,6 +30,14 @@
                 </div>
                 <div class="fieldset">
                     <div class="form">
+                        <h3 class="mb-0 fw-bolder">Ваш пригласительный код</h3>
+                        <div class="form__row d-flex align-items-center justify-space">
+                            <input type="text" value="{{ \Illuminate\Support\Facades\Auth::user()->referral_code }}" class="form__input" placeholder="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="fieldset">
+                    <div class="form">
                         <h3 class="mb-0 fw-bolder">Ссылка для приглашения</h3>
                         <div class="form__row d-flex align-items-center justify-space">
                             <input type="text" value="{{ config('app.url') }}/mobile/register/{{ \Illuminate\Support\Facades\Auth::id() }}" class="form__input" placeholder="" />
