@@ -117,3 +117,10 @@ git checkout .bash_history
 git pull origin
 git pull origin
 git pull origin
+git pull origin
+git status
+git add .
+git commit -m "Changes for land and verification"
+git push origin
+git pull origin
+git push origin

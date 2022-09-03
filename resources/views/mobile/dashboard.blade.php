@@ -50,7 +50,7 @@
                         <div class="swiper-slide slider-links__slide">
                             <div class="slider-links__caption caption">
                                 <div class="caption__content">
-                                    <div class="caption__link"><a href="#">RAu</a></div>
+                                    <div class="caption__link"><a href="#">RAu COIN</a></div>
                                 </div>
                             </div>
                         </div>
