@@ -68,7 +68,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'referral_id' => $this->referralCookie(),
+            'referral_id' => $this->getReferralId($data),
             'referral_code' => $this->generateReferralCode(),
         ]);
     }
@@ -81,13 +81,19 @@ class RegisterController extends Controller
         return strtoupper($referralCode);
     }
 
-    protected function referralCookie()
+    protected function getReferralId($data)
     {
-        if (isset($_COOKIE['referral']))
-            $referral = $_COOKIE['referral'];
-        else
-            $referral = null;
+        $referral = $_COOKIE['referral'] ?? null;
+
+        if ($referral === null)
+            $referral = $this->getReferralWithCode($data['referral_code']);
 
         return $referral;
+    }
+
+    protected function getReferralWithCode($code)
+    {
+        $user = User::where('referral_code', $code)->first();
+        return $user->id ?? null;
     }
 }

@@ -36,6 +36,16 @@
                         @enderror
                     </div>
                     <div class="login-form__row">
+                        <label class="login-form__label">Промокод</label>
+                        <input type="text" class="login-form__input" name="referral_code" value="" autocomplete="email" />
+
+                        @error('email')
+                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                        @enderror
+                    </div>
+                    <div class="login-form__row">
                         <label class="login-form__label">Пароль</label>
                         <input type="password" value="" class="login-form__input required @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" />
 
