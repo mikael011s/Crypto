@@ -111,3 +111,9 @@ git push origin
 git pull origin
 git pull origin
 git pull origin
+git pull origin
+git status
+git checkout .bash_history
+git pull origin
+git pull origin
+git pull origin

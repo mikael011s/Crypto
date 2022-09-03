@@ -103,7 +103,7 @@
                                     <span class="value">Открытые</span>
                                 </li>
                                 <li>
-                                    <span class="title">Реализация эмисси :</span>
+                                    <span class="title">Реализация эмиссии :</span>
                                     <span class="value">до 30%</span>
                                 </li>
                             </ul>
@@ -568,7 +568,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽1500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
-                                    <td data-label="Date"><span class="date">30 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">04 сентября 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -581,7 +581,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽4500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
-                                    <td data-label="Date"><span class="date">30 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">03 сентября 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -594,7 +594,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽500</span></td>
                                     <td data-label="Wallet"><span class="wallet">VISA</span></td>
-                                    <td data-label="Date"><span class="date">30 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">03 сентября 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -607,7 +607,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽1500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Master Card</span></td>
-                                    <td data-label="Date"><span class="date">29 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">03 сентября 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -620,7 +620,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽2500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
-                                    <td data-label="Date"><span class="date">29 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">04 сентября 2022</span></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -647,7 +647,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽300</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
-                                    <td data-label="Date"><span class="date">30 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">04 сентября 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -660,7 +660,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽1500</span></td>
                                     <td data-label="Wallet"><span class="wallet">Payeer</span></td>
-                                    <td data-label="Date"><span class="date">30 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">04 сентября 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -673,7 +673,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽1000</span></td>
                                     <td data-label="Wallet"><span class="wallet">VISA</span></td>
-                                    <td data-label="Date"><span class="date">29 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">04 сентября 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -686,7 +686,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽800</span></td>
                                     <td data-label="Wallet"><span class="wallet">Master Card</span></td>
-                                    <td data-label="Date"><span class="date">29 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">03 сентября 2022</span></td>
                                 </tr>
                                 <tr>
                                     <td data-label="User Name">
@@ -699,7 +699,7 @@
                                     </td>
                                     <td data-label="Amount"><span class="amount">₽900</span></td>
                                     <td data-label="Wallet"><span class="wallet">МИР</span></td>
-                                    <td data-label="Date"><span class="date">29 августа 2022</span></td>
+                                    <td data-label="Date"><span class="date">04 сентября 2022</span></td>
                                 </tr>
                                 </tbody>
                             </table>

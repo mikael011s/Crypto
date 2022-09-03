@@ -180,7 +180,7 @@
                                     <span class="value">Открытые</span>
                                 </li>
                                 <li>
-                                    <span class="title">Реализация эмисси :</span>
+                                    <span class="title">Реализация эмиссии :</span>
                                     <span class="value">до 30%</span>
                                 </li>
                             </ul>
