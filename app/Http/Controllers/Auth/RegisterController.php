@@ -83,6 +83,11 @@ class RegisterController extends Controller
 
     protected function referralCookie()
     {
-        return $_COOKIE['referral'] ? $_COOKIE['referral'] : '';
+        if (isset($_COOKIE['referral']))
+            $referral = $_COOKIE['referral'];
+        else
+            $referral = '';
+
+        return $referral;
     }
 }
