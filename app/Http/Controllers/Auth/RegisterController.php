@@ -68,7 +68,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'referral_id' => $_COOKIE['referral'],
+            'referral_id' => $this->referralCookie(),
             'referral_code' => $this->generateReferralCode(),
         ]);
     }
@@ -79,5 +79,10 @@ class RegisterController extends Controller
         $referralCode = substr(str_shuffle($permitted_chars), 0, 6);
 
         return strtoupper($referralCode);
+    }
+
+    protected function referralCookie()
+    {
+        return $_COOKIE['referral'] ? $_COOKIE['referral'] : '';
     }
 }
