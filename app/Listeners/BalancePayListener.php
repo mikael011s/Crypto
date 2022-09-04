@@ -39,6 +39,7 @@ class BalancePayListener
             User::where('id', $user->referral_id)->update([
                 'referral_balance' => $referral->referral_balance + (($data['AMOUNT'] / 100) * 10)
             ]);
+            TransactionController::make('referral_pay', $referral->id, ($data['AMOUNT'] / 100) * 10);
         }
     }
 }

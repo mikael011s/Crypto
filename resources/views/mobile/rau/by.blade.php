@@ -70,8 +70,11 @@
 {{--                        <div class="card-selector">--}}
 {{--                            <input type="radio" name="payment_system" id="c1" value="payeer" /><label for="c1">Payeer <span></span></label>--}}
 {{--                        </div>--}}
-                        <div class="card-selector mb-0">
+                        <div class="card-selector">
                             <input type="radio" name="payment_system" id="c2" value="freekassa" /><label for="c2">Freekassa <span></span></label>
+                        </div>
+                        <div class="card-selector mb-0">
+                            <input type="radio" name="payment_system" id="c3" value="referral_balance" /><label for="c3">С реферального счёта <span></span></label>
                         </div>
                         <br><br>
                         <div class="" id="show-paypal-info">Вы будете перенаправлены на страницу платёжной системы.</div>
@@ -158,6 +161,7 @@
             var paymentSystem = $('input[name="freekassa_payment-system"]:checked').val();
 
             console.log(paymentSystem);
+            // console.log($('[name="payment_system"]:checked').val());
 
             $.ajaxSetup({
                 headers: {
@@ -171,7 +175,7 @@
                 data: {
                     "_token": $('input[name="_token"]').val(),
                     "col": $('[name="rau-col"]').val(),
-                    "payment-system": $('[name="payment_system"]').val(),
+                    "payment-system": $('[name="payment_system"]:checked').val(),
                     "freekassa_payment-system": paymentSystem,
                 },
                 success: function (response) {
