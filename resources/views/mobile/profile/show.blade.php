@@ -9,14 +9,15 @@
             </div>
         </header>
 
-        <form method="post" action="{{ route('my-profile.update', \Illuminate\Support\Facades\Auth::id()) }}">
-            @csrf
-            {{ method_field('PUT') }}
+
             <!-- PAGE CONTENT -->
             <div class="page__content page__content--with-header page__content--with-bottom-nav">
                 <h2 class="page__title">Мой профиль</h2>
                 @csrf
                 <div class="fieldset">
+                    <form method="post" id="edit-profile-form" action="{{ route('my-profile.update', \Illuminate\Support\Facades\Auth::id()) }}">
+                        @csrf
+                        {{ method_field('PUT') }}
                     <div class="form">
                         <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 10px;">Email</h3>
                         <div class="form__row d-flex align-items-center justify-space">
@@ -27,6 +28,7 @@
                             <input type="text" name="name" value="{{ \Illuminate\Support\Facades\Auth::user()->name }}" class="form__input" placeholder="" id="rub_input" />
                         </div>
                     </div>
+                    </form>
                 </div>
                 <div class="fieldset">
                     <div class="form">
@@ -54,9 +56,8 @@
             </div>
             <!-- PAGE END -->
             <div class="bottom-fixed-button text-center">
-                <button class="button button--full button--main" type="submit">Обновить</button>
+                <button class="button button--full button--main" type="submit" onclick="$('#edit-profile-form').submit();">Обновить</button>
             </div>
-        </form>
 
 
 
@@ -64,12 +65,6 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-    <style>
-        #popup-notifications {
-            display: none;
-        }
-    </style>
 
     {!! $bottomMenu = false !!}
 @endsection
