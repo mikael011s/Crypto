@@ -34,16 +34,26 @@
                     <div class="form">
                         <h3 class="mb-0 fw-bolder">Ваш пригласительный код</h3>
                         <div class="form__row d-flex align-items-center justify-space">
-                            <input type="text" value="{{ \Illuminate\Support\Facades\Auth::user()->referral_code }}" class="form__input" placeholder="" />
+                            <input type="text" value="{{ \Illuminate\Support\Facades\Auth::user()->referral_code }}" class="form__input" id="invite_code" placeholder="" />
                         </div>
+                        <button class="button small-button button--full button--main mb-10 mt-10"
+                                onclick="copyText($('#invite_code'))">Скопировать</button>
+                        <p class="mb-0 pb-0 mt-25">
+                            Если Ваш друг введёт пригласительный код, то получит 0. 05 приетственных коинов
+                        </p>
                     </div>
                 </div>
                 <div class="fieldset">
                     <div class="form">
                         <h3 class="mb-0 fw-bolder">Ссылка для приглашения</h3>
                         <div class="form__row d-flex align-items-center justify-space">
-                            <input type="text" value="{{ config('app.url') }}/mobile/register/{{ \Illuminate\Support\Facades\Auth::id() }}" class="form__input" placeholder="" />
+                            <input type="text" value="{{ config('app.url') }}/mobile/register/{{ \Illuminate\Support\Facades\Auth::id() }}" id="referral_link" class="form__input" placeholder="" />
                         </div>
+                        <button class="button small-button button--full button--main mb-10 mt-10"
+                            onclick="copyText($('#referral_link'))">Скопировать</button>
+                        <p class="mb-0 pb-0 mt-25">
+                            Скопируйте ссылку и отправь своим друзьям и близким!
+                        </p>
                     </div>
                 </div>
                 @if (\Session::has('success'))
@@ -62,6 +72,14 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        function copyText (object) {
+            object.select();
+            document.execCommand('copy');
+            alert('Скопировано в буфер обмена!');
+        }
+    </script>
 
     {!! $bottomMenu = false !!}
 @endsection
