@@ -47,7 +47,12 @@ Route::prefix('mobile')->group(function () {
         Route::view('dashboard', 'mobile.dashboard')->name('m-dashboard');
         Route::view('stat', 'mobile.stats')->name('m-stats');
         Route::view('contact', 'mobile.contact')->name('m-contact');
-        Route::view('wallet', 'mobile.wallet')->name('m-wallet');
+
+        Route::get('wallet', function () {
+            $transactions = \App\Models\Transaction::where('user_id', \Illuminate\Support\Facades\Auth::id())->get();
+            return view('mobile.wallet', compact('transactions'));
+        })->name('m-wallet');
+
         Route::view('rounds', 'mobile.rounds')->name('m-rounds');
 
         Route::view('rau/by', 'mobile.rau.by')->name('m-by');

@@ -4,6 +4,7 @@ namespace App\Listeners;
 
 use App\Events\UserBalancePayedEvent;
 use App\Http\Controllers\Merchant\ConverterController;
+use App\Http\Controllers\TransactionController;
 use App\Models\User;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
@@ -31,6 +32,8 @@ class BalancePayListener
         $data = $event->requestData;
         $user = User::where('email', $data['P_EMAIL'])->first();
         $referral = User::where('id', $user->referral_id)->first();
+
+        TransactionController::make('pay', $user->id, $data['AMOUNT']);
 
         if ($referral !== null) {
             User::where('id', $user->referral_id)->update([

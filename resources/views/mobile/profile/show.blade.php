@@ -58,9 +58,6 @@
             <div class="bottom-fixed-button text-center">
                 <button class="button button--full button--main" type="submit" onclick="$('#edit-profile-form').submit();">Обновить</button>
             </div>
-
-
-
     </div>
 
 
