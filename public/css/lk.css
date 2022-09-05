@@ -120,3 +120,24 @@ body.with-panel-left-reveal .panel--left {
   width: 100%;
   line-height: 0;
 }
+
+/**
+    Notifications
+ */
+.notifications li {
+  border-bottom: none;
+  padding: 5px 0;
+}
+.notifications .notification {
+  border-left: 2px solid;
+  padding-left: 15px;
+}
+.notifications .notification.notification-warning {
+  border-left-color: #ff7300;
+}
+.notifications .notification.notification-success {
+  border-left-color: #00b600;
+}
+.notifications .notification.notification-error {
+  border-left-color: #ff0000;
+}

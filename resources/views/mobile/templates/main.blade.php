@@ -130,13 +130,15 @@
                 <div class="popup__close"><a href="#" class="close-popup" data-popup="notifications"><img src="{{ asset('template-assets/cryptex/images/icons/close.svg') }}" alt="" title=""/></a></div>
                 <h2 class="popup__title">Последние уведомления</h2>
                 <ul class="notifications pt-20">
-{{--                    <li><a href="details.html">Bitcoin</a> is up 10%</li>--}}
-{{--                    <li><a href="details.html">Ethereum</a> is down 5% in the last 7 days</li>--}}
-{{--                    <li>Your BTC - ETH swap was succesfully done!</li>--}}
-{{--                    <li>Received a $100 payment from <a href="#">Robert J.</a></li>--}}
-                    <li>Вас приветствует компания MIKE GROUP, благодарим за доверие к нашему проекту! С нами Вы получите гарантированный доход!</li>
+                    @foreach(\App\Models\User::find(\Illuminate\Support\Facades\Auth::id())->getUserNotifications()->get() as $notification)
+                        <li class="notification notification-warning">{{ $notification->text }}</li>
+                    @endforeach
                 </ul>
-                <a href="#" class="button button--full button--main">Отметить прочитанными</a>
+                @if (count(\App\Models\User::find(\Illuminate\Support\Facades\Auth::id())->getUserNotifications()->get()) > 0)
+                    <a href="javascript:checkAllNotifications();" class="button button--full button--main">Отметить прочитанными</a>
+                @else
+                    <h3>Уведомлений пока нет.</h3>
+                @endif
             </div>
         </div>
     @endif
