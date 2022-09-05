@@ -53,17 +53,25 @@ class RauCoinController extends Controller
         $currentRate = Setting::where('param', 'rau_price')->first();
 
         // Генерируем случайное число в диапазоне
-        $percents = [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8];
-        $upPercent = $percents[rand(0, 6)];
+        $percents = [
+            0.2, 0.25,
+            0.3, 0.35,
+            0.4, 0.45,
+            0.5, 0.55,
+            0.6, 0.65,
+            0.7, 0.75,
+            0.8,
+        ];
+        $upPercent = $percents[rand(0, count($percents) - 1)];
 
         Setting::where('param', 'rau_price')->update([
             'value' => $currentRate->value + (($currentRate->value / 100) * $upPercent)
         ]);
 
         DB::table('rau_histories')->insert([
-            'old_price' => $currentRate->value,
-            'new_price' => round($currentRate->value + (($currentRate->value / 100) * $upPercent)),
-            'up_percent' => $upPercent,
+            'old_price' => number_format($currentRate->value, 2, '.', ''),
+            'new_price' => number_format($currentRate->value + (($currentRate->value / 100) * $upPercent), 2, '.', ''),
+            'up_percent' => number_format($upPercent, 2, '.', ''),
         ]);
 
         return $upPercent;
