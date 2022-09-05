@@ -13,23 +13,27 @@
             <div class="fieldset">
                 <h2 id="Note"></h2>
                 <div class="form">
-                    <form class="" id="ContactForm" method="post" action="" novalidate="novalidate">
+                    <form class="" id="ContactForm" method="post" action="{{ route('mail.store') }}">
+                        @csrf
                         <div class="form__row">
-                            <input type="text" name="ContactEmail" value="" class="form__input email required" placeholder="Тема">
+                            <input type="text" name="name" value="" class="form__input email required" placeholder="Как к Вам обращаться?">
                         </div>
                         <div class="form__row">
-                            <textarea name="ContactComment" class="form__textarea required" placeholder="Сообщение"></textarea>
+                            <textarea name="text" class="form__textarea required" placeholder="Сообщение"></textarea>
                         </div>
 
                         <div class="form__row mt-20">
                             <input type="submit" name="submit" class="form__submit button button--main button--full" id="submit" value="Отправить">
-                            <input class="" type="hidden" name="to" value="youremail@website.com">
-                            <input class="" type="hidden" name="ContactSubject" value="Contacf form message">
                             <label id="loader" style="display:none;"><div id="loader-animation"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></label>
                         </div>
                     </form>
                 </div>
             </div>
+            @if(\Illuminate\Support\Facades\Session::has('success'))
+                <div class="fieldset">
+                    <h4 class="mb-0 pb-0">{{ \Illuminate\Support\Facades\Session::get('success') }}</h4>
+                </div>
+            @endif
             <h2 class="page__title">Способы связи</h2>
             <div class="fieldset">
                 <ul class="custom-listing">

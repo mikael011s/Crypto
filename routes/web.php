@@ -66,7 +66,8 @@ Route::prefix('mobile')->group(function () {
         Route::post('payment/init', 'App\Http\Controllers\PaymentController@initPay')->name('payment.init');
 
         Route::resources([
-            'my-profile' => \App\Http\Controllers\UsersController::class
+            'my-profile' => \App\Http\Controllers\UsersController::class,
+            'mail' => \App\Http\Controllers\MailController::class,
         ]);
     });
 });

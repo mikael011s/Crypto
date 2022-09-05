@@ -35,7 +35,7 @@
                         <button class="button small-button button--full button--main mb-10 mt-10"
                             onclick="copyText($('#referral_link'))">Скопировать</button>
                         <p class="mb-0 pb-0 mt-25">
-                            Скопируйте ссылку и отправь своим друзьям и близким!
+                            Скопируйте ссылку и отправьте своим друзьям и близким!
                         </p>
                     </div>
                 </div>
