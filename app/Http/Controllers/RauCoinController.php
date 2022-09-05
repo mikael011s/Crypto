@@ -43,7 +43,7 @@ class RauCoinController extends Controller
 
     /**
      * Update coin rate
-     * @return void
+     * @return int
      */
     public function updateRate()
     {
@@ -56,13 +56,15 @@ class RauCoinController extends Controller
         $upPercent = rand($min->value, $max->value);
 
         Setting::where('param', 'rau_price')->update([
-            'value' => round($currentRate->value + (($upPercent / 100) * $currentRate->value))
+            'value' => round($currentRate->value + (($currentRate->value / 100) * $upPercent))
         ]);
 
         DB::table('rau_histories')->insert([
             'old_price' => $currentRate->value,
-            'new_price' => round($currentRate->value + (($upPercent / 100) * $currentRate->value)),
+            'new_price' => round($currentRate->value + (($currentRate->value / 100) * $upPercent)),
             'up_percent' => $upPercent,
         ]);
+
+        return $upPercent;
     }
 }
