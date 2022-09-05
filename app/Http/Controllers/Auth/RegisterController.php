@@ -64,15 +64,27 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $referral = $this->getReferralId($data);
+
+        $balance = 0;
+        if ($referral !== null) {
+            $balance = 0.05;
+        }
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'referral_id' => $this->getReferralId($data),
+            'referral_id' => $referral,
             'referral_code' => $this->generateReferralCode(),
+            'balance' => $balance,
         ]);
     }
 
+    /**
+     * Генерация пригласительного кода
+     * @return string
+     */
     protected function generateReferralCode()
     {
         $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyz';
@@ -81,6 +93,11 @@ class RegisterController extends Controller
         return strtoupper($referralCode);
     }
 
+    /**
+     * Проверка на приглашение реферала
+     * @param $data
+     * @return mixed|null
+     */
     protected function getReferralId($data)
     {
         $referral = $_COOKIE['referral'] ?? null;
@@ -91,6 +108,11 @@ class RegisterController extends Controller
         return $referral;
     }
 
+    /**
+     * Получение реферала по пригласительному коду
+     * @param $code
+     * @return null
+     */
     protected function getReferralWithCode($code)
     {
         $user = User::where('referral_code', $code)->first();

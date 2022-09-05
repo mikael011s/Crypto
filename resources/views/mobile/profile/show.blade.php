@@ -63,28 +63,28 @@
                         </div>
                     </div>
                 @endif
-                <h2 class="page__title">Изменить пароль</h2>
-                <div class="fieldset">
-                    <form method="post" id="edit-profile-form" action="{{ route('my-profile.update', \Illuminate\Support\Facades\Auth::id()) }}">
-                        @csrf
-                        {{ method_field('PUT') }}
-                        <div class="form">
-                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 10px;">Старый пароль</h3>
-                            <div class="form__row d-flex align-items-center justify-space">
-                                <input type="text" name="email" value="" class="form__input" placeholder="" id="rub_input" />
-                            </div>
-                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 30px;">Новый пароль</h3>
-                            <div class="form__row d-flex align-items-center justify-space">
-                                <input type="text" name="name" value="" class="form__input" placeholder="" id="rub_input" />
-                            </div>
-                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 30px;">Повторите новый пароль</h3>
-                            <div class="form__row d-flex align-items-center justify-space">
-                                <input type="text" name="name" value="" class="form__input" placeholder="" id="rub_input" />
-                            </div>
-                            <button class="button small-button button--full button--main mb-0 mt-10" type="submit">Сохранить</button>
-                        </div>
-                    </form>
-                </div>
+{{--                <h2 class="page__title">Изменить пароль</h2>--}}
+{{--                <div class="fieldset">--}}
+{{--                    <form method="post" id="edit-profile-form" action="{{ route('my-profile.update', \Illuminate\Support\Facades\Auth::id()) }}">--}}
+{{--                        @csrf--}}
+{{--                        {{ method_field('PUT') }}--}}
+{{--                        <div class="form">--}}
+{{--                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 10px;">Старый пароль</h3>--}}
+{{--                            <div class="form__row d-flex align-items-center justify-space">--}}
+{{--                                <input type="text" name="email" value="" class="form__input" placeholder="" id="rub_input" />--}}
+{{--                            </div>--}}
+{{--                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 30px;">Новый пароль</h3>--}}
+{{--                            <div class="form__row d-flex align-items-center justify-space">--}}
+{{--                                <input type="text" name="name" value="" class="form__input" placeholder="" id="rub_input" />--}}
+{{--                            </div>--}}
+{{--                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 30px;">Повторите новый пароль</h3>--}}
+{{--                            <div class="form__row d-flex align-items-center justify-space">--}}
+{{--                                <input type="text" name="name" value="" class="form__input" placeholder="" id="rub_input" />--}}
+{{--                            </div>--}}
+{{--                            <button class="button small-button button--full button--main mb-0 mt-10" type="submit">Сохранить</button>--}}
+{{--                        </div>--}}
+{{--                    </form>--}}
+{{--                </div>--}}
             </div>
             <!-- PAGE END -->
 {{--            <div class="bottom-fixed-button text-center">--}}
