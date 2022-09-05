@@ -13,23 +13,6 @@
             <!-- PAGE CONTENT -->
             <div class="page__content page__content--with-header page__content--with-bottom-nav">
                 <h2 class="page__title">Мой профиль</h2>
-                @csrf
-                <div class="fieldset">
-                    <form method="post" id="edit-profile-form" action="{{ route('my-profile.update', \Illuminate\Support\Facades\Auth::id()) }}">
-                        @csrf
-                        {{ method_field('PUT') }}
-                    <div class="form">
-                        <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 10px;">Email</h3>
-                        <div class="form__row d-flex align-items-center justify-space">
-                            <input type="text" name="email" value="{{ \Illuminate\Support\Facades\Auth::user()->email }}" class="form__input" placeholder="" id="rub_input" />
-                        </div>
-                        <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 30px;">Имя</h3>
-                        <div class="form__row d-flex align-items-center justify-space">
-                            <input type="text" name="name" value="{{ \Illuminate\Support\Facades\Auth::user()->name }}" class="form__input" placeholder="" id="rub_input" />
-                        </div>
-                    </div>
-                    </form>
-                </div>
                 <div class="fieldset">
                     <div class="form">
                         <h3 class="mb-0 fw-bolder">Ваш пригласительный код</h3>
@@ -39,7 +22,7 @@
                         <button class="button small-button button--full button--main mb-10 mt-10"
                                 onclick="copyText($('#invite_code'))">Скопировать</button>
                         <p class="mb-0 pb-0 mt-25">
-                            Если Ваш друг введёт пригласительный код, то получит 0. 05 приетственных коинов
+                            Если Ваш друг введёт пригласительный код, то получит 0. 05 приветственных RAu COIN
                         </p>
                     </div>
                 </div>
@@ -56,6 +39,23 @@
                         </p>
                     </div>
                 </div>
+                <div class="fieldset">
+                    <form method="post" id="edit-profile-form" action="{{ route('my-profile.update', \Illuminate\Support\Facades\Auth::id()) }}">
+                        @csrf
+                        {{ method_field('PUT') }}
+                        <div class="form">
+                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 10px;">Email</h3>
+                            <div class="form__row d-flex align-items-center justify-space">
+                                <input type="text" name="email" value="{{ \Illuminate\Support\Facades\Auth::user()->email }}" class="form__input" placeholder="" id="rub_input" />
+                            </div>
+                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 30px;">Имя</h3>
+                            <div class="form__row d-flex align-items-center justify-space">
+                                <input type="text" name="name" value="{{ \Illuminate\Support\Facades\Auth::user()->name }}" class="form__input" placeholder="" id="rub_input" />
+                            </div>
+                            <button class="button small-button button--full button--main mb-0 mt-10" type="submit">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
                 @if (\Session::has('success'))
                     <div class="fieldset" style="background: #105f14;">
                         <div class="form">
@@ -63,11 +63,33 @@
                         </div>
                     </div>
                 @endif
+                <h2 class="page__title">Изменить пароль</h2>
+                <div class="fieldset">
+                    <form method="post" id="edit-profile-form" action="{{ route('my-profile.update', \Illuminate\Support\Facades\Auth::id()) }}">
+                        @csrf
+                        {{ method_field('PUT') }}
+                        <div class="form">
+                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 10px;">Старый пароль</h3>
+                            <div class="form__row d-flex align-items-center justify-space">
+                                <input type="text" name="email" value="" class="form__input" placeholder="" id="rub_input" />
+                            </div>
+                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 30px;">Новый пароль</h3>
+                            <div class="form__row d-flex align-items-center justify-space">
+                                <input type="text" name="name" value="" class="form__input" placeholder="" id="rub_input" />
+                            </div>
+                            <h3 class="mb-0 fw-bolder pb-0" style="margin-top: 30px;">Повторите новый пароль</h3>
+                            <div class="form__row d-flex align-items-center justify-space">
+                                <input type="text" name="name" value="" class="form__input" placeholder="" id="rub_input" />
+                            </div>
+                            <button class="button small-button button--full button--main mb-0 mt-10" type="submit">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <!-- PAGE END -->
-            <div class="bottom-fixed-button text-center">
-                <button class="button button--full button--main" type="submit" onclick="$('#edit-profile-form').submit();">Обновить</button>
-            </div>
+{{--            <div class="bottom-fixed-button text-center">--}}
+{{--                <button class="button button--full button--main" type="submit" onclick="$('#edit-profile-form').submit();">Обновить</button>--}}
+{{--            </div>--}}
     </div>
 
 
@@ -81,5 +103,5 @@
         }
     </script>
 
-    {!! $bottomMenu = false !!}
+    {!! $bottomMenu = true !!}
 @endsection
