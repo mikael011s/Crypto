@@ -84,7 +84,7 @@
                                         <div class="caption__chart"><canvas id="rau_chart" width="100%" height="60"></canvas></div>
                                         <br>
                                         <div class="caption__info">
-                                            <b>1 RAu</b> - <b>{{ \App\Models\Setting::where('param', 'rau_price')->first()->value }}₽</b>
+                                            <b>1 RAu</b> - <b>{{ number_format(\App\Models\Setting::where('param', 'rau_price')->first()->value, 2, '.', ' ') }}₽</b>
                                         </div>
                                         <div class="caption__info">
                                             <strong>Рост за последний день:</strong>
