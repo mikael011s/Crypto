@@ -11,7 +11,7 @@
                 <div class="account-info__title" style="text-transform: uppercase;font-weight: bolder;font-size: 15px;margin-bottom: 0px;">{{ $coin }}</div>
                 @if($coin == 'RAU')
                     <div class="account-info__total" style="margin-top: -2px;">
-                        {{ \App\Models\Setting::where('param', 'rau_price')->first()->value }}
+                        {{ number_format(\App\Models\Setting::where('param', 'rau_price')->first()->value, 2, '.', ' ') }}
                         <span style="font-size: 15px;font-weight: 300;position: absolute;margin-top: 20px;margin-left: 2px;">₽</span>
                     </div>
                     <div class="account-info__stats">
