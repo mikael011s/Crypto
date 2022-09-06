@@ -21,5 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::prefix('/payment/')->group(function () {
     Route::post('/', 'App\Http\Controllers\Merchant\PostbackController@payUserBalance');
 
-    Route::get('/payment/success', '');
+//    Route::get('/payment/success', '');
 });
