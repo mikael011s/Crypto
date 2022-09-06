@@ -30,7 +30,7 @@
                                     <h4 class="card-title">Вариация курса</h4>
                                 </div>
                                 <div class="card-body">
-                                    <form class="form form-horizontal" method="post" action="{{ route('currency-save') }}">
+                                    <form class="form form-horizontal" method="post" action="{{-- route('currency-save') --}}">
                                         @csrf
                                         <div class="row">
                                             <div class="col-12">
@@ -70,6 +70,11 @@
                                 </div>
                             </div>
                         @endif
+                        <div class="col-md-12">
+                            <div class="alert alert-danger p-2 pt-2 pb-2">
+                                Эта форма пока не работает.
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>

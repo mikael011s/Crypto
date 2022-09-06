@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // В случае ошибки с кроном
-Route::get('update-rate', 'App\Http\Controllers\RauCoinController@updateRate');
+//Route::get('update-rate', 'App\Http\Controllers\RauCoinController@updateRate');
 
 // Ссылки главной страницы
 Route::view('/', 'welcome');
@@ -31,6 +31,8 @@ Route::prefix('home')->group(function () {
 //    Route::view('/privacy/rules', 'home.privacy-rules')->name('rules');
 //    Route::view('/privacy/documents', 'home.privacy-documents')->name('documents');
 });
+
+
 
 // Мобильная версия
 Route::prefix('mobile')->group(function () {
@@ -72,6 +74,8 @@ Route::prefix('mobile')->group(function () {
     });
 });
 
+
+
 // Админ панель
 Route::prefix('panel')->middleware('auth')->middleware('admin')->group(function () {
     Route::view('/', 'admin.main')->name('admin-main');
@@ -79,11 +83,17 @@ Route::prefix('panel')->middleware('auth')->middleware('admin')->group(function 
     Route::resources([
         // Пользователи
         'users' => \App\Http\Controllers\UsersController::class,
+        'mails' => \App\Http\Controllers\MailController::class,
     ]);
 
     // Управление курсом
     Route::view('/currency/edit', 'admin.currency.edit')->name('currency-edit');
     Route::post('/currency/edit', 'App\Http\Controllers\RauCoinController@edit')->name('currency-save');
+
+    Route::get('/currency/history', function () {
+        $history = \Illuminate\Support\Facades\DB::table('rau_histories')->orderBy('id', 'desc')->take(10)->get();
+        return view('admin.currency.history', compact('history'));
+    })->name('currency-history');
 });
 
 Route::redirect('/home', '/mobile/dashboard')->name('home');

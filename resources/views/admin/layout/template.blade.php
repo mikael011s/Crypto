@@ -72,15 +72,17 @@
             </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="{{ route('users.index') }}"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">Управление базой</span></a>
             </li>
-            <li class=" nav-item"><a class="d-flex align-items-center" href="app-chat.html"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Запросы в поддержку</span></a>
+            <li class=" nav-item"><a class="d-flex align-items-center" href="{{ route('mails.index') }}"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Запросы в поддержку</span></a>
             </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Calendar">Планирование</span></a>
             </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="{{ route('currency-edit') }}"><i data-feather="dollar-sign"></i><span class="menu-title text-truncate" data-i18n="Kanban">Управление курсом</span></a>
             </li>
-            <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather="dollar-sign"></i><span class="menu-title text-truncate" data-i18n="Kanban">Заявки на вывод</span></a>
+            <li class=" nav-item"><a class="d-flex align-items-center" href="{{ route('currency-history') }}"><i data-feather="trending-up"></i><span class="menu-title text-truncate" data-i18n="Kanban">История курса</span></a>
             </li>
-            <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather="trending-up"></i><span class="menu-title text-truncate" data-i18n="Kanban">Стат. по операциям</span></a>
+            <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather="send"></i><span class="menu-title text-truncate" data-i18n="Kanban">Заявки на вывод</span></a>
+            </li>
+            <li class=" nav-item"><a class="d-flex align-items-center" href="app-kanban.html"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="Kanban">Стат. по операциям</span></a>
             </li>
 {{--            <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="menu"></i><span class="menu-title text-truncate" data-i18n="Menu Levels">Menu Levels</span></a>--}}
 {{--                <ul class="menu-content">--}}
