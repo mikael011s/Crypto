@@ -135,3 +135,11 @@ php7.4 artisan route:cache
 git pull origin
 php artisan migrate
 php artisan route:cache
+git pull origin
+git status
+git add .
+git commit -m "Ленд"
+git status
+git push origin
+git pull origin
+git push origin

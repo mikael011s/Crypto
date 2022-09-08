@@ -99,7 +99,7 @@
                                 <div class="slider-simple__caption caption caption--gradient">
                                     <div class="caption__content">
                                         <div class="page__title-bar">
-                                            <h3>Динамика курса Bitcoin (неделя)</h3>
+                                            <h3>Динамика курса Bitcoin</h3>
                                         </div>
 
                                         <!-- TradingView Widget BEGIN -->
@@ -151,7 +151,7 @@
                                 <div class="slider-simple__caption caption caption--gradient">
                                     <div class="caption__content">
                                         <div class="page__title-bar">
-                                            <h3>Динамика курса Ethereum (неделя)</h3>
+                                            <h3>Динамика курса Ethereum</h3>
                                         </div>
 
                                         <!-- TradingView Widget BEGIN -->
