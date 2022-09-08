@@ -124,3 +124,14 @@ git commit -m "Changes for land and verification"
 git push origin
 git pull origin
 git push origin
+git pull origin
+git status
+git checkout .bash_history
+git pull origin
+php7.4 artisan migrate
+php7.4 artisan route:cache
+git pull origin
+php7.4 artisan route:cache
+git pull origin
+php artisan migrate
+php artisan route:cache
