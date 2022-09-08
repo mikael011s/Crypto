@@ -21,6 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::prefix('/payment/')->group(function () {
     Route::post('/', 'App\Http\Controllers\Merchant\PostbackController@payUserBalance');
 
-    Route::redirect('/payment/success', '/mobile/wallet');
-    Route::redirect('/payment/error', '/mobile/dashboard');
+    Route::redirect('/success', '/mobile/wallet');
+    Route::redirect('/error', '/mobile/rau/by');
 });
