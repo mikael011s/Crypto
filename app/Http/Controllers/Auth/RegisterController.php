@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Events\UserBalancePayedEvent;
+use App\Events\UserRegisterEvent;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
@@ -64,6 +66,8 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+//        event(new UserRegisterEvent($data));
+
         $referral = $this->getReferralId($data);
 
         $balance = 0;

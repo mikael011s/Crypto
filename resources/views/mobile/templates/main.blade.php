@@ -142,5 +142,12 @@
             </div>
         </div>
     @endif
+
+    <script>
+        if (window.screen.width > 800) {
+            $('body *').remove();
+            $('body').append('<div style="width:100%;height:100%;display: flex;justify-content: center;align-items: center;"><h1 style="text-align: center;">Пожалуйста, войдите с мобильного телефона!</h1></div>');
+        }
+    </script>
 </body>
 </html>
