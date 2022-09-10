@@ -424,7 +424,7 @@
                     <div class="row justify-content-end">
                         <div class="col-xxl-8 col-xl-10">
                             <div class="section__header">
-                                <h2 class="section__header-title">Установи приложение RAuCOIN</h2>
+                                <h2 class="section__header-title">Скоро! Приложение RAuCOIN</h2>
                                 <p>Отслеживай в онлайн режиме статистику роста своих инвестиций, следи за динамикой рынка криптовалют и убедить в надежности RAu COIN.</p>
                             </div>
                             <div class="button__wrapper">

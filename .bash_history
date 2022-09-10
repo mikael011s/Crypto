@@ -143,3 +143,9 @@ git status
 git push origin
 git pull origin
 git push origin
+git pull origin
+git status
+git add .
+git commit -m "Changes"
+git pull origin
+git push origin

@@ -342,7 +342,7 @@
                 <div class="col-lg-6">
                     <div class="section__header">
                         <h2 class="section__header-title">10% Партнёрам</h2>
-                        <p>Расскажи друзьям и близким об уникальном проекте RAu COIN, помоги заработать им, и заработай сам!</p>
+                        <p>Расскажи друзьям и близким об уникальном проекте RAu COIN, поделись своим пригласительным кодом! Помоги заработать друзьям, и заработай сам!</p>
                     </div>
                     <a href="mobile" class="cmn--btn">Вперед</a>
                 </div>
@@ -420,7 +420,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7">
                     <div class="section__header">
-                        <h2 class="section__header-title">Установи приложение RAuCOIN</h2>
+                        <h2 class="section__header-title">Скоро! Приложение RAuCOIN</h2>
                         <p>Отслеживай в онлайн режиме статистику роста своих инвестиций, следи за динамикой рынка криптовалют и убедись в надежности RAu COIN.</p>
                     </div>
                     <div class="button__wrapper">
