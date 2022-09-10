@@ -146,7 +146,9 @@
     <script>
         if (window.screen.width > 800) {
             $('body *').remove();
-            $('body').append('<div style="width:100%;height:100%;display: flex;justify-content: center;align-items: center;"><h1 style="text-align: center;">Пожалуйста, войдите с мобильного телефона!</h1></div>');
+            $('body').append('<div style="width:100%;height:100%;display: flex;justify-content: center;align-items: center;"><h1 style="text-align: center;width:800px;margin-top:55px;">' +
+                'Пожалуйста, войдите с мобильного устройства и личный кабинет будет доступен Вам</h1>' +
+                '<img style="position:absolute;z-index:-1;margin-top:-300px;" width="400px" src="{{ asset("/template-assets/digihyip/images/choose-us/thumb.png") }}"></div>');
         }
     </script>
 </body>

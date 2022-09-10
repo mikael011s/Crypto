@@ -112,12 +112,6 @@
                         <div class="footer__widget">
                             <h3 class="widget-title">MIKE GROUP</h3>
                             <p>Компания MIKE GROUP состоит из нескольких инвестиционных проектов включая Хейдж Фонд MIKE Capital который инвестирует в самые высокодоходные мировые проекты и компании</p>
-                            <ul class="social-links">
-                                <li><a class="facebook-bg" href="#0"><i class="lab la-facebook-f"></i></a></li>
-                                <li><a class="twitter-bg" href="#0"><i class="lab la-twitter"></i></a></li>
-                                <li><a class="instagram-bg" href="#0"><i class="lab la-instagram"></i></a></li>
-                                <li><a class="pinterest-bg" href="#0"><i class="lab la-pinterest"></i></a></li>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-sm-6">
