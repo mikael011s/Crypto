@@ -144,7 +144,12 @@
     @endif
 
     <script>
-        if (window.screen.width > 800) {
+        var url_string = document.location.href;
+        var url = new URL(url_string);
+        var noBlock = url.searchParams.get("noblock");
+        console.log(noBlock);
+
+        if (window.screen.width > 800 && noBlock === null) {
             $('body *').remove();
             $('body').append('<div style="width:100%;height:100%;display: flex;justify-content: center;align-items: center;"><div style="font-size:20px;text-align: center;width:800px;margin-top:55px;">' +
                 'В нашем проекте реализована мобильная версия личного кабинет! Пожалуйста, войдите с мобильного устройства и личный кабинет будет доступен Вам!!</div>' +
