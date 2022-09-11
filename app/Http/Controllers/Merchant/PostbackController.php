@@ -11,27 +11,25 @@ use Illuminate\Http\Request;
 
 class PostbackController extends Controller implements PostbackContract
 {
-    public function payUserBalance(Request $request): int
+    public function payUserBalance($data): int
     {
-        // $this->checkSign($request);
+        event(new UserBalancePayedEvent($data));
 
-        event(new UserBalancePayedEvent($request->all()));
+        $user = User::where('email', $data['P_EMAIL'])->first();
+        $userNewBalance = $user->balance + ConverterController::convertToRau($data['AMOUNT']);
 
-        $user = User::where('email', $request->post('P_EMAIL'))->first();
-        $userNewBalance = $user->balance + ConverterController::convertToRau($request->post('AMOUNT'));
-
-        User::where('email', $request->post('P_EMAIL'))->update([
+        User::where('email', $data['P_EMAIL'])->update([
             'balance' => $userNewBalance
         ]);
 
         return $userNewBalance;
     }
 
-    private function checkSign($request): void
+    private function checkSign($data): void
     {
-        $sign = md5($request->post('MERCHANT_ID').':'.$request->post('AMOUNT').':ezGke.jo/QZNp)c:'.$request->post('MERCHANT_ORDER_ID'));
+        $sign = md5($data['MERCHANT_ID'].':'.$data['AMOUNT'].':ezGke.jo/QZNp)c:'.$data['MERCHANT_ORDER_ID']);
 
-        if ($sign !== $request->post('SIGN')) {
+        if ($sign !== $data['SIGN']) {
             exit ('403');
         }
     }

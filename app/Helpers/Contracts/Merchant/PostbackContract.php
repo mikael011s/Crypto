@@ -9,8 +9,8 @@ interface PostbackContract
     /**
      * Пополнить баланс пользователя
      *
-     * @param Request $request
+     * @param $data
      * @return int
      */
-    public function payUserBalance(Request $request): int;
+    public function payUserBalance($data): int;
 }

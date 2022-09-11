@@ -18,9 +18,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// Freekassa payment
 Route::prefix('/payment/')->group(function () {
-    Route::post('/', 'App\Http\Controllers\Merchant\PostbackController@payUserBalance');
+    // Freekassa
+    Route::post('/', 'App\Http\Controllers\Api\Freekassa\FreekassaPostbackController@pay');
 
+    // Payok payment
+    Route::post('/payok', 'App\Http\Controllers\Api\Freekassa\PayokPostbackController@pay');
+
+    // Just redirects
     Route::redirect('/success', '/mobile/wallet');
     Route::redirect('/error', '/mobile/rau/by');
 });
