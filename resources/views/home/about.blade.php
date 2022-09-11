@@ -61,7 +61,7 @@
                     <div class="section__header m-0">
                         <h2 class="section__header-title">RAu COIN - это гарантирванный доход</h2>
                         <span class="d-block"> Эмиссию данной уникальной валюты обьявила корпорация MIKE GROUP основанная крупными инвесторами в январе 2022 года </span>
-                        <a href="mobile" class="cmn--btn mt-4">Купить RAu COIN</a>
+                        <a href="/mobile" class="cmn--btn mt-4">Купить RAu COIN</a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -146,7 +146,7 @@
                             <li> Фин тех стартапы</li>
                         </ul>
                         <div class="button__wrapper">
-                            <a href="mobil" class="cmn--btn">Хочу инвестировать</a>
+                            <a href="/mobile" class="cmn--btn">Хочу инвестировать</a>
                             <a href="startup" class="cmn--btn2">Для стартапов</a>
                         </div>
                     </div>
@@ -287,7 +287,7 @@
                         <h2 class="section__header-title">10% Партнерам</h2>
                         <p>Партнерская программа работает по принципу реферальной ссылки. Имеет 1 уровень и приносит Вам 10% от суммы, на которую приобрели RAu COIN привлеченные Вами пользователи </p>
                     </div>
-                    <a href="sign-up.html" class="cmn--btn">ВПЕРЁД</a>
+                    <a href="{{ route('register') }}" class="cmn--btn">ВПЕРЁД</a>
                 </div>
             </div>
         </div>
@@ -428,8 +428,8 @@
                                 <p>Отслеживай в онлайн режиме статистику роста своих инвестиций, следи за динамикой рынка криптовалют и убедить в надежности RAu COIN.</p>
                             </div>
                             <div class="button__wrapper">
-                                <a href="mobile" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-google-play"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">для Android</p></div></a>
-                                <a href="mobile" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-apple"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">для IOS</p></div></a>
+                                <a href="javascript:alert('Мобильное приложение ещё в разработке!')" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-google-play"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">Для Android</p></div></a>
+                                <a href="javascript:alert('Мобильное приложение ещё в разработке!')" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-apple"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">Для IOS</p></div></a>
                             </div>
                         </div>
                     </div>

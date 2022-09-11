@@ -53,7 +53,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Investor Section Starts Here -->
     <section class="investor-section padding-top padding-bottom">
         <div class="container">
@@ -187,8 +187,8 @@
                                 <p>Отслеживай в онлайн режиме статистику роста своих инвестиций, следи за динамикой рынка криптовалют и убедить в надежности RAu COIN.</p>
                             </div>
                             <div class="button__wrapper">
-                                <a href="sign-up.html" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-google-play"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">для Android</p></div></a>
-                                <a href="sign-up.html" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-apple"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">для IOS</p></div></a>
+                                <a href="javascript:alert('Мобильное приложение ещё в разработке!')" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-google-play"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">Для Android</p></div></a>
+                                <a href="javascript:alert('Мобильное приложение ещё в разработке!')" class="cmn--btn download-btn"><div class="icon"><i class="fab fa-apple"></i></div> <div class="text"><p>СКАЧАТЬ</p><p class="for">Для IOS</p></div></a>
                             </div>
                         </div>
                     </div>
