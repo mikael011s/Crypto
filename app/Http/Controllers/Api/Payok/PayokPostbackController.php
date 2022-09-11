@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\Freekassa;
+namespace App\Http\Controllers\Api\Payok;
 
 use App\Helpers\Contracts\Postback\ServicePostbackController;
 use App\Http\Controllers\Controller;

@@ -24,7 +24,7 @@ Route::prefix('/payment/')->group(function () {
     Route::post('/', 'App\Http\Controllers\Api\Freekassa\FreekassaPostbackController@pay');
 
     // Payok payment
-    Route::post('/payok', 'App\Http\Controllers\Api\Freekassa\PayokPostbackController@pay');
+    Route::post('/payok', 'App\Http\Controllers\Api\Payok\PayokPostbackController@pay');
 
     // Just redirects
     Route::redirect('/success', '/mobile/wallet');
