@@ -71,7 +71,7 @@
 {{--                            <input type="radio" name="payment_system" id="c1" value="payeer" /><label for="c1">Payeer <span></span></label>--}}
 {{--                        </div>--}}
                         <div class="card-selector">
-                            <input type="radio" name="payment_system" id="c1" value="bank" /><label for="c1">Банковской картой <span></span></label>
+                            <input type="radio" name="payment_system" id="c1" value="bank" /><label for="c1">Visa, Mastercard, Qiwi<span></span></label>
                         </div>
                         <div class="card-selector">
                             <input type="radio" name="payment_system" id="c2" value="freekassa" /><label for="c2">Оплата криптовалютой <span></span></label>
@@ -86,12 +86,12 @@
                 <div class="fieldset freekassa-payments-block hide" id="freekassa_select">
                     <div class="form">
                         <h3 class="mb-0 fw-bolder">Выберите способ оплаты</h3>
-                        <div class="card-selector">
-                            <input type="radio" name="freekassa_payment-system" id="fc0" value="13" /><label for="fc0">Qiwi <span></span></label>
-                        </div>
-                        <div class="card-selector">
-                            <input type="radio" name="freekassa_payment-system" id="fc2" value="6" checked /><label for="fc2">ЮКасса <span></span></label>
-                        </div>
+{{--                        <div class="card-selector">--}}
+{{--                            <input type="radio" name="freekassa_payment-system" id="fc0" value="13" /><label for="fc0">Qiwi <span></span></label>--}}
+{{--                        </div>--}}
+{{--                        <div class="card-selector">--}}
+{{--                            <input type="radio" name="freekassa_payment-system" id="fc2" value="6" checked /><label for="fc2">ЮКасса <span></span></label>--}}
+{{--                        </div>--}}
 {{--                        <div class="card-selector">--}}
 {{--                            <input type="radio" name="freekassa_payment-system" id="fc3" value="10" /><label for="fc3">Онлайн банки <span></span></label>--}}
 {{--                        </div>--}}
