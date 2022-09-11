@@ -16,3 +16,4 @@ yarn-error.log
 .ssh
 .htaccess
 .composer
+.bash_history
