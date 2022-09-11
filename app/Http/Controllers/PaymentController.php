@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Api\Freekassa\ApiController;
+use App\Http\Controllers\Api\Payok\ApiController;
 use App\Http\Controllers\Merchant\ReferralPayController;
 use App\Http\Requests\PayRequest;
 use Illuminate\Http\Request;
@@ -14,9 +14,11 @@ class PaymentController extends Controller
         $payment = $request->post('payment-system');
 
         if ($payment == 'freekassa')
-            return ApiController::init('orders/create', ['i' => $request->post('freekassa_payment-system'), 'amount' => $request->post('col')]);
+            return \App\Http\Controllers\Api\Freekassa\ApiController::init('orders/create', ['i' => $request->post('freekassa_payment-system'), 'amount' => $request->post('col')]);
         elseif ($payment == 'referral_balance')
             return ReferralPayController::init($request->all());
+        elseif ($payment == 'bank')
+            return ApiController::init('', $request->all());
     }
 
     /**
@@ -33,7 +35,7 @@ class PaymentController extends Controller
 
         // Пополнение с фрикассы. Возвращаем объект мерчанта
         if ($payment == 'freekassa')
-            return ['orders/create', Api\Freekassa\ApiController::class];
+            return ['orders/create', App\Http\Controllers\Api\Payok\ApiController::class];
 
         // Если нет такого способа
         return false;

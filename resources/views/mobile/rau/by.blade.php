@@ -71,7 +71,10 @@
 {{--                            <input type="radio" name="payment_system" id="c1" value="payeer" /><label for="c1">Payeer <span></span></label>--}}
 {{--                        </div>--}}
                         <div class="card-selector">
-                            <input type="radio" name="payment_system" id="c2" value="freekassa" /><label for="c2">Freekassa <span></span></label>
+                            <input type="radio" name="payment_system" id="c1" value="bank" /><label for="c1">Банковской картой <span></span></label>
+                        </div>
+                        <div class="card-selector">
+                            <input type="radio" name="payment_system" id="c2" value="freekassa" /><label for="c2">Оплата криптовалютой <span></span></label>
                         </div>
                         <div class="card-selector mb-0">
                             <input type="radio" name="payment_system" id="c3" value="referral_balance" /><label for="c3">С реферального счёта <span></span></label>
@@ -80,7 +83,7 @@
                         <div class="" id="show-paypal-info">Вы будете перенаправлены на страницу платёжной системы.</div>
                     </div>
                 </div>
-                <div class="fieldset freekassa-payments-block hide">
+                <div class="fieldset freekassa-payments-block hide" id="freekassa_select">
                     <div class="form">
                         <h3 class="mb-0 fw-bolder">Выберите способ оплаты</h3>
                         <div class="card-selector">
@@ -150,8 +153,26 @@
         </div>
     </div>
 
+    <style>
+        #popup-notifications {
+            display: none !important;
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript">
+        $('[name="payment_system"]').on('change', function () {
+            let paymentSystem = $('[name="payment_system"]:checked').val();
+            if (paymentSystem === 'freekassa') {
+                console.log(1);
+                setTimeout(function () {
+                    document.getElementById('freekassa_select').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 100);
+            }
+        });
+
         $('[name="freekassa_payment-system"]').on('change', function () {
             let paymentSystem = $(this).val();
         });
@@ -168,6 +189,8 @@
                     'X-CSRF-TOKEN': $('input[name="_token"]').val()
                 }
             });
+
+            console.log("Pay sys: " + $('[name="payment_system"]:checked').val());
 
             $.ajax({
                 url: "{{ route('payment.init') }}",

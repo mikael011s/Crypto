@@ -2,7 +2,7 @@
 
 namespace Http\Controllers\Api\Freekassa;
 
-use App\Http\Controllers\Api\Freekassa\ApiController;
+use App\Http\Controllers\Api\Payok\ApiController;
 use PHPUnit\Framework\TestCase;
 
 class ApiControllerMakeOrderTest extends TestCase

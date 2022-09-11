@@ -2,7 +2,7 @@
 
 namespace Http\Controllers\Api\Freekassa;
 
-use App\Http\Controllers\Api\Freekassa\ApiController;
+use App\Http\Controllers\Api\Payok\ApiController;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Event;
 use PHPUnit\Framework\TestCase;
