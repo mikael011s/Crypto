@@ -149,3 +149,68 @@ git add .
 git commit -m "Changes"
 git pull origin
 git push origin
+git pull origin
+git status
+git checkout .bash_history
+git pull origin
+git ignore .bash_history
+nano .gitignore 
+ls
+
+nano .gitignore 
+sudo
+sudo nan
+sudo nano
+sudo nano .gitignore
+git pull origin
+git status
+git add .
+git commit -m "Update .gitignore"
+git pull origin
+git push origin
+git push origin
+git push origin master
+git push origin main
+git status
+git pull origin
+git restore
+git status
+git pull origin main
+git push origin main
+checkout origin main
+git checkout origin main
+git checkout origin master
+git checkout .
+git status
+git pull
+git pull origin
+git git-pull(1)
+git git-pull
+git pull --help
+git restore
+git checkout
+git status
+git stash
+git checkout main
+git stash pop
+git status
+git restore
+git status
+git pull origin
+git rebaske --skip
+git rebase --skip
+git status
+git pull origin
+nano .bash_history
+nano .gitignore
+nano .gitignore
+nano .gitignore
+nano .gitignore
+git add .
+git commit -m "Update .gitignore"
+git push origin
+git push origin
+git pull origin
+git status
+php7.4 artisan route:cache
+git pull origin
