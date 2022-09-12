@@ -61,6 +61,10 @@ Route::prefix('mobile')->group(function () {
         Route::view('rau/sell', 'mobile.rau.sell')->name('m-sell');
         Route::view('rau/swap', 'mobile.rau.swap')->name('m-swap');
 
+        Route::get('referrals', function () {
+            return view('mobile.referrals', ['referrals' => \App\Models\User::where('referral_id', \Illuminate\Support\Facades\Auth::id())->get()]);
+        })->name('m-referrals');
+
         Route::view('profile', 'mobile.profile.show')->name('m-profile');
 
         Route::get('coin/{coin}', 'App\Http\Controllers\CoinController@viewCoin')->name('coin-more');
