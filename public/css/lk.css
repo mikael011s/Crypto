@@ -141,3 +141,14 @@ body.with-panel-left-reveal .panel--left {
 .notifications .notification.notification-error {
   border-left-color: #ff0000;
 }
+
+.price-dot-numbers {
+  font-size: 25px;
+  position: relative;
+  display: inline;
+}
+
+.price-dot-numbers-small {
+  font-size: 12px;
+  display: inline;
+}

@@ -27,4 +27,18 @@ class CoinController extends Controller
 
         return view('mobile.coin.more', compact('coin', 'data'));
     }
+
+    public static function showFormatedUserBalance($class = "price-dot-numbers")
+    {
+        $balance = explode(',', self::getUserBalance());
+        return "{$balance[0]},<span class='$class'>{$balance[1]}</span>";
+    }
+
+    public static function getUserBalance()
+    {
+        return number_format(
+            \Illuminate\Support\Facades\Auth::user()->balance * \App\Models\Setting::where('param', 'rau_price')->first()->value,
+            2, ',', ' '
+        );
+    }
 }

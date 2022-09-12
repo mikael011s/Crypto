@@ -209,6 +209,10 @@
                     } else {
                         window.location.href = response['body']['location'];
                     }
+                },
+                error: function (response) {
+                    alert('Пожалуйста, заполните все поля корректно!');
+                    console.log(response.message);
                 }
             });
         });
