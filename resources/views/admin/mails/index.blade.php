@@ -40,7 +40,7 @@
                                             <th>Имя</th>
                                             <th>Текст</th>
                                             <th>Дата создания</th>
-                                            <th>ID в системе</th>
+                                            <th>Почта отправителя</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -49,7 +49,7 @@
                                                 <td>{{ $mail->name }}</td>
                                                 <td style="max-width: 600px;">{{ $mail->message }}</td>
                                                 <td>{{ $mail->created_at }}</td>
-                                                <td>{{ $mail->id }}</td>
+                                                <td>{{ $mail->user->email }}</td>
                                             </tr>
                                         @endforeach
                                         </tbody>
